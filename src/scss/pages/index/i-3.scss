@@ -17,4 +17,12 @@
 	.block__btn {
 		text-align: center;
 	}
+	@media(max-width: 991.98px){
+		.block__title{
+			padding-bottom: 0;
+		}
+		.block__slide{
+			height: auto;
+		}
+	}
 }

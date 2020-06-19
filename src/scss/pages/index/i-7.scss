@@ -80,4 +80,17 @@
 		margin-top: 30px;
 		padding-bottom: 30px;
 	}
+	@media(max-width: 991.98px){
+		margin-top: 0;
+		.block__title{
+			padding-top: 0;
+		}
+		.new-home-list .new-home__description{
+			padding: 10px;
+		}
+		.block__btn{
+			margin-top: 0;
+			padding-bottom: 0;
+		}
+	}
 }

@@ -94,6 +94,18 @@ function homeNewSlide(){
 			nextEl: '.new-home-list .swiper-button-next',
 			prevEl: '.new-home-list .swiper-button-prev',
 		},
+		breakpoints: {
+			992:{
+				slidesPerView: 3,
+			},
+			575:{
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+			320:{
+				slidesPerView: 1,
+			}
+		},
 	});
 }
 
@@ -118,11 +130,11 @@ function partnerSlide(){
 				spaceBetween: 10,
 			},
 			575:{
-				slidesPerView: 1,
+				slidesPerView: 2,
 				spaceBetween: 10,
 			},
 			320:{
-				slidesPerView: 1,
+				slidesPerView: 2,
 			}
 		},
 

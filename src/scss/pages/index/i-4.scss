@@ -246,7 +246,12 @@
 					}
 				}
 			}
-			
+			@media(max-width: 991.98px){
+				padding: 10px;
+				.block__description{
+					width: 100%;
+				}
+			}
 		}
 	}
 }

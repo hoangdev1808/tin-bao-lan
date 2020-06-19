@@ -68,6 +68,7 @@
 					}
 				}
 				@media(max-width: 991.98px){
+					max-height: 160px;
 					p{
 						font-size: 14px;
 						padding-bottom: 10px;
@@ -82,7 +83,7 @@
 					}
 				}
 				@media(max-width: 344px){
-					max-height: 75px;
+					max-height: 135px;
 				}
 			}
 		}
@@ -96,6 +97,9 @@
 			.block__content{
 				width: 100%;
 			}
+		}
+		@media(max-width: 991.98px){
+			display: inline-block;
 		}
 	}
 }

@@ -19,6 +19,9 @@
 			position: absolute;
 			bottom: -50%;
 		}
+		@media(max-width: 991.98px){
+			display: none;
+		}
 	}
 	.box-right{
 		position: relative;
@@ -99,6 +102,16 @@
 					justify-content: center;
 				}
 			}
+		}
+	}
+	@media(max-width: 991.98px){
+		padding: 10px;
+		.block__description{
+			padding-bottom: 0;
+			margin-bottom: 15px;
+		}
+		.box-right{
+			padding: 0;
 		}
 	}
 }
