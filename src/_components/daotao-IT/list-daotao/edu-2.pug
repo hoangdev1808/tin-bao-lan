@@ -1,0 +1,16 @@
+section.block-section
+	.container
+		.block__title.text-uppercase.text-center
+			h3 đào tạo
+		.row
+			-for(i=1; i<4; i++)
+				.col-md-4
+					.block-item
+						.item__img
+							a(href="chi-tiet-khoa-hoc.html")
+								img(src="./assets/images/education/item-"+i+".png", alt="")
+						.item__img-hover
+							.content
+								.text-center
+									h5 Trung tâm Pearson Vue
+									a.btn.btn__new(href="chi-tiet-khoa-hoc.html") xem thêm

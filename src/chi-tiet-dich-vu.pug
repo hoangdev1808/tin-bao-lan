@@ -1,0 +1,12 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'CHI TẾT DỊCH VỤ';
+	- let bodyClass = 'serveced-detail-page';
+	- let titlePosition = [''];
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/dichvu/dichvu-ct/detaildv-1.pug
+	include ./_components/dichvu/dichvu-ct/detaildv-2.pug
+	include ./_components/dichvu/dichvu-ct/detaildv-3.pug
+block scripts

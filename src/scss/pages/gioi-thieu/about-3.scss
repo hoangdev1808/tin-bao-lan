@@ -1,0 +1,29 @@
+.about-3{
+	position: relative;
+	width: 100%;
+	.list-partner{
+		width: 100%;
+		.item-partner{
+			position: relative;
+			.item__image{
+				background-color: rgb(245, 245, 245);
+				max-width: 350px;
+				height: 150px;
+				padding: 40px 0;
+				text-align: center;
+			}
+			.item__desc{
+				padding: 30px 0;
+			}
+			@media(max-width: 991.98px){
+				.item__image{
+					max-width: 100%;
+				}
+				.item__desc{
+					text-align: center;
+					padding: 15px 0;
+				}
+			}
+		}
+	}
+}

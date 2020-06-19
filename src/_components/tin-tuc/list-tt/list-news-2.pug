@@ -1,0 +1,49 @@
+section.block-section.news-block.bg-light.mb-0
+	.container
+		.block__title.text-uppercase.text-center
+			h3 tin tức
+		.news-hot
+			.row
+				.col-md-6.pr-0
+					.box-left
+						.box__img
+							a(href="chi-tiet-tin-tuc.html")
+								img(src="./assets/images/news/left-1.png", alt="")
+				.col-md-6.pl-0
+					.box-right
+						.box__content
+							ul
+								li.box__time
+									p 10.02.2020
+
+								li.box__title
+									a(href="chi-tiet-tin-tuc.html") Giải pháp kết hợp video & âm thanh mới nhất của HIKVISION: răn đe, ngăn chặn kẻ xấu
+
+								li.box__desc
+									p HIKVISION nhà cung cấp các sản phẩm và giải pháp bảo mật hàng đầu thế giới đã giới thiệu một giải pháp kết hợp video & âm thanh với tính năng tiên tiến – ngăn chặn xâm nhập thời gian thực.
+		.news-list
+			.row
+				-for(i=1; i<7; i++)
+					.col-md-4
+						.news__item
+							.news__image
+								a(href="chi-tiet-tin-tuc.html")
+									img(src="./assets/images/news/n-"+i+".png", alt="")
+							.news__description
+								ul
+									li.new__time
+										span 10.02.2020
+									li.news__title
+										a(href="chi-tiet-tin-tuc.html")
+											|Hướng dẫn cấu hình ban đầu chi tiết nhất cho thiết bị mạng hãng UNIFI
+									li.news__content.lcl.lcl-3
+										p Chắc hẳn với nhiều nhiều khách hàng khi sở hữu một hệ thống mạng ko dây của gia đình hay hệ thống cực kỳ lớn dành cho doanh nghiệp đã không xa lạ gì với  thương hiệu Ubiquiti UniFi
+				.pages
+					.modulepager
+						ul.pagination
+							li.active
+								a(href="#") 1
+							li
+								a(href="#") 2
+							li
+								a(href="#") 3

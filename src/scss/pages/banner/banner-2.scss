@@ -1,0 +1,17 @@
+.banner-2 {
+	width: 100%;
+	height: 65vh;
+	display: block;
+	.banner__img{
+		width: 100%;
+		height: 100%;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	@media(max-width: 991.98px){
+		height: 40vh;
+	}
+}

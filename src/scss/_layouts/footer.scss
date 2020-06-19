@@ -1,0 +1,128 @@
+footer{
+	background-color: rgb(7, 88, 163);
+	margin-left: auto;
+	width: 100%;
+	.footer-block{
+		position: relative;
+		padding: 3rem 0;
+		.footer-card{
+			width: 100%;
+			.card__title{
+				margin-bottom: 1.25rem;
+				h3{
+					font-weight: 600;
+					color: #fff;
+					font-size: 18px;
+					font-family: "Barlow";
+					text-transform: uppercase;
+				}
+			}
+			.card__body{
+				p{
+					font-size: .875rem;
+					font-family: "Barlow";
+					color: #99cccc;
+				}
+				ul{
+					padding: 0;
+					list-style: none;
+					li{
+						display: flex;
+						margin-bottom: .5rem;
+						span{
+							font-size: 14px;
+							font-family: "MaterialIcons";
+							color: rgb(29, 175, 240);
+							margin-right: 15px;
+						}
+						p{
+							font-size: .875rem;
+							font-family: "Barlow";
+							color: #99cccc;
+						}
+						a{
+							font-size: .875rem;
+							font-family: "Barlow";
+							color: #99cccc;
+						}
+					}
+				}
+				.form-control{
+					border-radius: 0;
+					height: 40px;
+					background-color: transparent;
+					color: #99cccc;
+				}
+				.form-group{
+					position: relative;
+					margin: 1.25rem 0;
+				}
+				.btn__send{
+					position: absolute;
+					right: 0;
+					top: 0;
+					border-radius: 0;
+					color: #fff;
+					padding: .3rem;
+					background-color: rgb(29, 175, 240);
+					width: 75px;
+					height: 40px;
+				}
+			}
+			.card__media{
+				ul{
+					display: flex;
+					list-style: none;
+					padding: 0;
+					.media__icon{
+						width: 32px;
+						height: 32px;
+						background-color: #fff;
+						border-radius: 50%;
+						margin-right: auto;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+			}
+			@media(max-width: 768.98px){
+				margin-top: 15px !important;
+			}
+		}
+		@media(max-width: 768.98px){
+			padding: 0;
+		}
+	}
+	.copyright{
+		width: 100%;
+		padding: 1rem 0;
+		border-top: solid 1px rgb(57, 121, 181);
+		ul{
+			display: flex;
+			justify-content: flex-end;
+			padding: 0;
+			list-style: none;
+			li{
+				padding-right: 1rem;
+				position: relative;
+				a{
+					font-size: 15px;
+					font-family: "FontAwesome5Brands";
+					color: rgb(137, 186, 232);
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+			@media(max-width: 768px){
+				justify-content: flex-start;
+			}
+		}
+		p{
+			font-size: 13px;
+			font-family: "Barlow";
+			color: rgba(255, 255, 255, 0.502);
+		}
+	}
+}

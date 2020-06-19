@@ -1,0 +1,10 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'TIN TỨC CHI TIẾT';
+	- let bodyClass = 'detail-news-page';
+	- let titlePosition = [''];
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/tin-tuc/tt-chitiet/news-detail-1.pug
+block scripts

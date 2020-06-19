@@ -1,0 +1,12 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'SẢN PHẨM CHI TIẾT';
+	- let bodyClass = 'product-detail-page';
+	- let titlePosition = [''];
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/san-pham/sp-chitiet/detail-1.pug
+	include ./_components/san-pham/sp-chitiet/detail-2.pug
+	include ./_components/san-pham/sp-chitiet/detail-3.pug
+block scripts

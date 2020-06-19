@@ -1,0 +1,58 @@
+section.block-section
+	.container
+		.block__title.text-uppercase.text-center
+			h3 máy in
+		.block__filter
+			ul.nav
+				p BỘ LỌC
+				li.nav-item
+					.form-group
+						span Thương Hiệu:
+						select
+							option(selected='') Tất cả
+							option Thương hiệu 1
+							option Thương hiệu 2
+				li.nav-item
+					.form-group
+						input#radio1(type='radio', name='radio-group', checked='')
+						label(for='radio1') Mới nhất
+				li.nav-item
+					.form-group
+						input#radio2(type='radio', name='radio-group')
+						label(for='radio2') Bán chạy nhất
+				li.nav-item
+					.form-group
+						input#radio3(type='radio', name='radio-group')
+						label(for='radio3') Giá tăng dần
+				li.nav-item
+					.form-group
+						input#radio4(type='radio', name='radio-group')
+						label(for='radio4') Giá giảm dần
+		.list-product
+			.row
+				-for(i=1; i<17; i++)
+					.col-md-3.col-12
+						.product__item
+							.product__image
+								a(href="chi-tiet-san-pham.html")
+									img(src="./assets/images/product/p-"+i+".png", alt="")
+							.product__desc
+								.product__name
+									a(href="chi-tiet-san-pham.html") Máy in Laser BROTHER HL- L2321D - In đảo mặt tự động
+								.product__infor
+									.product__price
+										p.sale  2.699.000đ
+										p.promotion 3.000.000đ
+									.icon
+										a(href="") 
+											i.fa.fa-shopping-cart
+				.pages
+					.modulepager
+						ul.pagination
+							li.active
+								a(href="#") 1
+							li
+								a(href="#") 2
+							li
+								a(href="#") 3
+

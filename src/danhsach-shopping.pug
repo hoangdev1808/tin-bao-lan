@@ -1,0 +1,11 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'DANH SÁCH SHOPPING';
+	- let bodyClass = 'listshopping-page';
+	- let titlePosition = ['list shopping'];
+block banner,breadcrumb
+	include ./_components/shopping/shopping-banner.pug
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/shopping/list-shopping.pug
+block scripts

@@ -1,0 +1,11 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'LIÊN HỆ';
+	- let bodyClass = 'contact-page';
+	- let titlePosition = ['lien he'];
+block banner,breadcrumb
+	include ./_components/lien-he/contact-1.pug
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/lien-he/contact-2.pug
+block scripts

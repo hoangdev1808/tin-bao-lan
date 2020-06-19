@@ -1,0 +1,82 @@
+section.block-section.contact.mb-0
+	.container
+		.block__title.text-uppercase.text-center
+			h3 liên hệ
+		.contact-block
+			.row
+				.col-md-6
+					.__content
+						.__logo
+							img(src="./assets/logo.png", alt="")
+						.__title
+							h3 Công ty TNHH Tín Bảo Lan
+						.__address
+							ul
+								li
+									span
+										i.material-icons
+											|location_on
+									p 160/47 Bùi Đình Túy, Phường 12, Quận Bình Thạnh, TP.HCM 0304 87
+								li
+									span
+										i.material-icons
+											|monetization_on
+									p 0304 876 381
+								li
+									span
+										i.material-icons
+											|chrome_reader_mode
+									p 034001504690001 tại NH TMCP Đông Á- CN Phú Nhuận
+								li
+									span
+										i.material-icons
+											|assignment_ind
+									p Phạm Văn Tín - Giám Đốc
+								li
+									span
+										i.material-icons
+											|call
+									p (028) 7300 1399
+								li
+									span
+										i.material-icons
+											|print
+									p (028) 7300 1399
+				.col-md-6
+					.form-contact
+						.row
+							.col-md-6.form-group
+								input#txtName.form-control(type="text" placeholder="Họ và tên" onkeyup="validationForm();")
+								span#erroName.error
+							.col-md-6.form-group
+								input#txtAddress.form-control(type="text" placeholder="Địa chỉ" onkeyup="validationForm();")
+								span.erro#erroAddress
+							.col-md-6.form-group
+								input#txtEmail.form-control(type="text" placeholder="Email" onkeyup="validationForm();")
+								span.erro#errorEmail
+							.col-md-6.form-group
+								input#txtNum.form-control(type="text" placeholder="Số điện thoại" onkeyup="validationForm();")
+								span.erro#errorNum
+							.col-md-12.form-group
+								input#txtTitle.form-control(type="text" placeholder="Tiêu đề" onkeyup="validationForm();")
+								span.erro#errorTitle
+							.col-md-12.form-group
+								textarea#txtContent.form-control(name="", cols="30", rows="5" placeholder="Nội dung" onkeyup="validationForm();")
+								span.erro#errorContent
+							.col-md-12.d-flex
+								.form__control
+									ul
+										li.img-captcha
+											img(src="./assets/images/contact/captcha.png", alt="")
+										li.refresh
+											a(href="")
+												span.material-icons replay
+										li.input
+											input.form-control(type="text")
+								.block__btn
+									a.btn.btn__new(href="") gửi
+
+section.block-section.bg-light.mb-0
+	.container
+		.map-wrapper
+			iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19896.2391182464!2d106.67608946496217!3d10.772064938675168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f26de7d8973%3A0x8d5075f38e1bf491!2zNTA2LCAxNyBCYSBUaMOhbmcgSGFpLCBwaMaw4budbmcgMTEsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1590154490382!5m2!1svi!2s',  frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0',width="",height="")

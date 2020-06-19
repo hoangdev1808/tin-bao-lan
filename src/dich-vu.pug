@@ -1,0 +1,13 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'DỊCH VỤ';
+	- let bodyClass = 'serveced-page';
+	- let titlePosition = [''];
+block banner,breadcrumb
+	include ./_components/dichvu/list-dv/service-1.pug
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/dichvu/list-dv/service-2.pug
+	include ./_components/dichvu/list-dv/service-3.pug
+	include ./_components/dichvu/list-dv/service-4.pug
+block scripts

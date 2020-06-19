@@ -1,0 +1,14 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'CHI TIẾT ĐÀO TẠO IT';
+	- let bodyClass = 'detail-education-page';
+	- let titlePosition = [''];
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	.bg-light
+		include ./_components/daotao-IT/ct-daotao/detail-edu-1.pug
+		include ./_components/daotao-IT/ct-daotao/detail-edu-2.pug
+		include ./_components/daotao-IT/ct-daotao/detail-edu-3.pug
+		include ./_components/daotao-IT/ct-daotao/detail-edu-4.pug
+block scripts

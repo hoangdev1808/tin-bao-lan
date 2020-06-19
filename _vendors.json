@@ -1,0 +1,15 @@
+{
+	"fonts": [
+		"src/fonts/**"
+	],
+	"js": [
+		"bower_components/jquery/dist/jquery.js",
+		"bower_components/bootstrap/dist/js/bootstrap.min.js",
+		"bower_components/jquery-nice-select/js/jquery.nice-select.min.js",
+		"bower_components/swiper/dist/js/swiper.min.js"
+		],
+	"css": [
+		"bower_components/bootstrap/dist/css/bootstrap.min.css",
+		"bower_components/swiper/dist/css/swiper.min.css"
+	]
+}

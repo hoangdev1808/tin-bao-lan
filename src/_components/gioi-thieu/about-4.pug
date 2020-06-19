@@ -1,0 +1,35 @@
+section.block-section.about-3
+	.container
+		.block__title.text-center
+			h3 đối tác
+		.list-partner
+			.row
+				.col-lg-4
+					.item-partner
+						.item__image
+							img(src="./assets/images/about/logo-dt-1.png", alt="")
+						.item__desc.text-uppercase
+							h5 Asus authorized service partner
+				.col-lg-4
+					.item-partner
+						.item__image
+							img(src="./assets/images/about/logo-dt-2.png", alt="")
+						.item__desc.text-uppercase
+							h5 network optix
+							p exclusive distributor in vietnam
+				.col-lg-4
+					.item-partner
+						.item__image
+							img(src="./assets/images/about/logo-dt-3.png", alt="")
+						.item__desc.text-uppercase
+							h5 Comptia
+							p training partner
+		.logo-block-slide.partner
+			.swiper-container.partner__slide
+				.swiper-wrapper
+					-for(i=1; i<13; i++)
+						.swiper-slide
+							.logo__image
+								img(src="./assets/images/home/dt-"+i+".png", alt="")
+			.swiper-button-next
+			.swiper-button-prev

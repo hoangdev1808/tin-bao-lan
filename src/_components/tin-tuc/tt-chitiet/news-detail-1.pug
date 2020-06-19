@@ -1,0 +1,60 @@
+section.block-section.news-detail.bg-light.mb-0
+	.container
+		.row
+			.col-md-9
+				.block__title
+					h4 Hướng dẫn cấu hình ban đầu chi tiết nhất cho thiết bị mạng hãng
+				.block__timeline
+					.time
+						p 10.02.2020
+					.icon-social
+						ul
+							li
+								a(href="")
+									i.fa.fa-facebook
+							li
+								a(href="")
+									i.fa.fa-twitter
+				.block-news-content
+					p Chắc hẳn với nhiều nhiều khách hàng khi sở hữu một hệ thống mạng ko dây của gia đình hay hệ thống cực kỳ lớn dành cho doanh nghiệp đã không xa lạ gì với  thương hiệu Ubiquiti UniFi với nhiều ưu điểm như: tính ổn định, khả năng chịu tải cao, nhiều người có thể truy cập cùng lúc và nhất là tính năng quản trị tập trung vô cùng mạnh mẽ của Phần phềm UniFi Controller.
+					p Ưu điểm là thế nhưng quá trình thiết lập ban đầu có thể hơi rắc rối một chút. Để giúp người dùng dễ dàng sử dụng sản phẩm này hơn thì Phúc Anh xin gửi tới hướng dẫn cài đặt cơ bản cho thiết bị mạng thương hiệu Ubiquiti UniFi
+					p Nhưng trước khi tiến hành các bạn cần chuẩn bị 1 số dụng cụ sau:
+					p - 1 chiếc Laptop hoặc PC đã kết nối internet.
+					p - Thiết bị Unifi AP
+					p - 2 dây mạng LAN RJ45 (chú ý Unifi yêu cầu chuẩn 8 sợi để kết nối, loại chất lượng tốt để đảm bảo tín hiệu ổn định)
+					img(src="./assets/images/news/news-detail-1.png", alt="")
+					p Hệ thống mạng internet chung một Router hoặc SwitchĐầy đủ dụng cụ rồi chúng ta sẽ qua các bước tiến hành:
+					p 
+						strong B1: Cắm dây LAN vào cổng nguồn PoE (ở adapter) với thiết bị Unifi để cấp nguồn
+					img(src="./assets/images/news/news-detail-2.png", alt="")
+					p 
+						strong B2: Cắm dây LAN (ở adapter) với cổng LAN ở mode/router để lấy tín hiệu
+					img(src="./assets/images/news/news-detail-3.png", alt="")
+					p
+						strong B3: Tạo 1 tài khoản Ubiquiti theo đường link: https://account.u
+					img(src="./assets/images/news/news-detail-4.png", alt="")
+					p Tiếp theo tới phần cài đặt:  tải hai phần mềm là UniFi controller và Java ở link bên dưới:
+					p
+						strong - UniFi controller: 
+							a(href="https://www.ui.com/download/unifi/")  https://www.ui.com/download/unifi/
+
+					p
+						strong - Java:  
+							a(href="https://www.java.com/en/download/") https://www.java.com/en/download/
+
+					p Lưu ý để chạy được UniFi controller bắt buộc máy tính của bạn phải có Java không sẽ có cảnh báo lỗi, nếu máy bạn đã cài Java trước đó thì bỏ qua bước này cài đặt java.
+			.col-md-3
+				.orther-news
+					.block__title.text-uppercase.text-center
+						h4 tin tức khác
+					.news-list
+						-for(i=1; i<5; i++)
+							.news__item
+								.news__img
+									img(src="./assets/images/news/n-"+i+".png", alt="")
+								.news__desc
+									ul
+										li
+											p 10.02.2020
+										li
+											a.lcl.lcl-2(href="") Có nên cài phần mềm diệt virus

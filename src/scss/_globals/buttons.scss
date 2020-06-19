@@ -1,0 +1,28 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 0;
+	padding: 0;
+	&.btn__new{
+		width: 160px;
+		height: 45px;
+		font-size: 16px;
+		font-family: "Barlow";
+		color: rgb(102, 102, 102);
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		border: solid 1px rgb(229, 229, 229);
+		border-radius: 0;
+		transition: .3s all ease-in-out;
+		&:hover{
+			background-color: $main-color;
+			color: #fff;
+		}
+		@media(max-width: 991.98px){
+			width: 120px;
+			font-size: 14px;
+		}
+	}	
+}

@@ -1,0 +1,82 @@
+header
+	.container
+		nav.navbar.navbar-expand-lg
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent')
+				.navbar-toggler-icon
+					.bar
+					.bar
+					.bar
+			a.navbar-brand(href='index.html')
+				img.d-inline-block.align-top(src='./assets/logo.png', alt='')
+			.mobile
+				.search
+					i.fa.fa-search
+				.search-form
+					.form-group
+						input.form-control(type="text" placeholder="Tìm sản phẩm...")
+						.close
+							em.fa.fa-times
+			#navbarSupportedContent.collapse.navbar-collapse.ml-auto
+				ul.nav-top.d-flex.align-item-center.dekstop
+					li
+						.form-group
+							input.form-control(type="text" placeholder="Tìm sản phẩm...")
+							button.btn.btn__search
+								i.fa.fa-search(aria-hidden='true')
+					li
+						a.btn.btn__shopping(href="shopping.html")
+							em.fa.fa-cart-plus
+							| Shopping
+					li
+						a.btn.btn__check(href="")
+							em.fa.fa-shield
+							|Kiểm tra và bảo hành
+					li
+						.header__language.dropdown
+							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								a(href="")
+									img(src="./assets/icons/vn.png", alt="") 
+								span.down3.lnr.lnr-chevron-down
+							.dropdown-menu(aria-labelledby='dropdownMenuButton')
+								a.dropdown-item(href='#')
+									img(src="./assets/icons/en.png", alt="")
+								a.dropdown-item(href='#')
+									img(src="./assets/icons/cn.png", alt="")
+				ul.navbar-nav
+					li.nav-item.dropdown
+						a.nav-link(href='gioi-thieu.html') giới thiệu
+						ul.dropdown-menu
+							li
+								a.dropdown-item(href='#') tổng quan
+							li
+								a.dropdown-item(href='#') tin tức
+
+					li.nav-item
+						a.nav-link(href="dich-vu.html")
+							|dịch vụ - giải pháp
+					li.nav-item
+						a.nav-link(href="san-pham.html")
+							|sản phẩm
+					li.nav-item
+						a.nav-link(href="khoa-hoc-IT.html")
+							|đào tạo
+					li.nav-item
+						a.nav-link(href="lien-he.html")
+							|liên hệ
+					li.nav-item
+						.header__language.dropdown.mobile
+							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								a(href="")
+									img(src="./assets/icons/vn.png", alt="")
+								span.down3.lnr.lnr-chevron-down
+							.dropdown-menu(aria-labelledby='dropdownMenuButton')
+								a.dropdown-item(href='#')
+									img(src="./assets/icons/en.png", alt="")
+								a.dropdown-item(href='#')
+									img(src="./assets/icons/cn.png", alt="")
+			.nav-logo.dekstop
+				ul.d-flex.align-item-center
+					-for(i=1; i<4; i++)
+						li
+							a(href="")
+								img(src="./assets/images/home/logo-"+i+".png", alt="")

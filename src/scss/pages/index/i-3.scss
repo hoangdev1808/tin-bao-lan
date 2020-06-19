@@ -1,0 +1,20 @@
+.section3{
+	.block__title{
+		padding-bottom: 60px;
+	}
+	.block__slide{
+		position: relative;
+		height: 200px;
+		.product-home{
+			width: 100%;
+			float: left;
+			.block__img{
+				cursor: pointer;
+				text-align: center;
+			}
+		}
+	}
+	.block__btn {
+		text-align: center;
+	}
+}

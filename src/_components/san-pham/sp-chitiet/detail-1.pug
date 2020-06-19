@@ -1,0 +1,49 @@
+section.block-section
+	.product-detail
+		.container
+			.row
+				.col-md-8
+					.product-slide
+						.swiper-container.gallery-top
+							.swiper-wrapper
+								-for(i=1; i<4; i++)
+									.swiper-slide
+										img(src="./assets/images/product/pro-ct-"+i+".png", alt="")
+						//- .swiper-button-next
+						//- .swiper-button-prev
+						.thumb
+							.swiper-container.gallery-thumbs
+								.swiper-wrapper
+									-for(i=1; i<4; i++)
+										.swiper-slide
+											img(src="./assets/images/product/pro-ct-"+i+".png", alt="")
+				.col-md-4
+					.product__detail
+						.product__name
+							a(href="") Máy in mã vạch ZEBRA GC420T 203DPI
+						.product__price
+							span.sale  2.699.000đ
+							span.promotion 3.000.000đ
+						.product__desc
+							ul
+								li
+									p Công nghệ in
+									span direct thermal/thermal transfer
+								li
+									p Độ phân giải
+									span 203 dpi (8 dots/mm) 4" (102 mm)
+								li
+									p Tốc độ in tối đa
+									span 4" (102 mm)
+								li
+									p Trọng lượng
+									span 3.2 lbs (1.5 kg)
+								li
+									p Bảo hành
+									span 12 Tháng
+								li
+									p Độ dài cuộn mực
+									span 244' (74 m)
+						.block__btn
+							a.btn.btn__new(href="") mua ngay
+

@@ -1,0 +1,50 @@
+.section1{
+	.warranty-block{
+		position: relative;
+		width: 100%;
+		.warranty__img{
+			width: 100%;
+			height: 200px;
+			background-color: rgba(15,105,171,0.8);
+			img{
+				width: 100%;
+				height: 100%;
+				opacity: .5;
+			}
+		}
+		.warranty__discription{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			h3{
+				position: relative;
+				font-size: 24px;
+				font-family: "Barlow";
+				color: rgb(255, 255, 255);
+				text-transform: uppercase;
+				text-align: left;
+				text-shadow: 2.868px 4.096px 20px rgba(0, 0, 0, 0.25);
+				&::after{
+					position: absolute;
+					top: 0;
+					left: -30px;
+					content: '';
+					height: 100%;
+					width: 2px;
+					background-color: #fff;
+					box-shadow: 2.868px 4.096px 20px 0px rgba(0, 0, 0, 0.25);
+				}
+			}
+			@media(max-width: 991.98px){
+				h3{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

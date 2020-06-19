@@ -1,0 +1,11 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'ĐÀO TẠO IT';
+	- let bodyClass = 'education-it-page';
+	- let titlePosition = [''];
+block banner,breadcrumb
+	include ./_components/daotao-IT/list-daotao/edu-1.pug
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/daotao-IT/list-daotao/edu-2.pug
+block scripts

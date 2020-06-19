@@ -1,0 +1,39 @@
+.pro-desciption{
+	.tab-panels{
+		.panel__title{
+			padding: 0;
+			margin-bottom: 20px;
+			h3{
+				color: $main-color;
+				font-size: 24px;
+				font-weight: 700;
+			}
+		}
+		.panel{
+			padding: 60px 0 65px 40px;
+			.panel__desc{
+				max-width: 100%;
+				.desc{
+					li{
+						pointer-events: none;
+						p{
+							width: 50%;
+							text-align: left;
+						}
+						span{
+							width: 50%;
+							text-align: left;
+						}
+					}
+				}
+			}
+			@media(max-width: 991.98px){
+				padding: 10px;
+				.block__btn{
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	
+}

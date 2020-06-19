@@ -1,0 +1,14 @@
+.pearson-about{
+	padding-top: 60px;
+	.right-box>.block__content{
+		padding: 30px 0;
+	}
+	@media(max-width: 1024px){
+		padding-top: 0;
+	}
+	@media(max-width: 480px){
+		.right-box>.block__content>.block__description{
+			max-height: 120px;
+		}
+	}
+}

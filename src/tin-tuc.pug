@@ -1,0 +1,11 @@
+extends _components/_layout/_layout.pug
+block var
+	- let title = 'TIN TỨC';
+	- let bodyClass = 'news-page';
+	- let titlePosition = [''];
+block banner,breadcrumb
+	include ./_components/tin-tuc/list-tt/list-news-1.pug
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/tin-tuc/list-tt/list-news-2.pug
+block scripts

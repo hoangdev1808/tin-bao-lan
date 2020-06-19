@@ -1,0 +1,112 @@
+.helper-block {
+	padding-top: 40px;
+
+	.tab-panels {
+		.left-box {
+			.block__title {
+				background-color: rgb(29, 175, 240);
+				height: 60px;
+				padding: 20px 0;
+
+				h4 {
+					font-size: 20px;
+					color: rgb(255, 255, 255);
+					font-weight: bold;
+				}
+			}
+
+			.tabs {
+				li {
+					width: 100%;
+					background-color: #fff;
+					color: rgb(51, 51, 51);
+					text-align: left;
+					padding-left: 20px;
+					font-size: 16px;
+					border-bottom: solid 1px #ebebeb;
+
+					&:hover {
+						color: rgb(29, 175, 240);
+					}
+				}
+			}
+		}
+
+		.panel {
+			padding-top: 0;
+			background-color: transparent;
+
+			.block__title {
+				padding-top: 0;
+
+				h4 {
+					font-size: 40px;
+					color: rgb(2, 103, 177);
+					font-weight: bold;
+				}
+			}
+
+			.acc {
+				.acc__card {
+					background-color: #fff;
+					border: none;
+					margin-bottom: 5px;
+
+					.__title {
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+						padding: .75rem 1.875rem;
+						position: relative;
+
+						p {
+							font-size: 18px;
+							font-family: "Barlow";
+							color: rgb(51, 51, 51);
+							text-decoration: none;
+						}
+
+						&::after {
+							position: absolute;
+							right: 20px;
+							top: 0;
+							transform: rotate(0deg);
+							transition: all 0.2s ease-in-out;
+							padding: 5px 0;
+							content: '\f107 ';
+							font-family: 'FontAwesome';
+							font-size: 16px;
+						}
+						&.active{
+							p{
+								color: $main-color;
+							}
+							&::after{
+								color: $main-color;
+								transform: rotate(-180deg);
+								transition: all 0.2s ease-in-out;
+							}
+						}
+					}
+					.acc__panel {
+						position: relative;
+						padding-left: 20px;
+						padding-bottom: 40px;
+
+						&::after {
+							opacity: 1;
+							position: absolute;
+							top: 0;
+							left: 0;
+							content: '';
+							height: 2px;
+							width: 100%;
+							background-color: $main-color;
+							transition: .3s all ease-in-out;
+						}
+					}
+				}
+			}
+		}
+	}
+}
