@@ -1,37 +1,68 @@
 .helper-block {
 	padding-top: 40px;
 
-	.tab-panels {
-		.left-box {
-			.block__title {
-				background-color: rgb(29, 175, 240);
-				height: 60px;
-				padding: 20px 0;
+	.left-box {
+		.block__title {
+			background-color: rgb(29, 175, 240);
+			height: 60px;
+			padding: 20px 20px;
 
-				h4 {
-					font-size: 20px;
-					color: rgb(255, 255, 255);
-					font-weight: bold;
-				}
+			h4 {
+				font-size: 20px;
+				color: rgb(255, 255, 255);
+				font-weight: bold;
 			}
+			@media(max-width: 991.98px) {
+				padding: 10px;
+				height: unset;
+			}
+		}
 
-			.tabs {
+		.left__sidebar {
+			ul {
+				list-style: none;
+				padding-left: 0;
+				background-color: #fff;
+
 				li {
-					width: 100%;
-					background-color: #fff;
-					color: rgb(51, 51, 51);
-					text-align: left;
-					padding-left: 20px;
-					font-size: 16px;
-					border-bottom: solid 1px #ebebeb;
+					position: relative;
+					padding: 15px 20px;
+					border-bottom: solid 1px #eee;
+
+					&::after {
+						position: absolute;
+						content: '';
+						top: 0;
+						left: 0;
+						width: 2px;
+						height: 100%;
+						background-color: $main-color;
+						opacity: 0;
+						visibility: hidden;
+						transition: .2s all ease-in-out;
+					}
+
+					a {
+						font-size: 16px;
+						font-weight: bold;
+						text-decoration: none;
+					}
 
 					&:hover {
-						color: rgb(29, 175, 240);
+						&::after {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+					@media(max-width: 991.98px){
+						padding: 10px;
 					}
 				}
 			}
 		}
+	}
 
+	.right-box {
 		.panel {
 			padding-top: 0;
 			background-color: transparent;
@@ -43,9 +74,16 @@
 					font-size: 40px;
 					color: rgb(2, 103, 177);
 					font-weight: bold;
+
+					
+				}
+				@media(max-width: 991.98px) {
+					padding-top: 10px;
+					h4{
+						font-size: 20px;
+					}
 				}
 			}
-
 			.acc {
 				.acc__card {
 					background-color: #fff;
@@ -77,32 +115,50 @@
 							font-family: 'FontAwesome';
 							font-size: 16px;
 						}
-						&.active{
-							p{
+
+						&.active {
+							p {
 								color: $main-color;
 							}
-							&::after{
+
+							&::after {
 								color: $main-color;
 								transform: rotate(-180deg);
 								transition: all 0.2s ease-in-out;
 							}
 						}
+						@media(max-width: 991.98px){
+							p{
+								font-size: 14px;
+							}
+						}
 					}
+
 					.acc__panel {
-						position: relative;
-						padding-left: 20px;
+						padding-left: 30px;
+						padding-right: 20px;
 						padding-bottom: 40px;
 
-						&::after {
-							opacity: 1;
-							position: absolute;
-							top: 0;
-							left: 0;
-							content: '';
-							height: 2px;
-							width: 100%;
-							background-color: $main-color;
-							transition: .3s all ease-in-out;
+						p {
+							position: relative;
+							font-size: 18px;
+							color: rgb(51, 51, 51);
+
+							&::after {
+								opacity: 1;
+								position: absolute;
+								top: -30px;
+								left: 0;
+								content: '';
+								height: 2px;
+								width: 100%;
+								background-color: $main-color;
+								transition: .3s all ease-in-out;
+							}
+
+							@media(max-width: 991.98px) {
+								font-size: 14px;
+							}
 						}
 					}
 				}
