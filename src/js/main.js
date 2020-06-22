@@ -353,12 +353,14 @@ function productDetail() {
 		spaceBetween: 10,
 		slidesPerView: 4,
 		loop: true,
-		observer: true,
-		observeParents: true,
-		slideToClickedSlide: true,
-		navigation: {
-			nextEl: ".thumb .swiper-button-next",
-			prevEl: ".thumb .swiper-button-prev",
+		freeMode: true,
+		loopedSlides: 5,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		breakpoints:{
+			1024:{
+				direction: 'horizontal',
+			},
 		},
 	});
 	var galleryTop = new Swiper(".gallery-top", {
@@ -423,7 +425,18 @@ function listFilter(){
 		dropDown.stop(false, true).slideToggle();
 		j.preventDefault();
 	});
+	if($(window).width() <= 1024)
+		$('.acc__mobile').find('.read-all').on('click', function(e){
+			e.stopPropagation();
+			$('.content__sidebar').find('.acc').addClass('active');
+		});
+		$('.acc__mobile').find('.back').on('click', function(e) {
+			e.stopPropagation();
+			$('.content__sidebar').find('.acc').removeClass('active');
+		})
+
 }
+
 function helperCus(){
 	$('.__title').click(function(j) {
 		var dropDown = $(this).closest('.acc__card').find('.acc__panel');
@@ -439,92 +452,6 @@ function helperCus(){
 	});
 
 }
-//ham mau
-function validationForm(){
-	//Valication
-	var vName = document.getElementById('txtName').value;
-	var vAddress =  document.getElementById('txtAddress').value;
-	var vEmail =  document.getElementById("txtEmail").value;
-	var vNumBer =  document.getElementById("txtNum").value;
-	var vTitle =  document.getElementById("txtTitle").value;
-	var vConttent =  document.getElementById("txtContent").value;
-
-	if (vName.trim().length == 0) {
-		document.getElementById("erroName").innerHTML = "Vui lòng nhập tên";
-		return false;
-	}
-	document.getElementById("erroName").innerHTML = "";
-
-	if (vAddress.trim().length == 0) {
-		document.getElementById("erroAddress").innerHTML = "Vui lòng nhập địa chỉ";
-		return false;
-	}
-	document.getElementById("erroAddress").innerHTML = "";
-
-	if (vEmail.trim().length == 0) {
-		document.getElementById("errorEmail").innerHTML = "Vui lòng nhập email";
-		return false;
-	}
-	document.getElementById("errorEmail").innerHTML = "";
-
-	if (vNumBer.trim().length == 0) {
-		document.getElementById("errorNum").innerHTML = "Vui lòng nhập số điện thoại";
-		return false;
-	}
-	document.getElementById("errorNum").innerHTML = "";
-
-	if (vTitle.trim().length == 0) {
-		document.getElementById("errorTitle").innerHTML = "Vui lòng nhập tiêu đề";
-		return false;
-	}
-	document.getElementById("errorTitle").innerHTML = "";
-
-	if (vConttent.trim().length == 0) {
-		document.getElementById("errorContent").innerHTML = "Vui lòng nhập nội dung";
-		return false;
-	}
-	document.getElementById("errorContent").innerHTML = "";
-
-	//tao mẫu PS00001
-	var regMa = /^PS\d{5}$/;
-	if (!regMa.test(vMa)) {
-		document.getElementById("erroMa").innerHTML = "Bạn nhập sai định dạng."
-		return false;
-	}
-	document.getElementById("erroMa").innerHTML = "";
-	if (!isEmail(vEmail)) {
-		document.getElementById("erroEmail").innerHTML = "Bạn nhập sai định dạng."
-		return false;
-	}
-	document.getElementById("erroEmail").innerHTML = "";
-		if (!isngaysinh()) {
-			return false;
-		}
-		return true;
-	function isEmail(vEmail){
-		//tạo mẫu email.
-		var regEmail = /^\w{2,}@\w{2,}(\.[a-zA-Z]{2,3}){1,2}$/;
-		//alert(regEmail.test(vEmail));
-		if (!regEmail.test(vEmail)) {
-			return false;
-		}
-		return true;
-		
-	}
-	
-	function isngaysinh(){
-		var vNgaysinh = document.getElementById("txtNgaysinh").value;
-		var nsinh =  new Date(vNgaysinh);
-		var today = new Date();
-		nSinhYear = nsinh.getFullYear();
-		thisYear = today.getFullYear();
-		if (thisYear - nSinhYear < 18 || thisYear - nSinhYear > 65) {
-			return false;
-		}
-		return true;
-	}
-}
-
 
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();

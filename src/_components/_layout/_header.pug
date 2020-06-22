@@ -47,22 +47,56 @@ header
 						a.nav-link(href='gioi-thieu.html') giới thiệu
 						ul.dropdown-menu
 							li
-								a.dropdown-item(href='#') tổng quan
+								a.dropdown-item(href='gioi-thieu.html') Tổng quan
 							li
-								a.dropdown-item(href='#') tin tức
+								a.dropdown-item(href='tin-tuc.html') Tin tức
 
-					li.nav-item
+					li.nav-item.dropdown
 						a.nav-link(href="dich-vu.html")
 							|dịch vụ - giải pháp
-					li.nav-item
+						ul.dropdown-menu
+							li
+								a.dropdown-item(href='chi-tiet-dich-vu.html') Dịch vụ CNTT
+							li
+								a.dropdown-item(href='chi-tiet-dich-vu.html') Giải pháp tích hợp hệ thống
+							li
+								a.dropdown-item(href="chi-tiet-dich-vu.html") Smart factory - Smart city
+
+					li.nav-item.dropdown-mega
 						a.nav-link(href="san-pham.html")
 							|sản phẩm
-					li.nav-item
-						a.nav-link(href="khoa-hoc-IT.html")
-							|đào tạo
-					li.nav-item
+						.menu-mega
+							.container
+								.row
+									-for(i=1; i<14; i++)
+										.col-2dot4
+											.product-menu
+												.product-menu__img
+													a(href="san-pham.html")
+														img(src="./assets/images/product/p-"+i+".png", alt="")
+												.product-menu__name.text-uppercase
+													a(href="san-pham.html") máy in
+					li.nav-item.dropdown
+							a.nav-link(href="khoa-hoc-IT.html")
+								|đào tạo
+							ul.dropdown-menu
+								li
+									a.dropdown-item(href='khoa-hoc-IT.html') Trung tâm Pearson Vue
+								li
+									a.dropdown-item(href='khoa-hoc-IT.html') Comptia
+								li
+									a.dropdown-item(href="khoa-hoc-IT.html") Đào tạo doanh nghiệp
+
+					li.nav-item.dropdown
 						a.nav-link(href="lien-he.html")
 							|liên hệ
+						ul.dropdown-menu
+							li
+								a.dropdown-item(href='khoa-hoc-IT.html') Tuyển dụng
+							li
+								a.dropdown-item(href='khoa-hoc-IT.html') Bảo hành - Kỹ thuật
+							li
+								a.dropdown-item(href="khoa-hoc-IT.html") Kinh doanh
 					li.nav-item
 						.header__language.dropdown.mobile
 							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')

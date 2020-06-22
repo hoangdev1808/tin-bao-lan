@@ -1,1 +1,99 @@
-.hr-block
+.hr-block{
+	.block__title{
+		padding: 50px 0;
+		@media(max-width: 991.98px){
+			padding: 15px 0;
+		}
+	}
+	.box-left{
+		max-height: 400px;
+		&__img{
+			width: 100%;
+			img{
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.box-right{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		.box-right__content{
+			padding-left: 60px;
+			&__title{
+				padding: 30px 0;
+				h4{
+					font-size: 30px;
+					color: rgb(2, 103, 177);
+					font-weight: bold;
+				}
+				@media(max-width: 991.98px){
+					padding: 10px 0;
+					h4{
+						font-size: 16px;
+					}
+				}
+			}
+			&__desc{
+				max-height: 200px;
+				overflow: hidden;
+				p{
+					font-size: 18px;
+					color: rgb(51, 51, 51);
+				}
+			}
+			@media(max-width: 991.98px){
+				padding-left: 0;
+				&__desc{
+					p{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.block-tabel{
+		.block__title{
+			h4{
+				font-size: 30px;
+				color: rgb(2, 103, 177);
+				font-weight: bold;
+			}
+			@media(max-width: 991.98px){
+				padding: 15px 0;
+				h4{
+					font-size: 16px;
+				}
+			}
+		}
+		table{
+			width: 100%;
+			.title{
+				background-color: rgb(2, 103, 177);
+				th{
+					padding: 20px 0;
+					color: #fff;
+					text-align:  center;
+				}
+			}
+			tr{
+				th{
+					text-align: center;
+					font-weight: 400;
+				}
+				td{
+					cursor: pointer;
+					a{
+						text-decoration: none;
+					}
+				}
+			}
+			&.table-hover tbody tr:hover {
+				background-color: rgb(214, 238, 255);
+				color: $main-color;
+			}
+		}
+	}
+}
