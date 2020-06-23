@@ -1,5 +1,22 @@
 import Loading from "./lib/Loading";
 
+
+const toggleMenuMobile = () => {
+	$(".toggle-menu.mobile").on("click", function() {
+		$(this).toggleClass("active");
+		$(this).siblings(".navbar-collapse").toggleClass("active");
+		$("body").toggleClass("disabled");
+	});
+
+	$("#overlay").on("click", function() {
+		$(this).removeClass("active");
+		$("body").removeClass("disabled");
+		$(".navbar-collapse").removeClass("active");
+		$(".toggle-menu.mobile").removeClass("active");
+	});
+};
+
+
 //Slide product home
 function productHomeSlide(){
 	var swiper = new Swiper('.product-home', {
@@ -452,9 +469,19 @@ function helperCus(){
 	});
 
 }
+const setHeightOverFolowBySomeElement = () => {
+	const heightGet = $('[data-getHeight]').height();
+	const heightSet = $('[data-setHeight]');
+	const responsive = heightSet.attr('data-setHeight');
+	if (window.innerWidth > responsive) {
+		heightSet.css('max-height', heightGet)
+	}
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
+	toggleMenuMobile();
+	setHeightOverFolowBySomeElement();
 	checkLayoutBanner();
 	productHomeSlide();
 	searchForm();
