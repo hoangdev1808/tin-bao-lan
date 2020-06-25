@@ -35,7 +35,9 @@ textarea {
 		}
 	}
 }
-
+	.container{
+		max-width: 1230px !important;
+	}
 .field-validation-error {
 	display: inline-block;
 	margin: .5rem 0;
@@ -125,25 +127,34 @@ textarea {
 }
 .block-section{
 	margin-left: auto;
-	margin-bottom: 50px;
-	@media(max-width: 991.98px){
-		margin-bottom: 20px;
-		font-size: 14px;
+	padding: 20px 0;
+	@media (min-width: 600px){
+		padding: 30px 0;
 	}
+	@media (min-width: 768px){
+		padding: 35px 0;
+	}
+	@media (min-width: 1025px){
+		padding: 40px 0;
+	}
+	@media (min-width: 1200px){
+		padding: 50px 0;
+	}
+	@media (min-width: 1438px){
+		padding: 70px 0;
+	}
+
 }
 .block__title {
 	padding-top: 0;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 	h3{
 		font-size: 40px;
 		font-family: "Barlow";
 		color: rgb(15, 105, 171);
 		font-weight: bold;
-	}
-	@media(max-width: 1024px){
-		padding: 10px 0;
-		h3{
-			font-size: 20px;
+		@media(max-width: 1025px){
+			font-size: 28px;
 		}
 	}
 }
@@ -165,9 +176,10 @@ textarea {
 	&::after{
 		width: 100%;
 		height: 100%;
-		content: '\f054';
+		content: '\f105';
 		font-family: "FontAwesome";
-		font-size: 20px;
+		font-size: 30px;
+		font-weight: 400;
 		color: #999999;
 		text-align: center;
 		transition: .4s all ease-in-out;
@@ -197,9 +209,9 @@ textarea {
 	&::after{
 		width: 100%;
 		height: 100%;
-		content: '\f053';
+		content: '\f104';
 		font-family: 'FontAwesome';
-		font-size: 20px;
+		font-size: 30px;
 		color: #999999;
 		text-align: center;
 		transition: .4s all ease-in-out;
@@ -266,6 +278,7 @@ textarea {
 
 .item{
 	max-width: 390px;
+	margin-bottom: 30px;
 	.item__image{
 		overflow: hidden;
 		cursor: pointer;
@@ -302,7 +315,7 @@ textarea {
 			}
 		}
 	}
-	@media (min-width: 1025px) {
+	@media (min-width: 991.98px) {
 		&:hover {
 			.item__image {
 				img {
@@ -347,6 +360,7 @@ textarea {
 		}
 	}
 	@media(max-width: 991.98px){
+		margin-bottom: 15px;
 		max-width: 100%;
 		.item__image{
 			.item__title{
@@ -551,7 +565,7 @@ textarea {
 .block__filter {
 	position: relative;
 	width: 100%;
-	padding: 0 30px;
+	padding: 0 20px;
 	background-color: rgb(255, 255, 255);
 
 	.nav {
@@ -641,7 +655,7 @@ textarea {
 	height: 40px;
 	line-height: 40px;
 	outline: none;
-	margin-left: 18px;
+	margin-left: 10px;
 	padding-right: 30px;
 	position: relative;
 	text-align: left !important;
@@ -652,7 +666,7 @@ textarea {
 	-ms-user-select: none;
 	user-select: none;
 	white-space: nowrap;
-	width: 350px;
+	max-width: 350px;
 	&:after {
 		content: 'expand_more';
 		font-size: 25px;
@@ -662,7 +676,7 @@ textarea {
 		display: block;
 		pointer-events: none;
 		position: absolute;
-		right: 10px;
+		right: 0;
 		top: 0;
 		transform: translateY(-50%);
 		transform: rotate(0deg);

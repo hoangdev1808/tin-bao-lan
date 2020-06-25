@@ -1,15 +1,14 @@
-.section5{
+.tbl-home-5{
+	padding-top: 0;
 	width: 100%;
 	.left-box{
-		background-image: linear-gradient( 170deg, rgb(203,248,255) 55%, rgb(0,162,232) 99%);
-		margin-top: 27px;
+		height: 650px;
 		padding: 0;
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		.block__content{
-			width: 675px;
-			padding: 60px 105px 60px 168px;
-			margin-left: auto;
+			width: 100%;
+			background-image: linear-gradient( 170deg, rgb(203,248,255) 55%, rgb(0,162,232) 99%);
 			.block__img{
 				width: 240px;
 				margin-bottom: 30px;
@@ -18,9 +17,12 @@
 				}
 			}
 			.block__description{
-				width: 461px;
-				max-height: 80px;
-				overflow-y: hidden;
+				padding-top: 75px;
+				padding-bottom: 75px;
+				padding-left: 200px;
+				padding-right: 90px;
+				width: 678px;
+				margin: 0 auto;
 				h5{
 					font-size: 14px;
 					font-family: "Barlow";
@@ -74,7 +76,7 @@
 				}
 				.swiper-button-next{
 					position: absolute;
-					left: -110px;
+					left: -70px;
 					top: 40%;
 					width: 40px;
 					height: 40px;
@@ -84,21 +86,17 @@
 					&::after{
 						width: 100%;
 						height: 100%;
-						content: '\f105 ';
-						font-family: 'FontAwesome';
-						font-size: 50px;
-						font-weight: 400;
-						color: #fff;
+						content: '';
+						background-image: url('../assets/icons/next.png');
+						background-repeat: no-repeat;
+						background-position: center;
 						text-align: center;
 						transition: .4s all ease-in-out;
-						display: flex;
-						align-items: center;
-						justify-content: center;
 					}
 				}
 				.swiper-button-prev{
 					position: absolute;
-					left: -110px !important;
+					left: -70px;
 					top: 65%;
 					width: 40px;
 					height: 40px;
@@ -108,37 +106,56 @@
 					&::after{
 						width: 100%;
 						height: 100%;
-						content: '\f104';
-						font-family: 'FontAwesome';
-						font-size: 50px;
-						font-weight: 400;
-						color: #fff;
+						content: '';
+						background-image: url('../assets/icons/prev.png');
+						background-repeat: no-repeat;
+						background-position: center;
 						text-align: center;
 						transition: .4s all ease-in-out;
-						display: flex;
-						align-items: center;
-						justify-content: center;
 					}
 				}
 			}
 			
 		}
+		@media(max-width: 1200px){
+			height: unset;
+			.block__content{
+				.block__description{
+					padding-left: 100px;
+					width: 100%;
+				}
+			}
+		}
+		@media(max-width: 1025px){
+			height: unset;
+			.block__content{
+				.block__description{
+					width: 100%;
+					margin: 0;
+					padding-left: 100px;
+					padding-top: 35px;
+					padding-bottom: 35px;
+				}
+			}
+		}
 		@media(max-width: 991.98px){
-			margin-top: 0;
 			width: 100%;
 			display: inline-block;
 			.block__content{
 				width: 100%;
-				padding: 10px;
 				.block__img{
 					margin-bottom: 10px;
 				}
 				.block__description{
 					width: 100%;
-					max-height: unset;
+					padding: 30px;
 				}
 				.vaxtor-slide .vaxtor__pro{
 					margin-top: 15px;
+					width: 100%;
+					.img{
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -146,6 +163,7 @@
 	.video__slide{
 		position: relative;
 		padding: 0;
+		height: 100%;
 		.nx-software{
 			position: absolute;
 			z-index: 0;
@@ -185,16 +203,12 @@
 				&::after{
 					width: 100%;
 					height: 100%;
-					content: '\f105 ';
-					font-family: 'FontAwesome';
-					font-size: 50px;
-					font-weight: 400;
-					color: #999999;
+					content: '';
+					background-image: url('../assets/icons/next-gray.png');
+					background-repeat: no-repeat;
+					background-position: center;
 					text-align: center;
 					transition: .4s all ease-in-out;
-					display: flex;
-					align-items: center;
-					justify-content: center;
 				}
 				@media(min-width: 1024px){
 					&:hover{
@@ -217,16 +231,12 @@
 				&::after{
 					width: 100%;
 					height: 100%;
-					content: '\f104';
-					font-family: 'FontAwesome';
-					font-size: 50px;
-					font-weight: 400;
-					color: #999999;
+					content: '';
+					background-image: url('../assets/icons/prev-gray.png');
+					background-repeat: no-repeat;
+					background-position: center;
 					text-align: center;
 					transition: .4s all ease-in-out;
-					display: flex;
-					align-items: center;
-					justify-content: center;
 				}
 				@media(min-width: 1024px){
 					&:hover{

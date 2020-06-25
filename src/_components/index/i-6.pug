@@ -1,24 +1,28 @@
-section.block-section.section6.bg-while
-	.container
+section.block-section.tbl-home-6.bg-while
+	.tbl-home-6__content
 		.block__title.text-center.text-uppercase
 			h3 khóa học it
-		.block__description.d-flex.align-items-center.justify-content-center
-			p TBL Test Center - Trung tâm khảo thí được ủy quyền của Pearson VUE tại Việt Nam
-			span.pl-2
-				img(src="./assets/images/home/logo-12.png", alt="")
-		.row
-			.col-lg-7.col-12.box-left
-				.left__img
-					img(src="./assets/images/home/home4-laptop.png", alt="")
-			.col-lg-5.col-12.box-right
-				.right__title
-					h5 đối tác đào tạo comptia
-				.right-slide
-					.swiper-container.right-partner
-						.swiper-wrapper
-							-for(i=6; i<12; i++)
-								.swiper-slide
-									.img
-										img(src="./assets/images/home/logo-"+i+".png", alt="")
-					.swiper-button-next
-					.swiper-button-prev
+			.block__title__description
+				p TBL Test Center - Trung tâm khảo thí được ủy quyền của Pearson VUE tại Việt Nam
+				span.pl-2
+					img(src="./assets/images/home/logo-12.png", alt="")
+		.tbl-home-6__content__edu
+			.container
+				.row
+					.col-lg-6.col-12
+						.box-left
+							.left__img
+								img(src="./assets/images/home/home4-laptop.png", alt="")
+					.col-lg-6.col-12
+						.box-right
+							.right__title
+								h5 đối tác đào tạo comptia
+							.right-slide
+								.swiper-container.right-partner
+									.swiper-wrapper
+										-for(i=6; i<12; i++)
+											.swiper-slide
+												.img
+													img(src="./assets/images/home/logo-"+i+".png", alt="")
+								.swiper-button-next
+								.swiper-button-prev

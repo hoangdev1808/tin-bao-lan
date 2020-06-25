@@ -1,9 +1,17 @@
 
-.solution-list{
+.solution-2{
 	width: 100%;
+	&__list{
+		.item{
+			@media(max-width: 768px){
+				.item__image{
+					height: unset;
+				}
+			}
+		}
+	}
 	.block__btn{
 		width: 100%;
-		margin-top: 30px;
 		@media(max-width: 991.98px){
 			margin-top: 10px;
 		}

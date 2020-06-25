@@ -1,28 +1,29 @@
-section.block-section.section7
+section.block-section.tbl-home-7
 	.container
-		.block__title.text-uppercase
-			h3 tin tức
-		.new-home-list
-			.swiper-container.new-home__slide
-				.swiper-wrapper
-					-for(i=1; i<4; i++)
-						.swiper-slide
-							figure
-								.new-home-item
-									.new-home__image
-										a(href="")
-											img(src="./assets/images/home/home4-"+i+".png", alt="")
-									figcaption
-										.new-home__description
-											ul
-												li.new-home__time
-													span 10.02.2020
-												li.new-home__title
-													a(href="")
-														|Hướng dẫn cấu hình ban đầu chi tiết nhất cho thiết bị mạng hãng UNIFI
-												li.new-home__content.lcl.lcl-3
-													p Chắc hẳn với nhiều nhiều khách hàng khi sở hữu một hệ thống mạng ko dây của gia đình hay hệ thống cực kỳ lớn dành cho doanh nghiệp đã không xa lạ gì với  thương hiệu Ubiquiti UniFi
-			.swiper-button-next
-			.swiper-button-prev
-		.block__btn
-			a.btn.btn__new.__hover(href="") xem thêm
+		.tbl-home-7__content
+			.block__title.text-uppercase
+				h3 tin tức
+			.tbl-home-7__content__list
+				.swiper-container.new-home__slide
+					.swiper-wrapper
+						-for(i=1; i<4; i++)
+							.swiper-slide
+								figure
+									.new-home-item
+										.new-home__image
+											a(href="")
+												img(src="./assets/images/home/home4-"+i+".png", alt="")
+										figcaption
+											.new-home__description
+												ul
+													li.new-home__time
+														span 10.02.2020
+													li.new-home__title
+														a(href="")
+															|Hướng dẫn cấu hình ban đầu chi tiết nhất cho thiết bị mạng hãng UNIFI
+													li.new-home__content.lcl.lcl-3
+														p Chắc hẳn với nhiều nhiều khách hàng khi sở hữu một hệ thống mạng ko dây của gia đình hay hệ thống cực kỳ lớn dành cho doanh nghiệp đã không xa lạ gì với  thương hiệu Ubiquiti UniFi
+				.swiper-button-next
+				.swiper-button-prev
+			.block__btn
+				a.btn.btn__new.__hover(href="") xem thêm

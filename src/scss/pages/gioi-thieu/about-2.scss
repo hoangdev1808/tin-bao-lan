@@ -14,6 +14,9 @@
 				object-fit: cover;
 			}
 		}
+		@media(max-width: 991.98px){
+			height: 50vw;
+		}
 	}
 	.right-box{
 		background-image: linear-gradient( 150deg, rgb(12,180,206) 0%, rgb(0,108,255) 100%);
@@ -26,8 +29,9 @@
 		.block__content{
 			width: 550px;
 			margin: 0 auto;
+			padding-top: 80px;
+			padding-bottom: 70px;
 			.block__title{
-				padding-left: 20px;
 				h3{
 					color: #fff;
 				}
@@ -35,13 +39,12 @@
 			.block__description{
 				max-height: 355px;
 				overflow-y: auto;
-				padding: 0 20px;
 				p{
-					font-size: 18px;
+					font-size: 16px;
 					font-family: "Barlow";
 					color: rgb(255, 255, 255);
 					text-align: left;
-					padding-bottom: 30px;
+					padding-bottom: 20px;
 				}
 				ul{
 					padding-left: 30px;
@@ -67,8 +70,21 @@
 						}
 					}
 				}
+				@media(max-width: 1025px){
+					p{
+						padding-bottom: 16px;
+						font-size: 14px;
+					}
+					ul li p{
+						font-size: 14px;
+					}
+					ul li{
+						padding-bottom: 15px;
+					}
+				}
 				@media(max-width: 991.98px){
 					max-height: 160px;
+					padding-right: 20px;
 					p{
 						font-size: 14px;
 						padding-bottom: 10px;
@@ -86,20 +102,27 @@
 					max-height: 135px;
 				}
 			}
+			@media(max-width: 1200px){
+				padding-top: 50px;
+				padding-bottom: 30px;
+				width: 100%;
+				margin: 0;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@media(max-width: 1025px){
+				padding: 30px;
+			}
+			@media(max-width: 768.98px){
+				padding: 25px 15px;
+			}
 		}
 		@media(max-width: 1024px){
-			margin-top: 0;
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 100%;
 			width: 100%;
+			margin-top: 0;
 			.block__content{
 				width: 100%;
 			}
-		}
-		@media(max-width: 991.98px){
-			display: inline-block;
 		}
 	}
 }

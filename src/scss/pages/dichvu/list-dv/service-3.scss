@@ -1,10 +1,25 @@
-.cntt-list{
+.service-3 {
+	padding-top: 0;
 	width: 100%;
-	.block__btn{
-		width: 100%;
-		margin-top: 30px;
-		@media(max-width: 991.98px){
-			margin-top: 10px;
+
+	&__content {
+		&__list {
+
+			@media(max-width: 768px) {
+				.item {
+					.item__image {
+						height: unset;
+					}
+				}
+			}
+		}
+
+		.block__btn {
+			width: 100%;
+
+			@media(max-width: 991.98px) {
+				margin-top: 10px;
+			}
 		}
 	}
 }

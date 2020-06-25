@@ -3,6 +3,8 @@
 	top: 287px;
 	right: 20px;
 	z-index: 99;
+	opacity: 1;
+	transition: ease-in-out all .3s;
 	ul{
 		padding: 0;
 		list-style: none;
@@ -32,5 +34,10 @@
 				}
 			}
 		}
+	}
+	&.active{
+		opacity: 0;
+		visibility: hidden;
+		transition: .3s all ease-in-out;
 	}
 }

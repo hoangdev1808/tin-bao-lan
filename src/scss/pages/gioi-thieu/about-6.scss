@@ -1,21 +1,45 @@
 .about-6{
 	position: relative;
-	margin-left: auto;
 	background-color: rgb(243, 243, 243);
 	width: 100%;
 	background-image: url('../assets/images/about/bg-cc.png');
 	background-size: cover;
-	padding: 60px 0;
-	margin-bottom: 80px;
-	.block-prize{
-		padding-bottom: 80px;
-		@media(max-width: 991.98px){
-			padding-bottom: 10px;
-			margin-bottom: 0;
+	padding-top: 0;
+	&__content{
+		padding-top: 55px;
+		padding-bottom: 10px;
+		.block__title{
+			margin-bottom: 40px;
+		}
+		.block-prize{
+			position: relative;
+			.img{
+				width: 100%;
+				img{
+					width: 100%;
+				}
+			}
+			@media(max-width: 1200px){
+				.swiper-button-next{
+					right: 0;
+					top: 50px;
+					background-color: #fff;
+				}
+				.swiper-button-prev{
+					left: 0;
+					top: 50px;
+					background-color: #fff;
+				}
+			}
+			
+		}
+		@media(max-width: 1025px){
+			padding-top: 30px;
+			padding-bottom: 0;
+			.block__title{
+				margin-bottom: 20px;
+			}
 		}
 	}
-	@media(max-width: 991.98px){
-		margin-bottom: 0;
-		padding: 30px 0;
-	}
+	
 }
