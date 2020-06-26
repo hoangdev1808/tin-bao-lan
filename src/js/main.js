@@ -450,15 +450,15 @@ function listFilter(){
 		j.preventDefault();
 	});
 	if($(window).width() <= 1024)
-		$('.acc__mobile').find('.read-all').on('click', function(e){
-			e.stopPropagation();
-			$('.content__sidebar').find('.acc').addClass('active');
+		$('.block__title').find('.acc__mobile').on('click', function(e){
+			$('.content__sidebar').find('.acc').toggleClass('active');
+			e.preventDefault();
 		});
-		$('.acc__mobile').find('.back').on('click', function(e) {
-			e.stopPropagation();
-			$('.content__sidebar').find('.acc').removeClass('active');
-		})
-
+	if($(window).width() <= 1024)
+	$('.block__filter').find('.filter__icon').on('click', function(e){
+		$('.block__filter').find('ul.nav').toggleClass('active');
+		e.preventDefault();
+	});
 }
 
 function helperCus(){
@@ -487,7 +487,7 @@ const setHeightOverFolowBySomeElement = () => {
 
 function hideTool() {
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 500) {
+		if ($(this).scrollTop() > 50) {
 			$("#block__tool").addClass("active");
 		} else {
 			$("#block__tool").removeClass("active");

@@ -1,6 +1,7 @@
 .tbl-product{
 	background-color: #f5f5f5;
 	.block__filter{
+		position: relative;
 		display: flex;
 		align-items: center;
 		h4{
@@ -13,20 +14,51 @@
 				font-size: 14px;
 			}
 		}
-		.nav{
-			.nav-item{
-				padding-left: 30px;
-			}
-		}
 		@media(max-width: 991.98px){
 			padding: 7px;
-			display: block;
+			display: flex;
 			h4{ padding-right: 15px;}
 			position: relative;
 			.nav{
-				display: block;
 				background-color: #fff;
 				
+			}
+		}
+		@media(max-width: 768px){
+			position: relative;
+			padding: 10px;
+			h4{ padding-right: 15px;}
+			.nav{
+				border-top: solid 1px $main-color;
+				width: 50%;
+				padding: 15px;
+				position: absolute;
+				top: 100%;
+				right: 0;
+				z-index: 2;
+				background-color: #fff;
+				display: none;
+				&.active{
+					display: block;
+					transition: all .3s ease-in-out;
+				}
+				@media(max-width: 575px){
+					width: 100%;
+				}
+			}
+		}
+		.filter__icon{
+			display: none;
+			color: rgb(51, 51, 51);
+			font-weight: 900;
+			font-size: 18px;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			cursor: pointer;
+			transform: translateY(-50%);
+			@media(max-width: 768px){
+				display: block;
 			}
 		}
 	}
@@ -50,7 +82,7 @@
 			transition: ease-in-out all .3s;
 			.product__image{
 				width: 100%;
-				height: 130px;
+				height: 150px;
 				padding: 20px;
 				display: flex;
 				align-items: center;
@@ -74,7 +106,6 @@
 						color: rgb(51, 51, 51);
 						font-weight: bold;
 						text-transform: uppercase;
-						text-align: left;
 						text-decoration: none;
 					}
 				}

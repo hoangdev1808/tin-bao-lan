@@ -2,14 +2,15 @@ header
 	nav.navbar.navbar-expand-lg
 		.container
 			.nav-main
+				<!-- Logo Tin Bảo Lan -->
 				a.navbar-brand(href='index.html')
 					img.d-inline-block.align-top(src='./assets/logo.png', alt='')
+				<!-- Icon header mobile -->
 				.header-icon.mobile.d-flex.align-items-center
 					.header__language.dropdown
 						button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 							a(href="")
 								img(src="./assets/icons/vn.png", alt="")
-							span.down3.lnr.lnr-chevron-down
 						.dropdown-menu(aria-labelledby='dropdownMenuButton')
 							a.dropdown-item(href='#')
 								img(src="./assets/icons/en.png", alt="")
@@ -21,34 +22,41 @@ header
 						.form-group
 							input.form-control(type="text" placeholder="Tìm sản phẩm...")
 							.close
-								em.fa.fa-times
+								span.fa.fa-times
+				<!-- End icon header mobile -->
+
+				
 				.toggle-menu.mobile
+
+				<!-- Main menu header start -->
 				.navbar-collapse.ml-auto
-					ul.nav-top.d-flex.align-item-center.dekstop
+					<!-- Top main menu -->
+					ul.nav-top
 						li
-							.form-group
+							.searchbox.form-group
 								input.form-control(type="text" placeholder="Tìm sản phẩm...")
-								button.btn.btn__search
-									i.fa.fa-search(aria-hidden='true')
+								button.searchbutton.btn.btn__search
+									span.material-icons search
 						li
-							a.btn.btn__shopping(href="shopping.html")
+							a.btn.btn__shopping(href="danh-sach-shopping.html")
 								em.fa.fa-cart-plus
-								| Shopping
+								span Shopping
 						li
 							a.btn.btn__check(href="")
 								em.fa.fa-shield
-								|Kiểm tra và bảo hành
+								span Kiểm tra và bảo hành
 						li
 							.header__language.dropdown
 								button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
 									a(href="")
 										img(src="./assets/icons/vn.png", alt="") 
-									span.down3.lnr.lnr-chevron-down
 								.dropdown-menu(aria-labelledby='dropdownMenuButton')
 									a.dropdown-item(href='#')
 										img(src="./assets/icons/en.png", alt="")
 									a.dropdown-item(href='#')
 										img(src="./assets/icons/cn.png", alt="")
+					
+					<!-- Main menu -->
 					ul.navbar-nav
 						li.nav-item
 							a.nav-link(href='gioi-thieu.html') giới thiệu
@@ -116,28 +124,29 @@ header
 								li
 									a.dropdown-item(href='tuyen-dung.html') Tuyển dụng
 								li
-									a.dropdown-item(href='#') Bảo hành - Kỹ thuật
+									a.dropdown-item(href='ho-tro-khach-hang.html') Bảo hành - Kỹ thuật
 								li
-									a.dropdown-item(href="#") Kinh doanh
+									a.dropdown-item(href="ho-tro-khach-hang.html") Kinh doanh
 					.mobile
 						ul.nav-top.d-flex.align-item-center
 							li.d-flex.align-item-center
-								a.btn.btn__shopping(href="shopping.html")
+								a.btn.btn__shopping(href="danh-sach-shopping.html")
 									em.fa.fa-cart-plus
 									| Shopping
 							li.d-flex.align-item-center
 								a.btn.btn__check(href="")
 									em.fa.fa-shield
 									|Kiểm tra và bảo hành
-						.nav-logo
-							ul.d-flex.align-item-center
+						.nav-logo__mobile
+							ul
 								-for(i=1; i<4; i++)
 									li
 										a(href="")
 											img(src="./assets/images/home/logo-"+i+".png", alt="")
-					
-				.nav-logo.dekstop
-					ul.d-flex.align-item-center
+				<!-- End main menu header start -->
+
+				.nav-logo
+					ul
 						-for(i=1; i<4; i++)
 							li
 								a(href="")

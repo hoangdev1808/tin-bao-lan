@@ -1,22 +1,22 @@
-section.block-section.contact.mb-0
+section.block-section.tbl-contact
 	.container
 		.block__title.text-uppercase.text-center
 			h3 liên hệ
-		.contact-block
+		.tbl-contact__content
 			.row
 				.col-md-6
-					.__content
-						.__logo
+					.tbl-contact__content__infor
+						.tbl-contact__content__infor__logo
 							img(src="./assets/logo.png", alt="")
-						.__title
-							h3 Công ty TNHH Tín Bảo Lan
-						.__address
+						.tbl-contact__content__infor__title
+							h4 Công ty TNHH Tín Bảo Lan
+						.tbl-contact__content__infor__address
 							ul
 								li
 									span
 										i.material-icons
 											|location_on
-									p 160/47 Bùi Đình Túy, Phường 12, Quận Bình Thạnh, TP.HCM 0304 87
+									p 160/47 Bùi Đình Túy, Phường 12, Quận Bình Thạnh, TP.HCM
 								li
 									span
 										i.material-icons
@@ -43,25 +43,25 @@ section.block-section.contact.mb-0
 											|print
 									p (028) 7300 1399
 				.col-md-6
-					.form-contact
+					.tbl-contact__content__form
 						.row
 							.col-md-6.form-group
-								input#txtName.form-control(type="text" placeholder="Họ và tên" onkeyup="validationForm();")
+								input#txtName.form-control(type="text" placeholder="Họ và tên")
 								span#erroName.error
 							.col-md-6.form-group
-								input#txtAddress.form-control(type="text" placeholder="Địa chỉ" onkeyup="validationForm();")
+								input#txtAddress.form-control(type="text" placeholder="Địa chỉ")
 								span.erro#erroAddress
 							.col-md-6.form-group
-								input#txtEmail.form-control(type="text" placeholder="Email" onkeyup="validationForm();")
+								input#txtEmail.form-control(type="text" placeholder="Email")
 								span.erro#errorEmail
 							.col-md-6.form-group
-								input#txtNum.form-control(type="text" placeholder="Số điện thoại" onkeyup="validationForm();")
+								input#txtNum.form-control(type="text" placeholder="Số điện thoại")
 								span.erro#errorNum
 							.col-md-12.form-group
-								input#txtTitle.form-control(type="text" placeholder="Tiêu đề" onkeyup="validationForm();")
+								input#txtTitle.form-control(type="text" placeholder="Tiêu đề")
 								span.erro#errorTitle
 							.col-md-12.form-group
-								textarea#txtContent.form-control(name="", cols="30", rows="5" placeholder="Nội dung" onkeyup="validationForm();")
+								textarea#txtContent.form-control(name="", cols="30", rows="5" placeholder="Nội dung")
 								span.erro#errorContent
 							.col-md-12.d-flex
 								.form__control

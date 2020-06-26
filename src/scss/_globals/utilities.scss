@@ -1,19 +1,19 @@
-::-webkit-scrollbar-track {
-		box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
-		background-color: rgb(29, 175, 240);
-	}
+// ::-webkit-scrollbar-track {
+// 		box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+// 		background-color: rgb(29, 175, 240);
+// 	}
 	
-	::-webkit-scrollbar {
-		width           : 5px;
-		height          : 5px;
-		background-color: rgb(29, 175, 240);
-	}
+// 	::-webkit-scrollbar {
+// 		width           : 5px;
+// 		height          : 5px;
+// 		background-color: rgb(29, 175, 240);
+// 	}
 	
-	::-webkit-scrollbar-thumb {
-		border-radius   : 2.5px;
-		box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
-		background-color: #fff;
-	}
+// 	::-webkit-scrollbar-thumb {
+// 		border-radius   : 2.5px;
+// 		box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+// 		background-color: #fff;
+// 	}
 body {
 	overflow-x: hidden;
 
@@ -36,7 +36,7 @@ textarea {
 	}
 }
 	.container{
-		max-width: 1230px !important;
+		max-width: 1260px !important;
 	}
 .field-validation-error {
 	display: inline-block;
@@ -147,14 +147,14 @@ textarea {
 }
 .block__title {
 	padding-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	h3{
 		font-size: 40px;
 		font-family: "Barlow";
 		color: rgb(15, 105, 171);
 		font-weight: bold;
 		@media(max-width: 1025px){
-			font-size: 28px;
+			font-size: 20px;
 		}
 	}
 }
@@ -565,14 +565,13 @@ textarea {
 .block__filter {
 	position: relative;
 	width: 100%;
-	padding: 0 20px;
 	background-color: rgb(255, 255, 255);
 
 	.nav {
 		align-items: center;
 
 		.nav-item {
-			margin-left: auto;
+				margin-left: 10px;
 
 			.form-group {
 				display: flex;
@@ -584,11 +583,11 @@ textarea {
 					font-size: 16px;
 				}
 				label{
-					margin-left: 20px;
+					padding-left: 7px;
 				}
 				.form-control {
 					label{
-						padding-left: 30px;
+						padding-left: 10px;
 					}
 					
 					[type="radio"]:checked,
@@ -666,7 +665,7 @@ textarea {
 	-ms-user-select: none;
 	user-select: none;
 	white-space: nowrap;
-	max-width: 350px;
+	width: 350px;
 	&:after {
 		content: 'expand_more';
 		font-size: 25px;

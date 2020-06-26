@@ -12,7 +12,7 @@
 	justify-content: center;
 	.admissions__content{
 		text-align: center;
-		.block__title>h3{
+		.block__title>h4{
 			color: #fff;
 		}
 		ul{
@@ -41,10 +41,17 @@
 				background-color: $main-color;
 				color: #fff;
 			}
+			@media(max-width: 1025px){
+				width: 190px;
+				font-size: 14px;
+			}
 		}
 		p{
 			font-size: 16px;
 			color: rgb(255, 255, 255);
 		}
+	}
+	@media(max-width: 1025px){
+		height: unset;
 	}
 }

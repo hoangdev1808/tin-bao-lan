@@ -1,86 +1,86 @@
-section.block-section.shopping-page
+section.block-section.tbl-shopping.tbl-product
 	.container
-		.block__title.text-center.text-uppercase
-			h3 máy in
-		.row
-			.col-md-3.left-box
-				.content__sidebar
-					.block__title.text-center.text-uppercase.bg-main
-						h5.color-while shopping
-					.acc__mobile.mobile
-						.read-all
-							a(href="javascript:void(0)") Xem tất cả sản phẩm
-						.back
-							a(href="javascript:void(0)") Thu gọn
-					.acc.bg-while
-						-for(i=1; i<14; i++)
-							.acc__card
-								.acc__title.text-uppercase
-									a(href="danhsach-shopping.html") máy in
-									span.material-icons
-										|expand_more
-								.acc__panel
-									ul
+		.tbl-shopping__content
+			.block__title.text-center.text-uppercase
+				h3 máy in
+			.row
+				.col-md-3.left-box
+					.content__sidebar
+						.block__title.text-center.text-uppercase.bg-main
+							h5.color-while shopping
+							.acc__mobile
+								i.fa.fa-angle-down
+						.acc.bg-while
+							-for(i=1; i<14; i++)
+								.acc__card
+									.acc__title.text-uppercase
+										a(href="danhsach-shopping.html") máy in
+										span.material-icons
+											|expand_more
+									.acc__panel
+										ul
+											li
+												a(href="danhsach-shopping.html") laser
+											li
+												a(href="danhsach-shopping.html") in phun
+											li
+												a(href="danhsach-shopping.html") in trắng đen
+											li
+												a(href="danhsach-shopping.html") in màu
+				.col-md-9.right-box
+					.block__filter
+						h4 BỘ LỌC
+						.filter__icon
+							i.fa.fa-filter
+						ul.nav
+							li.nav-item
+								.form-group
+									span Thương Hiệu:
+									select
+										option(selected='') Tất cả
+										option Thương hiệu 1
+										option Thương hiệu 2
+							li.nav-item
+								.form-group
+									span Sản phẩm:
+									select
+										option(selected='') Mới nhất
+										option Thương hiệu 1
+										option Thương hiệu 2
+							li.nav-item
+								.form-group
+									span Theo giá:
+									select
+										option(selected='') Giá giảm dần
+										option Thương hiệu 1
+										option Thương hiệu 2
+							li.nav-item
+								.form-group
+									span Hiện thị: 20
+					.list-product
+						.row
+							-for(i=1; i<17; i++)
+								.col-xl-3.col-md-4.col-sm-6
+									.product__item
+										.product__image
+											a(href="chi-tiet-san-pham.html")
+												img(src="./assets/images/product/p-"+i+".png", alt="")
+										.product__desc
+											.product__name
+												a(href="chi-tiet-san-pham.html") Máy in Laser BROTHER HL- L2321D - In đảo mặt tự động
+											.product__infor
+												.product__price
+													p.sale  2.699.000đ
+													p.promotion 3.000.000đ
+												.icon
+													a(href="") 
+														i.fa.fa-shopping-cart
+							.pages
+								.modulepager
+									ul.pagination
+										li.active
+											a(href="#") 1
 										li
-											a(href="danhsach-shopping.html") laser
+											a(href="#") 2
 										li
-											a(href="danhsach-shopping.html") in phun
-										li
-											a(href="danhsach-shopping.html") in trắng đen
-										li
-											a(href="danhsach-shopping.html") in màu
-			.col-md-9.right-box
-				.block__filter
-					ul.nav
-						p BỘ LỌC
-						li.nav-item
-							.form-group
-								span Thương Hiệu:
-								select
-									option(selected='') Tất cả
-									option Thương hiệu 1
-									option Thương hiệu 2
-						li.nav-item
-							.form-group
-								span Sản phẩm:
-								select
-									option(selected='') Mới nhất
-									option Thương hiệu 1
-									option Thương hiệu 2
-						li.nav-item
-							.form-group
-								span Theo giá:
-								select
-									option(selected='') Giá giảm dần
-									option Thương hiệu 1
-									option Thương hiệu 2
-						li.nav-item
-							.form-group
-								span Theo giá: 20
-				.list-product
-					.row
-						-for(i=1; i<17; i++)
-							.col-md-3.col-12
-								.product__item
-									.product__image
-										a(href="chi-tiet-san-pham.html")
-											img(src="./assets/images/product/p-"+i+".png", alt="")
-									.product__desc
-										.product__name
-											a(href="chi-tiet-san-pham.html") Máy in Laser BROTHER HL- L2321D - In đảo mặt tự động
-										.product__infor
-											.product__price
-												p.sale  2.699.000đ
-												p.promotion 3.000.000đ
-											.icon
-												a(href="") 
-													i.fa.fa-shopping-cart
-						.pages
-							.modulepager
-								ul.pagination
-									li.active
-										a(href="#") 1
-									li
-										a(href="#") 2
-									li
-										a(href="#") 3
+											a(href="#") 3

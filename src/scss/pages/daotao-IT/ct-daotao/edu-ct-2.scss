@@ -1,17 +1,35 @@
-.csvc-list{
+.tbl-detail-edu2{
+	padding-top: 0;
+	&__list{
 	position: relative;
 	width: 100%;
 	.csvc__item{
 		display: flex;
 		width: 100%;
 		height: 210px;
+		cursor: pointer;
 		margin-bottom: 10px;
 		.csvc__img{
 			width: 100%;
+			overflow: hidden;
 			img{
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2);
+				-webkit-transition: .3s ease-in-out;
+				transition: .3s ease-in-out;
+			}
+		}
+		@media (min-width: 991.98px) {
+			&:hover {
+				.csvc__img {
+					img {
+						-webkit-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+				}
 			}
 		}
 		.csvc__content{
@@ -74,4 +92,5 @@
 			}
 		}
 	}
+}
 }

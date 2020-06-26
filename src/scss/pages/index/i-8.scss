@@ -2,6 +2,7 @@
 	padding-top: 0;
 	&__content{
 		.block__partner{
+			position: relative;
 			.swiper-slide{
 				.item__image{
 					border: solid 1px $main-color;
