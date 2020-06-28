@@ -58,8 +58,8 @@ function nxPro(){
 		loop: true,
 		speed: 1000,
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.nx-slide .swiper-button-next',
+			prevEl: '.nx-slide .swiper-button-prev',
 		},
 		breakpoints: {
 			991:{
@@ -83,7 +83,7 @@ function nxPro(){
 }
 
 function vaxTor(){
-	var swiper = new Swiper('.vaxtor__pro', {
+	var swiper = new Swiper('.vaxtor-slide .vaxtor__pro', {
 		slidesPerView: 3,
 		spaceBetween: 30,
 		observer: true,
@@ -91,8 +91,8 @@ function vaxTor(){
 		loop: true,
 		speed: 1000,
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.vaxtor-slide .swiper-button-next',
+			prevEl: '.vaxtor-slide .swiper-button-prev',
 		},
 		breakpoints: {
 			991:{
@@ -517,9 +517,8 @@ function subMenuMobile(){
 
 
 document.addEventListener('DOMContentLoaded', () => {
-	Loading();
+	// Loading();
 	toggleMenuMobile();
-	// setHeightOverFolowBySomeElement();
 	checkLayoutBanner();
 	productHomeSlide();
 	searchForm();
@@ -541,6 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	$('select').niceSelect();
 	hideTool();
 	subMenuMobile();
+	setHeightOverFolowBySomeElement();
 });
 $(window).resize(function() {
 	const banner2 = $('.banner-2');

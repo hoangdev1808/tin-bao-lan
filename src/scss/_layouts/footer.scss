@@ -4,7 +4,7 @@ footer{
 	width: 100%;
 	.footer-block{
 		position: relative;
-		padding: 3rem 0;
+		padding-top: 60px;
 		.footer-card{
 			width: 100%;
 			.card__title{
@@ -90,13 +90,14 @@ footer{
 				margin-top: 15px !important;
 			}
 		}
-		@media(max-width: 768.98px){
-			padding: 0;
+		@media(max-width: 1024.98px){
+			padding-top: 35px;
 		}
 	}
 	.copyright{
 		width: 100%;
-		padding: 1rem 0;
+		padding-top: 15px;
+		padding-bottom: 30px;
 		border-top: solid 1px rgb(57, 121, 181);
 		ul{
 			display: flex;

@@ -5,60 +5,42 @@ section.block-section.tbl-home-3
 				.video__slide
 					.swiper-container.nx-software
 						.swiper-wrapper
-							.swiper-slide
-								.block__img
-									img(src="./assets/images/home/home2-video.png", alt="")
-									.block__icon
-										a(href="")
-											img(src="./assets/icons/play-button.png", alt="")
-							.swiper-slide
-								.block__img
-									img(src="./assets/images/home/home2-video.png", alt="")
-									.block__icon
-										a(href="")
-											img(src="./assets/icons/play-button.png", alt="")
-							.swiper-slide
-								.block__img
-									img(src="./assets/images/home/home2-video.png", alt="")
-									.block__icon
-										a(href="")
-											img(src="./assets/icons/play-button.png", alt="")
-							.swiper-slide
-								.block__img
-									img(src="./assets/images/home/home2-video.png", alt="")
-									.block__icon
-										a(href="")
-											img(src="./assets/icons/play-button.png", alt="")
+							-for(i=1; i<5; i++)
+								.swiper-slide
+									.block__img(data-getHeight)
+										img(src="./assets/images/home/home2-video.png", alt="")
+										.block__icon
+											a(href="https://www.youtube.com/watch?v=VctmqeNRqEI")
+												img(src="./assets/icons/play-button.png", alt="")
 						.swiper-button-next
 						.swiper-button-prev
-			.col-lg-6.col-12.p-0
-				.right-box
-					.block__content
-						.block__description
-							.block__img
-								img(src="./assets/images/home/logo-4.png", alt="")
-							p.lcl.lcl-4 Nx witness là một phần mềm xem và ghi hình camera IP tích hợp được hầu hết với tất cả các hãng camera IP đang có trên thị trường. Và Tín Bảo  Lan là nhà phân phối độc quyền trong việc cung cấp phần mềm ghi hình camera IP tích hợp và các thiết bị đi kèm tại Việt Nam.
+			.col-lg-6.col-12.p-0.right-box(data-setHeight)
+				.block__content
+					.block__description
+						.block__img
+							img(src="./assets/images/home/logo-4.png", alt="")
+						p.lcl.lcl-4 Nx witness là một phần mềm xem và ghi hình camera IP tích hợp được hầu hết với tất cả các hãng camera IP đang có trên thị trường. Và Tín Bảo  Lan là nhà phân phối độc quyền trong việc cung cấp phần mềm ghi hình camera IP tích hợp và các thiết bị đi kèm tại Việt Nam.
 
-							.block__btn
-								a.btn.btn__new.color-while(href="")
-									|xem chi tiết
-							.nx-slide
-								.swiper-container.nx__pro.ml-0
-									.swiper-wrapper
-										.swiper-slide
-											.img
-												a(href="")
-													img(src="./assets/images/home/home2-slide-1.png", alt="")
-											.img__name
-												a(href="")
-													|Nx Meta VMP
-										.swiper-slide
-											.img
-												a(href="")
-													img(src="./assets/images/home/home2-slide-2.png", alt="")
-											.img__name
-												a(href="")
-													|Nx Witness VMS
-								.swiper-button-next
-								.swiper-button-prev
+						.block__btn
+							a.btn.btn__new.color-while(href="")
+								|xem chi tiết
+						.nx-slide
+							.swiper-container.nx__pro.ml-0
+								.swiper-wrapper
+									.swiper-slide
+										.img
+											a(href="")
+												img(src="./assets/images/home/home2-slide-1.png", alt="")
+										.img__name
+											a(href="")
+												|Nx Meta VMP
+									.swiper-slide
+										.img
+											a(href="")
+												img(src="./assets/images/home/home2-slide-2.png", alt="")
+										.img__name
+											a(href="")
+												|Nx Witness VMS
+							.swiper-button-next
+							.swiper-button-prev
 
