@@ -7,6 +7,7 @@ footer{
 		padding-top: 60px;
 		.footer-card{
 			width: 100%;
+			padding-bottom: 40px;
 			.card__title{
 				margin-bottom: 1.25rem;
 				h3{
@@ -21,7 +22,7 @@ footer{
 				p{
 					font-size: .875rem;
 					font-family: "Barlow";
-					color: #99cccc;
+					color: rgba(255, 255, 255, 0.502);
 				}
 				ul{
 					padding: 0;
@@ -38,12 +39,12 @@ footer{
 						p{
 							font-size: .875rem;
 							font-family: "Barlow";
-							color: #99cccc;
+							color: rgba(255, 255, 255, 0.502);
 						}
 						a{
 							font-size: .875rem;
 							font-family: "Barlow";
-							color: #99cccc;
+							color: rgba(255, 255, 255, 0.502);
 						}
 					}
 				}
@@ -51,7 +52,7 @@ footer{
 					border-radius: 0;
 					height: 40px;
 					background-color: transparent;
-					color: #99cccc;
+					color: rgba(255, 255, 255, 0.502);
 				}
 				.form-group{
 					position: relative;

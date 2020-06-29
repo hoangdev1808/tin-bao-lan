@@ -19,17 +19,17 @@
 					width: 100%;
 				}
 			}
-			@media(max-width: 1200px){
-				.swiper-button-next{
-					right: 0;
-					top: 50px;
-					background-color: #fff;
-				}
-				.swiper-button-prev{
-					left: 0;
-					top: 50px;
-					background-color: #fff;
-				}
+			.swiper-button-next{
+				position: absolute;
+				right: -60px;
+				top: 50px;
+				background-color: #fff;
+			}
+			.swiper-button-prev{
+				position: absolute;
+				left: -60px;
+				top: 50px;
+				background-color: #fff;
 			}
 			
 		}

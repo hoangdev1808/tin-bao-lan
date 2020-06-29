@@ -449,13 +449,10 @@ header {
 			}
 
 			.search-form {
-				display: none;
-				transition: .3s all ease-in-out;
-
 				.form-group {
 					width: 100%;
 					position: absolute;
-					bottom: -80%;
+					bottom: -55px;
 					right: 0;
 
 					.form-control {
@@ -464,9 +461,9 @@ header {
 						border-bottom: solid 2px $main-color;
 					}
 
-					.close {
+					.btn__search {
 						position: absolute;
-						right: 0;
+						right: 10px;
 						top: 50%;
 						transform: translateY(-50%);
 						cursor: pointer;

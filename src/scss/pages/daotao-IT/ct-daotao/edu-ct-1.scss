@@ -1,17 +1,21 @@
-.tbl-detail-edu1{
+.tbl-detail-edu1 {
 	padding-top: 0;
-	.pearson-about{
-		padding-top: 60px;	
-		.box-left{
-			.block__img{
+
+	.pearson-about {
+		padding-top: 60px;
+
+		.box-left {
+			.block__img {
 				overflow: hidden;
-				img{
+
+				img {
 					-webkit-transform: scale(1.2);
 					transform: scale(1.2);
 					-webkit-transition: .3s ease-in-out;
 					transition: .3s ease-in-out;
 				}
 			}
+
 			@media (min-width: 991.98px) {
 				&:hover {
 					img {
@@ -21,11 +25,65 @@
 				}
 			}
 		}
-		@media(max-width: 1024px){
+
+		.right-box {
+			.block__content {
+				margin: 0;
+				width: auto;
+				padding-left: 85px;
+
+				.block__description {
+					width: 530px;
+					padding-right: 60px;
+					max-height: 260px;
+					overflow-y: auto;
+
+					p {
+						font-size: 18px;
+					}
+				}
+
+				.block__description::-webkit-scrollbar-track {
+					box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+					background-color: rgb(29, 175, 240);
+				}
+
+				.block__description::-webkit-scrollbar {
+					width: 5px;
+					height: 5px;
+					background-color: rgb(29, 175, 240);
+				}
+
+				.block__description::-webkit-scrollbar-thumb {
+					border-radius: 2.5px;
+					box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+					background-color: #fff;
+				}
+
+				@media(max-width: 991.98px) {
+					padding: 20px 15px;
+
+					.block__description {
+						width: 100%;
+						padding-right: 20px;
+					}
+				}
+
+				@media(max-width: 1024px) {
+					padding: 30px;
+				}
+				@media(max-width: 1200px){
+					padding-left: 30px;
+				}
+			}
+		}
+
+		@media(max-width: 1024px) {
 			padding-top: 0;
 		}
-		@media(max-width: 480px){
-			.right-box>.block__content>.block__description{
+
+		@media(max-width: 480px) {
+			.right-box>.block__content>.block__description {
 				max-height: 120px;
 			}
 		}

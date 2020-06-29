@@ -9,12 +9,14 @@
 		"bower_components/jquery-nice-select/js/jquery.nice-select.min.js",
 		"bower_components/swiper/dist/js/swiper.min.js",
 		"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
-		"bower_components/fancybox/dist/jquery.fancybox.min.js"
+		"bower_components/fancybox/dist/jquery.fancybox.min.js",
+		"bower_components/wow/dist/wow.min.js"
 		],
 	"css": [
 		"bower_components/bootstrap/dist/css/bootstrap.min.css",
 		"bower_components/swiper/dist/css/swiper.min.css",
 		"node_modules/@mdi/font/css/materialdesignicons.min.css",
-		"bower_components/fancybox/dist/jquery.fancybox.min.css"
+		"bower_components/fancybox/dist/jquery.fancybox.min.css",
+		"bower_components/wow/css/libs/animate.css"
 	]
 }

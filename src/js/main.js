@@ -1,5 +1,5 @@
 import Loading from "./lib/Loading";
-
+import Cookie from "./lib/Cookie"
 
 const toggleMenuMobile = () => {
 	$(".toggle-menu.mobile").on("click", function() {
@@ -123,10 +123,20 @@ function eduSlide(){
 		loop: true,
 		speed: 1100,
 		autoplay: true,
-		spaceBetween: 30,
+		spaceBetween: 20,
 		navigation: {
 			nextEl: '.right-slide .swiper-button-next',
 			prevEl: '.right-slide .swiper-button-prev',
+		},
+		breakpoints: {
+			578:{
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			375:{
+				slidesPerView: 2,
+				spaceBetween: 0,
+			},
 		},
 	})
 }
@@ -136,6 +146,8 @@ function homeNewSlide(){
 		spaceBetween: 30,
 		loop: true,
 		speed: 1100,
+		speed: 1100,
+		autoplay: true,
 		navigation: {
 			nextEl: '.new-home-list .swiper-button-next',
 			prevEl: '.new-home-list .swiper-button-prev',
@@ -161,6 +173,8 @@ function partnerSlide(){
 		slidesPerColumn: 2,
 		spaceBetween: 20,
 		slidesPerView: 6,
+		speed: 1100,
+		autoplay: true,
 		navigation: {
 			nextEl: '.block__partner .swiper-button-next',
 			prevEl: '.block__partner .swiper-button-prev',
@@ -339,11 +353,8 @@ function panelSlide(){
 function searchForm() {
 	$('header').each(function() {
 		$('.search').click(function(){
-			$('.search-form').slideToggle(500);
+			$('.search-form').slideToggle();
 		})
-	})
-	$('.close').click(function(){
-		$('.search-form').slideUp();
 	})
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
@@ -518,6 +529,8 @@ function subMenuMobile(){
 
 document.addEventListener('DOMContentLoaded', () => {
 	// Loading();
+	Cookie();
+	new WOW().init();
 	toggleMenuMobile();
 	checkLayoutBanner();
 	productHomeSlide();

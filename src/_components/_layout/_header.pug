@@ -16,13 +16,13 @@ header
 								img(src="./assets/icons/en.png", alt="")
 							a.dropdown-item(href='#')
 								img(src="./assets/icons/cn.png", alt="")
-					.search
+					.search.button-search
 						i.fa.fa-search
-					.search-form
+					.search-form.search-box
 						.form-group
 							input.form-control(type="text" placeholder="Tìm sản phẩm...")
-							.close
-								span.fa.fa-times
+							button.searchbutton.btn.btn__search
+								span.material-icons search
 				<!-- End icon header mobile -->
 
 				
@@ -132,7 +132,7 @@ header
 							li.d-flex.align-item-center
 								a.btn.btn__shopping(href="danh-sach-shopping.html")
 									em.fa.fa-cart-plus
-									| Shopping
+									span Shopping
 							li.d-flex.align-item-center
 								a.btn.btn__check(href="")
 									em.fa.fa-shield
