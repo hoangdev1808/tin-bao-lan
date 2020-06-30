@@ -112,11 +112,10 @@
 						&::after{
 							width: 100%;
 							height: 100%;
-							content: '\f105 ';
-							font-family: 'FontAwesome';
-							font-size: 50px;
-							font-weight: 400;
-							color: #fff;
+							content: '';
+							background-image: url('../assets/icons/next.png');
+							background-repeat: no-repeat;
+							background-position: center;
 							text-align: center;
 							transition: .4s all ease-in-out;
 							display: flex;
@@ -136,11 +135,10 @@
 						&::after{
 							width: 100%;
 							height: 100%;
-							content: '\f104';
-							font-family: 'FontAwesome';
-							font-size: 50px;
-							font-weight: 400;
-							color: #fff;
+							content: '';
+							background-image: url('../assets/icons/prev.png');
+							background-repeat: no-repeat;
+							background-position: center;
 							text-align: center;
 							transition: .4s all ease-in-out;
 							display: flex;

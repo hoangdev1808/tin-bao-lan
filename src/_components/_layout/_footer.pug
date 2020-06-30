@@ -67,11 +67,11 @@ footer
 						h3 Đăng ký nhận bản tin
 					.card__body
 						p Nhận thông tin mới nhất và các khuyến mãi từ Công ty TNHH Tín Bảo Lan
-						.form-email(action="#")
-							.form-group
-								input.form-control#email(type="text" placeholder="Nhận email..." name="email")
-								a.btn.btn__send(href="")
-									|GỬI
+					.form-email.subscribe
+						.form-group.subscribefrm
+							input.form-control.subscribeemail(type="text" placeholder="Nhận email..." name="email")
+							button.btn.btn__send.subscribebutton(href="")
+								|GỬI
 					.card__media
 						img(src="./assets/images/home/congthuong.png", alt="")
 			.copyright

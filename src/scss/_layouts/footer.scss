@@ -9,7 +9,7 @@ footer{
 			width: 100%;
 			padding-bottom: 40px;
 			.card__title{
-				margin-bottom: 1.25rem;
+				margin-bottom: 15px;
 				h3{
 					font-weight: 600;
 					color: #fff;
@@ -48,15 +48,15 @@ footer{
 						}
 					}
 				}
+			}
+			.form-group{
+				position: relative;
+				margin: 1.25rem 0;
 				.form-control{
 					border-radius: 0;
 					height: 40px;
 					background-color: transparent;
 					color: rgba(255, 255, 255, 0.502);
-				}
-				.form-group{
-					position: relative;
-					margin: 1.25rem 0;
 				}
 				.btn__send{
 					position: absolute;
@@ -88,11 +88,12 @@ footer{
 				}
 			}
 			@media(max-width: 768.98px){
-				margin-top: 15px !important;
+				margin-top: 0;
+				padding-bottom: 20px;
 			}
 		}
 		@media(max-width: 1024.98px){
-			padding-top: 35px;
+			padding-top: 30px;
 		}
 	}
 	.copyright{
@@ -125,6 +126,7 @@ footer{
 			font-size: 13px;
 			font-family: "Barlow";
 			color: rgba(255, 255, 255, 0.502);
+			text-transform: uppercase;
 		}
 	}
 }
