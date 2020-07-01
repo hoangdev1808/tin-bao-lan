@@ -11,6 +11,7 @@
 
 		@media(max-width: 1024px) {
 			padding-left: 0;
+			padding-bottom: 0;
 		}
 
 		&__infor {
@@ -52,113 +53,168 @@
 			}
 		}
 
-		&__form {
+		.box-form {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -10px;
+
+			
+			.form-group {
+				flex: 0 0 50%;
+				margin-bottom: 30px;
+				padding: 0 10px;
+
+				@media(max-width: 1024px) {
+					margin-bottom: 15px;
+				}
+			}
+
 			.form-group input {
 				border: solid 1px rgb(245, 245, 245);
 				background-color: rgb(255, 255, 255);
-				margin-bottom: 30px;
 				width: 100%;
 				height: 40px;
 				padding-left: 15px;
 			}
-			.form-group textarea{
-				background-color: rgb(255, 255, 255);
-				border: solid 1px rgb(245, 245, 245);
-				width: 100%;
-				height: 98px;
-				padding: 15px;
+
+			.form-title {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				padding: 0 10px;
+			}
+
+			.qparagraph {
+				flex: 0 0 100%;
+				padding: 0 10px;
+				margin-bottom: 30px;
+
+				@media(max-width: 1024px) {
+					margin-bottom: 15px;
+				}
+
+				textarea {
+					border: 1px solid #f5f5f5;
+					padding: 5px 20px;
+					width: 100%;
+					color: #333;
+					caret-color: #064975;
+					font-size: 15px;
+				}
 			}
 
 			.frm-captcha {
-				width: 50%;
+				width: 75%;
 				display: flex;
+				flex-direction: row-reverse;
+				align-items: center;
+				justify-content: flex-end;
+				margin: 0;
+				flex: none;
 
-				ul {
+				.RadCaptcha {
+					height: 40px;
 					display: flex;
+					flex-direction: row-reverse;
 					align-items: center;
-					list-style: none;
-					padding: 0;
+					justify-content: flex-end;
+					margin: 0;
 
-					.img-captcha {
-						flex: 2;
-						width: 180px;
-						height: 40px;
+					.rcRefreshImage {
+						font-size: 0;
+						text-decoration: none;
 
-						img {
-							width: 100%;
-							height: 100%;
-						}
-					}
-
-					.refresh {
-						flex: 1;
-						text-align: center;
-
-						a span.material-icons {
-							color: $main-color;
-							text-decoration: none;
+						&::after {
+							content: 'replay';
+							font-family: 'Material Icons';
 							font-size: 30px;
-							font-weight: 900;
+							color: $main-color;
 						}
 					}
+				}
 
-					.input {
-						flex: 2;
-						input{
-							border: solid 1px rgb(245, 245, 245);
-							background-color: rgb(255, 255, 255);
-							width: 100%;
-							height: 40px;
-							padding-left: 15px;
-						}
+				.frm-captcha-input {
+					height: 40px;
+					width: calc(100% - 227px);
+					display: flex;
+					flex-direction: row-reverse;
+					align-items: center;
+					justify-content: flex-end;
+					margin: 0;
+
+					input {
+						margin-bottom: 0;
+						height: 100%;
+					}
+				}
+
+				@media(max-width: 1024px) {
+					width: 100%;
+
+					&.frm-captcha-input {
+						width: 100%;
+						margin-top: 15px;
 					}
 				}
 			}
 
-			.block__btn {
-				width: 50%;
+			.frm-btnwrap {
+				width: 25%;
+				float: left;
+				margin: 0;
+				flex: none;
 
 				.btn__new {
-					margin-left: auto;
 					background-color: #fff;
 					color: $main-color;
-					float: right;
+					width: 100%;
+					height: 40px;
 
 					&:hover {
 						background-color: $main-color;
 						color: #fff;
 					}
 				}
-			}
-		}
-	}
 
-	@media(max-width: 991.98px) {
-
-		&__content {
-			&__infor {
-				margin-bottom: 25px;
-
-				&__address>ul {
-					li {
-						margin-bottom: 7px;
-					}
+				@media(max-width: 1024px) {
+					width: 100%;
+					margin-top: 15px;
 				}
-
-				&__title>h4 {
-					font-size: 18px;
-					margin-bottom: 15px;
-				}
-			}
-
-			&__form {
-				.form-group input {
-					margin-bottom: 0;
+				.frm-btn-reset{
+					display: none;
 				}
 			}
 		}
 	}
 }
+
+
+@media(max-width: 991.98px) {
+
+	&__content {
+		&__infor {
+			margin-bottom: 25px;
+
+			&__address>ul {
+				li {
+					margin-bottom: 7px;
+				}
+			}
+
+			&__title>h4 {
+				font-size: 18px;
+				margin-bottom: 15px;
+			}
+		}
+
+		&__form {
+			.form-group input {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
 .map-wrapper {
 	width: 100%;
 	height: 63.7vh;

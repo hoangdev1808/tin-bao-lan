@@ -7,7 +7,7 @@ section.block-section.tbl-contact.wow.fadeInDown(data-wow-delay=".3s")
 				.col-md-6
 					.tbl-contact__content__infor
 						.tbl-contact__content__infor__logo
-							img(src="./assets/logo.png", alt="")
+							img(src="./assets/logo.png" alt="")
 						.tbl-contact__content__infor__title
 							h4 Công ty TNHH Tín Bảo Lan
 						.tbl-contact__content__infor__address
@@ -43,36 +43,30 @@ section.block-section.tbl-contact.wow.fadeInDown(data-wow-delay=".3s")
 											|print
 									p (028) 7300 1399
 				.col-md-6
-					.tbl-contact__content__form
-						.row
-							.col-md-6.form-group
-								input(type="text" placeholder="Họ và tên")
-							.col-md-6.form-group
-								input(type="text" placeholder="Địa chỉ")
-							.col-md-6.form-group
-								input(type="text" placeholder="Email")
-							.col-md-6.form-group
-								input(type="text" placeholder="Số điện thoại")
-							.col-md-12.form-group
-								input(type="text" placeholder="Tiêu đề")
-							.col-md-12.form-group
-								textarea(name="", cols="30", rows="5" placeholder="Nội dung")
+					.box-form
+						.form-group
+							input(type='text' placeholder='Họ và tên')
+						.form-group
+							input(type='text' placeholder='Số điện thoại')
+						.form-group
+							input(type='text' placeholder='Địa chỉ')
+						.form-group
+							input(type='text' placeholder='Email')
+						.form-group.form-title
+							input(type='text' placeholder='Tiêu đề')
+						.form-group.qparagraph 
+							textarea(cols="30", rows="5" placeholder='Nội dung')
 						.form-group.frm-captcha
-							.RadCaptcha.RadCaptcha_Default
 							.frm-captcha-input
-								input#ctl00_mainContent_ctl05_txtCaptcha(name='ctl00$mainContent$ctl05$txtCaptcha', type='text', maxlength='5', placeholder='Nhập mã hiển thị')
-
-							.img-captcha
-									img(src="./assets/images/contact/captcha.png", alt="")
-								li.refresh
-									a(href="")
-										span.material-icons replay
-								li.input
-									input(type="text" placeholder="Nhập mã captcha")
-							.block__btn
-								a.btn.btn__new(href="") gửi
+								input(type='text' placeholder='Nhập mã hiển thị')
+							.RadCaptcha.RadCaptcha_Default
+								a.rcRefreshImage(title='Hình ảnh mới' href="") Hình ảnh mới
+								img(alt='' src='./assets/images/contact/captcha.png')
+						.form-group.frm-btnwrap
+							.frm-btn
+								input.btn.btn-default.frm-btn-submit(type='submit' name="" value='Gửi')
 
 section.block-section.bg-light.mb-0
 	.container
 		.map-wrapper
-			iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19896.2391182464!2d106.67608946496217!3d10.772064938675168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f26de7d8973%3A0x8d5075f38e1bf491!2zNTA2LCAxNyBCYSBUaMOhbmcgSGFpLCBwaMaw4budbmcgMTEsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1590154490382!5m2!1svi!2s',  frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0',width="",height="")
+			iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19896.2391182464!2d106.67608946496217!3d10.772064938675168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f26de7d8973%3A0x8d5075f38e1bf491!2zNTA2LCAxNyBCYSBUaMOhbmcgSGFpLCBwaMaw4budbmcgMTEsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1590154490382!5m2!1svi!2s' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0' width="" height="")
