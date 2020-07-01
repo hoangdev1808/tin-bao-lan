@@ -8,7 +8,21 @@ const toggleMenuMobile = () => {
 		$("body").toggleClass("disabled");
 	});
 };
-
+// Home banner
+function homeBanner(){
+	var swiper = new Swiper('.banner-main', {
+		loop: true,
+		speed: 1000,
+		autoplay: {
+			delay: 2000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.banner-main .swiper-button-next',
+			prevEl: '.banner-main .swiper-button-prev',
+		},
+	})
+}
 
 //Slide product home
 function productHomeSlide(){
@@ -547,10 +561,35 @@ function coutingNumber(){
 	});
 }
 
+function DataBG() {
+	$('[data-bg]').each(function () {
+		$(this).addClass('data-bg lazyload')
+	})
+}
+
+function setBackground() {
+	$("[setBackground]").each(function () {
+		var background = $(this).attr("setBackground");
+		$(this).css({
+			"background-image": "url(" + background + ")",
+			"background-size": "cover",
+			"background-position": "center center",
+		});
+	});
+	$("[setBackgroundRepeat]").each(function () {
+		var background = $(this).attr("setBackgroundRepeat");
+		$(this).css({
+			"background-image": "url(" + background + ")",
+			"background-repeat": "repeat",
+		});
+	});
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	// Loading();
 	Cookie();
 	new WOW().init();
+	homeBanner();
 	coutingNumber();
 	toggleMenuMobile();
 	checkLayoutBanner();
@@ -575,6 +614,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	hideTool();
 	subMenuMobile();
 	setHeightOverFolowBySomeElement();
+	DataBG();
+	setBackground();
 });
 $(window).resize(function() {
 	const banner2 = $('.banner-2');

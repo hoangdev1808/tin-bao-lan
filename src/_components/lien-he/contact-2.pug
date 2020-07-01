@@ -46,35 +46,31 @@ section.block-section.tbl-contact.wow.fadeInDown(data-wow-delay=".3s")
 					.tbl-contact__content__form
 						.row
 							.col-md-6.form-group
-								input#txtName.form-control(type="text" placeholder="Họ và tên")
-								span#erroName.error
+								input(type="text" placeholder="Họ và tên")
 							.col-md-6.form-group
-								input#txtAddress.form-control(type="text" placeholder="Địa chỉ")
-								span.erro#erroAddress
+								input(type="text" placeholder="Địa chỉ")
 							.col-md-6.form-group
-								input#txtEmail.form-control(type="text" placeholder="Email")
-								span.erro#errorEmail
+								input(type="text" placeholder="Email")
 							.col-md-6.form-group
-								input#txtNum.form-control(type="text" placeholder="Số điện thoại")
-								span.erro#errorNum
+								input(type="text" placeholder="Số điện thoại")
 							.col-md-12.form-group
-								input#txtTitle.form-control(type="text" placeholder="Tiêu đề")
-								span.erro#errorTitle
+								input(type="text" placeholder="Tiêu đề")
 							.col-md-12.form-group
-								textarea#txtContent.form-control(name="", cols="30", rows="5" placeholder="Nội dung")
-								span.erro#errorContent
-							.col-md-12.d-flex
-								.form__control
-									ul
-										li.img-captcha
-											img(src="./assets/images/contact/captcha.png", alt="")
-										li.refresh
-											a(href="")
-												span.material-icons replay
-										li.input
-											input.form-control(type="text")
-								.block__btn
-									a.btn.btn__new(href="") gửi
+								textarea(name="", cols="30", rows="5" placeholder="Nội dung")
+						.form-group.frm-captcha
+							.RadCaptcha.RadCaptcha_Default
+							.frm-captcha-input
+								input#ctl00_mainContent_ctl05_txtCaptcha(name='ctl00$mainContent$ctl05$txtCaptcha', type='text', maxlength='5', placeholder='Nhập mã hiển thị')
+
+							.img-captcha
+									img(src="./assets/images/contact/captcha.png", alt="")
+								li.refresh
+									a(href="")
+										span.material-icons replay
+								li.input
+									input(type="text" placeholder="Nhập mã captcha")
+							.block__btn
+								a.btn.btn__new(href="") gửi
 
 section.block-section.bg-light.mb-0
 	.container

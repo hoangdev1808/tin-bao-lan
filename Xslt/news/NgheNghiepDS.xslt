@@ -9,19 +9,24 @@
           <xsl:value-of select="/NewsList/ZoneTitle"></xsl:value-of>
         </h2>
         <div class="table-responsive">
-          <table class="table">
-            <thead>
-              <tr>
-                <th><xsl:value-of select="/NewsList/JopPositionText"></xsl:value-of></th>
-                <th><xsl:value-of select="/NewsList/NumberText"></xsl:value-of></th>
-                <th><xsl:value-of select="/NewsList/PlaceText"></xsl:value-of></th>
-                <th><xsl:value-of select="/NewsList/DateExpText"></xsl:value-of></th>
-              </tr>
-            </thead>
-            <tbody>
-              <xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
-            </tbody>
-          </table>
+          <table class="table table-striped table-hover">
+										<tr class="title">
+											<th scope="col">STT</th>
+											<th scope="col">Vị trí ứng tuyển</th>
+											<th scope="col">Số lượng</th>
+											<th scope="col">Khu vực</th>
+											<th scope="col">Thời hạn</th>
+										</tr>
+										<tbody>
+											<tr>
+												<th scope="row">1</th>
+												<td> <a href="chi-tiet-tuyen-dung.html">Nhân Viên Kỹ Thuật dịch vụ</a></td>
+												<td class="text-center">01</td>
+												<td class="text-center">TH.HCM</td>
+												<td class="text-center">05/05/2020</td>
+											</tr>
+										</tbody>
+									</table>
         </div>
       </div>
     </section>

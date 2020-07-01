@@ -49,27 +49,36 @@ footer{
 					}
 				}
 			}
-			.form-group{
-				position: relative;
-				margin: 1.25rem 0;
-				.form-control{
-					border-radius: 0;
-					height: 40px;
-					background-color: transparent;
-					color: rgba(255, 255, 255, 0.502);
-				}
-				.btn__send{
-					position: absolute;
-					right: 0;
-					top: 0;
-					border-radius: 0;
-					color: #fff;
-					padding: .3rem;
-					background-color: rgb(29, 175, 240);
-					width: 75px;
-					height: 40px;
+			.subscribe{
+				.subscribefrm{
+					position: relative;
+					margin: 1.25rem 0;
+					width: 293px;
+					.subscribeemail{
+						border-radius: 0;
+						width: 100%;
+						height: 40px;
+						background-color: transparent;
+						color: rgba(255, 255, 255, 0.502);
+						padding-left: 15px;
+						border: solid 1px rgba($color: #fff, $alpha: .2);
+					}
+					.subscribebutton{
+						position: absolute;
+						right: 0;
+						top: 0;
+						border-radius: 0;
+						color: #fff;
+						padding: .3rem;
+						background-color: rgb(29, 175, 240);
+						width: 75px;
+						height: 40px;
+						border: none;
+						outline: none;
+					}
 				}
 			}
+			
 			.card__media{
 				ul{
 					display: flex;

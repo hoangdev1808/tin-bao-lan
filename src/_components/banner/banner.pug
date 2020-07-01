@@ -1,12 +1,22 @@
 section.block__banner
-	.banner-main
-		.banner__img
-			.banner__content
-				.banner__description
-					h3 Bạn cần tìm giải pháp gì?
-					.form-group.mb-0
-						p Tôi muốn
-						select
-							option(selected='') mục tiêu của tôi là
-							option mục tiêu của tôi là
-							option mục tiêu của tôi là
+	.home-banner
+		.swiper-container.banner-main
+			.swiper-wrapper
+				-for(i=1; i<5; i++)
+					.swiper-slide
+						.banner__img(setBackground='./assets/images/banner/banner-1.png')
+	.banner__content
+		.container
+			.banner__description
+				h3 Bạn cần tìm giải pháp gì?
+				.form-group.mb-0
+					p Tôi muốn
+					.nice-select(tabindex='0')
+						span.current mục tiêu của tôi là
+						ul.list
+							li.option.selected.focus(data-value='mục tiêu của tôi là')
+								a(href="") mục tiêu của tôi là
+							li.option(data-value='mục tiêu của tôi là')
+								a(href="") mục tiêu của tôi là
+							li.option(data-value='mục tiêu của tôi là')
+								a(href="") mục tiêu của tôi là
