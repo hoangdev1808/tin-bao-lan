@@ -2,18 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   <xsl:output method="html" indent="yes"/>
 
-  <!--<FAQsList>
-    <ModuleTitle>Hỏi đáp</ModuleTitle>
-    <PageTitle>Hỏi đáp</PageTitle>
-    <SubmitLink>Hỏi đáp</SubmitLink>
-    <Culture>vi-VN</Culture>
-    <FAQs>
-      <Question>Câu hỏi</Question>
-      <Answer>Trả lời</Answer>
-      <Viewed>0</Viewed>
-    </FAQs>
-  </FAQsList>-->
-
   <xsl:template match="/">
     <h1 class="title-page">
       <xsl:value-of select="/FAQsList/ZoneTitle"></xsl:value-of>

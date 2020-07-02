@@ -18,13 +18,7 @@
 											<th scope="col">Thời hạn</th>
 										</tr>
 										<tbody>
-											<tr>
-												<th scope="row">1</th>
-												<td> <a href="chi-tiet-tuyen-dung.html">Nhân Viên Kỹ Thuật dịch vụ</a></td>
-												<td class="text-center">01</td>
-												<td class="text-center">TH.HCM</td>
-												<td class="text-center">05/05/2020</td>
-											</tr>
+
 										</tbody>
 									</table>
         </div>
