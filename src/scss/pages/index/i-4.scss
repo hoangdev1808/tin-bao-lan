@@ -1,4 +1,5 @@
 .tbl-home-3 {
+	padding-top: 0;
 	.video__slide {
 		position: relative;
 		padding: 0;
@@ -188,40 +189,38 @@
 					.nx__pro {
 						width: 390px;
 						margin-top: 30px;
-
-						.img {
+						.swiper-slide{
+							height: 200px;
 							background-color: rgb(255, 255, 255);
 							box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
-							width: 180px;
-							height: 200px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
 							text-align: center;
-						}
-
-						.img__name {
-							position: absolute;
-							width: 100%;
-							bottom: 0;
-							left: 0;
-							text-align: center;
-							padding: 1rem;
-
-							a {
-								font-size: 14px;
-								font-family: "Barlow";
-								color: rgb(15, 105, 171);
-								font-weight: bold;
-							}
-						}
-
-						@media(max-width: 1024px) {
-							width: 100%;
-
 							.img {
 								width: 100%;
+								img{
+									width: 75%;
+								}
 							}
+	
+							.img__name {
+								width: 100%;
+								text-align: center;
+								padding: 1rem;
+	
+								a {
+									font-size: 14px;
+									font-family: "Barlow";
+									color: rgb(15, 105, 171);
+									font-weight: bold;
+								}
+							}
+							@media(max-width: 1024px) {
+								width: 100%;
+	
+								.img {
+									width: 100%;
+								}
+							}
+	
 						}
 					}
 

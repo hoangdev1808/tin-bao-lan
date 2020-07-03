@@ -5,11 +5,13 @@
 	background-position: center;
 	width: 100%;
 	padding-top: 0;
-	padding-bottom: 0;
+	padding-bottom: 105px;
+	margin-bottom: -140px;
 	&__content{
 		
 		.block-about {
-			padding: 60px 0;
+			padding-top: 60px;
+			padding-bottom: 120px;
 			.block__title{
 				h3{
 					letter-spacing: 0.025rem;
