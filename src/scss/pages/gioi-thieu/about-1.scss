@@ -59,6 +59,7 @@
 		.block__description {
 			max-width: 743px;
 			padding-left: 30px;
+			padding-right: 20px;
 			padding-top: 10px;
 			margin-bottom: 40px;
 			overflow-y: hidden;
@@ -86,14 +87,29 @@
 					}
 				}
 			}
-		}
-
-		.block__btn {
-			padding-left: 30px;
-			@media(max-width: 991.98px){
-				padding-left: 0;
-				text-align: center;
-				margin-top: 10px;
+			&::-webkit-scrollbar-track {
+				box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+				background-color: rgb(29, 175, 240);
+			}
+	
+			&::-webkit-scrollbar {
+				width: 5px;
+				height: 5px;
+				background-color: rgb(29, 175, 240);
+			}
+	
+			&::-webkit-scrollbar-thumb {
+				border-radius: 2.5px;
+				box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+				background-color: #fff;
+			}
+			.block__btn {
+				padding-left: 30px;
+				@media(max-width: 991.98px){
+					padding-left: 0;
+					text-align: center;
+					margin-top: 10px;
+				}
 			}
 		}
 	}
