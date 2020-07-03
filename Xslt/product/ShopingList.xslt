@@ -4,18 +4,12 @@
   <xsl:output method="html" indent="yes" />
 
   <xsl:template match="/">
-    <section class="block-section tbl-product wow fadeInDown" data-wow-delay=".3s">
-      <div class="container">
-        <div class="block__title text-uppercase text-center">
-          <h3>
-            <xsl:value-of disable-output-escaping="yes" select="/ProductList/ZoneTitle"></xsl:value-of>
-          </h3>
-        </div>
-        <div class="block__filter">
-          <h4>BỘ LỌC</h4>
-          <div class="filter__icon"><i class="fa fa-filter"></i></div>
-          <ul class="nav">
-            <!-- <li class="nav-item">
+    <div class="container">
+      <div class="block__filter">
+        <h4>BỘ LỌC</h4>
+        <div class="filter__icon"><i class="fa fa-filter"></i></div>
+        <ul class="nav">
+          <!-- <li class="nav-item">
             <div class="form-group"><span>Thương Hiệu:</span>
               <select>
                 <option selected="">Tất cả</option>
@@ -24,16 +18,33 @@
               </select>
             </div>
           </li> -->
-            <xsl:apply-templates select="/ProductList/SortBy"></xsl:apply-templates>
-          </ul>
-        </div>
-        <div class="list-product">
-          <div class="row">
-            <xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
-          </div>
+          <xsl:apply-templates select="/ProductList/SortBy"></xsl:apply-templates>
+          <li class="nav-item">
+            <div class="form-group">
+              <span>Hiển thị: <xsl:apply-templates select="/ProductList/PageSize"></xsl:apply-templates>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="list-product">
+        <div class="row">
+          <xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
         </div>
       </div>
-    </section>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="PageSize">
+    <a class="d-inline-block mr-1">
+      <xsl:attribute name="href">
+        <xsl:value-of select="Url"></xsl:value-of>
+      </xsl:attribute>
+      <xsl:attribute name="title">
+        <xsl:value-of select="Title"></xsl:value-of>
+      </xsl:attribute>
+      <xsl:value-of select="Title"></xsl:value-of>
+    </a>
   </xsl:template>
 
   <xsl:template match="SortBy">
