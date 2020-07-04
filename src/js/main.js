@@ -506,7 +506,10 @@ const setHeightOverFolowBySomeElement = () => {
 	const heightSet = $('[data-setHeight]');
 	const responsive = heightSet.attr('data-setHeight');
 	if (window.innerWidth > responsive) {
-		heightSet.css('max-height', heightGet)
+		heightSet.css('height', heightGet - 50)
+	}
+	if($(window).width() <= 1024){
+		heightSet.css('height', heightGet)
 	}
 }
 

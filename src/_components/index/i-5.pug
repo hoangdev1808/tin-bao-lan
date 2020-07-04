@@ -3,7 +3,7 @@ section.block-section.tbl-home-4.wow.fadeInUp(data-wow-delay=".3s")
 		.row
 			.col-lg-6.p-0
 				.box-left
-					.block__content
+					.block__content(data-setHeight)
 						.block__description
 							.block__img
 								img(src="./assets/images/home/logo-5.png", alt="")
@@ -39,7 +39,7 @@ section.block-section.tbl-home-4.wow.fadeInUp(data-wow-delay=".3s")
 								.swiper-button-next
 								.swiper-button-prev
 			.col-lg-6.col-12.p-0
-				.video__slide
+				.video__slide(data-getHeight)
 					.swiper-container.nx-software
 						.swiper-wrapper
 							-for(i=1; i<5; i++)
