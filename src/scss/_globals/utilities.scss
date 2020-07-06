@@ -174,6 +174,9 @@ textarea {
 	transform: translateY(-3%);
 	background-image: none;
 	&::after{
+		top: 0;
+		left: 0;
+		position: absolute;
 		width: 100%;
 		height: 100%;
 		content: '\f105';
@@ -207,6 +210,9 @@ textarea {
 	transform: translateY(-3%);
 	background-image: none;
 	&::after{
+		top: 0;
+		left: 0;
+		position: absolute;
 		width: 100%;
 		height: 100%;
 		content: '\f104';
@@ -294,12 +300,14 @@ textarea {
 			transition: .3s ease-in-out;
 		}
 		.item__title{
+			display: flex;
+			align-items: center;
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			background-color: rgba($color: $main-color, $alpha: 0.8);
 			width: 100%;
-			max-height: 75px;
+			height: 70px;
 			overflow: hidden;
 			z-index: 2;
 			padding: 10px 20px;
@@ -312,6 +320,11 @@ textarea {
 				text-align: left;
 				text-decoration: none;
 				transition: .3s all ease-in-out;
+				overflow: hidden;
+				display: -webkit-box;
+				text-overflow: ellipsis;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
 			}
 		}
 	}
@@ -336,11 +349,14 @@ textarea {
 		box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.07);
 		width: 100%;
 		padding: 20px;
+		.desc{
+			max-height: 60px;
+			overflow: hidden;
+		}
 		p{
 			font-size: 16px;
 			font-family: "Barlow";
 			color: rgb(102, 102, 102);
-			margin-bottom: 20px;
 		}
 		.read-more{
 			position: relative;
@@ -445,10 +461,9 @@ textarea {
 
 	.panel {
 		background: #fff;
-		padding: 45px 0;
+		padding: 45px 30px;
 		display: none;
 		.panel__title{
-			padding-left: 30px;
 			p{
 				font-size: 18px;
 				font-family: "Barlow";
@@ -528,7 +543,7 @@ textarea {
 			}
 		}
 		@media(max-width: 991.98px){
-			padding: 10px;
+			padding: 15px;
 			.panel__slide{
 				.panel-slide{
 					max-width: 100%;
@@ -565,13 +580,14 @@ textarea {
 .block__filter {
 	position: relative;
 	width: 100%;
+	height: 50px;
 	background-color: rgb(255, 255, 255);
 
 	.nav {
 		align-items: center;
 
 		.nav-item {
-				margin-left: 10px;
+				margin-left: auto;
 
 			.form-group {
 				display: flex;
@@ -645,7 +661,7 @@ textarea {
 }
 .nice-select {
 	-webkit-tap-highlight-color: transparent;
-	border-bottom: dashed 2px #fff;
+	border-bottom: dashed 2px rgba($color: #fff, $alpha: .5);
 	box-sizing: border-box;
 	clear: both;
 	cursor: pointer;
@@ -667,11 +683,7 @@ textarea {
 	white-space: nowrap;
 	width: 350px;
 	&:after {
-		content: 'expand_more';
-		font-size: 25px;
-		color: #fff;
-		font-weight: 700;
-		font-family: 'Material Icons';
+		content: url('../assets/icons/down.png');
 		display: block;
 		pointer-events: none;
 		position: absolute;

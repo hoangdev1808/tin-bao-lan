@@ -14,6 +14,7 @@
 			padding-bottom: 120px;
 			.block__title{
 				h3{
+					font-size: 40px;
 					letter-spacing: 0.025rem;
 				}
 			}
@@ -74,6 +75,7 @@
 	
 				p {
 					font-size: 24px;
+					font-weight: 300;
 					letter-spacing: 0.025rem;
 					line-height: 30px;
 					font-family: "Barlow";
@@ -90,6 +92,7 @@
 	
 					li {
 						font-size: 24px;
+						font-weight: 300;
 						letter-spacing: 0.025rem;
 						font-family: "Barlow";
 						color: rgb(102, 102, 102);
@@ -117,17 +120,17 @@
 			display: flex;
 			align-items: center;
 			padding-left: 30px;
-			padding-right: 30px;
 			margin-left: auto;
 			.block__content {
+				padding-right: 30px;
+				width: 100%;
 				padding: 0;
 				list-style: none;
-	
 				li {
 					position: relative;
 					margin-bottom: 20px;
 					text-align: justify;
-					h4 {
+					h4{
 						font-size: 18px;
 						font-family: "Barlow";
 						color: rgb(29, 175, 240);
@@ -147,6 +150,7 @@
 					}
 					p{
 						font-size: 14px;
+						font-weight: 400;
 						font-family: "Barlow";
 						letter-spacing: 0.005rem;
 						line-height: 20px;
@@ -156,12 +160,16 @@
 						position: relative;
 						.block__icon{
 							position: absolute;
-							width: 35px;
-							height: 36px;
+							width: 40px;
+							height: 40px;
 							top: 50%;
 							left: 50%;
 							transform: translate(-50%, -50%);
 							z-index: 2;
+							a img{
+								width: 100%;
+								height: 100%;
+							}
 						}
 					}
 				}
@@ -208,5 +216,9 @@
 				}
 			}
 		}
+	}
+	@media(max-width: 1025px){
+		margin-bottom: 0;
+		padding-bottom: 30px;
 	}
 }

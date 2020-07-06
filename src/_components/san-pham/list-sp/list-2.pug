@@ -7,13 +7,18 @@ section.block-section.tbl-product.wow.fadeInDown(data-wow-delay=".3s")
 			.filter__icon
 				i.fa.fa-filter
 			ul.nav
-				li.nav-item
-					.form-group
-						span Thương Hiệu:
-						select
-							option(selected='') Tất cả
-							option Thương hiệu 1
-							option Thương hiệu 2
+				.fillter
+					li.nav-item
+						.form-group.nice-select(tabindex='0')
+							span Thương Hiệu:
+							span.current Tất cả
+							ul.list
+								li.option.selected.focus(data-value='Tất cả')
+									a(href="") Tất cả
+								li.option(data-value='Thương hiệu 1')
+									a(href="") Thương hiệu 1
+								li.option(data-value='Thương hiệu 2')
+									a(href="") Thương hiệu 2
 				li.nav-item
 					.form-group
 						input#radio1(type='radio', name='radio-group', checked='')
@@ -48,13 +53,13 @@ section.block-section.tbl-product.wow.fadeInDown(data-wow-delay=".3s")
 									.icon
 										a(href="") 
 											i.fa.fa-shopping-cart
-				.pages
-					.modulepager
-						ul.pagination
-							li.active
-								a(href="#") 1
-							li
-								a(href="#") 2
-							li
-								a(href="#") 3
+		.pages
+			.modulepager
+				ul.pagination
+					li.active
+						a(href="#") 1
+					li
+						a(href="#") 2
+					li
+						a(href="#") 3
 

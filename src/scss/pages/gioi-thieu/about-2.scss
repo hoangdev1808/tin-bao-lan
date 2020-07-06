@@ -36,8 +36,25 @@
 					color: #fff;
 				}
 			}
+			.block__description::-webkit-scrollbar-track {
+				box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+				background-color: rgb(29, 175, 240);
+			}
+			
+			.block__description::-webkit-scrollbar {
+				width           : 5px;
+				height          : 5px;
+				background-color: rgb(29, 175, 240);
+			}
+			
+			.block__description::-webkit-scrollbar-thumb {
+				border-radius   : 2.5px;
+				box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+				background-color: #fff;
+			}
 			.block__description{
-				max-height: 355px;
+				max-height: 320px;
+				padding-right: 20px;
 				overflow-y: auto;
 				p{
 					font-size: 16px;

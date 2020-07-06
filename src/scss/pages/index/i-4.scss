@@ -4,7 +4,10 @@
 		position: relative;
 		padding: 0;
 		width: 100%;
-
+		height: 650px;
+		.ModuleContent{
+			height: 100%;
+		}
 		.nx-software {
 			width: 100%;
 			height: 100%;
@@ -16,7 +19,7 @@
 			.block__img {
 				position: relative;
 				width: 100%;
-				height: 650px;
+				height: 100%;
 				overflow: hidden;
 
 				img {
@@ -30,17 +33,9 @@
 					width: 80px;
 					height: 80px;
 					top: 50%;
-					left: 50%;
+					left: 59%;
 					transform: translate(-50%, -50%);
 					z-index: 2;
-				}
-
-				@media(min-width: 1024px) {
-					height: unset;
-				}
-
-				@media(min-width: 1200px) {
-					height: 650px;
 				}
 			}
 
@@ -76,7 +71,7 @@
 
 			.swiper-button-prev {
 				position: absolute;
-				left: 103px;
+				left: 205px;
 				top: 50%;
 				width: 40px;
 				height: 40px;
@@ -110,27 +105,31 @@
 			}
 
 			@media(max-width: 911.98px) {
-
 				.swiper-button-next,
 				.swiper-button-prev {
 					display: none;
 				}
 			}
 		}
+		@media screen and ( max-width: 1024px){
+			height: auto;
+		}
 	}
 
 	.right-box {
 		width: 100%;
 		padding: 0;
-		display: flex;
-		align-items: flex-end;
-
+		height: 650px;
+		
 		.block__content {
 			width: 100%;
+			height: 600px;
+			margin-top: 50px;
 			background-image: linear-gradient(150deg, rgb(12, 180, 206) 0%, rgb(0, 108, 255) 100%);
 
 			.block__description {
 				width: 615px;
+				height: 100%;
 				padding: 70px 0 60px 105px;
 
 				.block__img {
@@ -182,6 +181,7 @@
 						width: 390px;
 						margin-top: 30px;
 						.swiper-slide{
+							width: 180px;
 							height: 200px;
 							padding: 20px;
 							background-color: rgb(255, 255, 255);
@@ -195,7 +195,6 @@
 								width: 100%;
 								height: 112px;
 								img{
-									width: 100%;
 									height: 90%;
 									object-fit: cover;
 								}
@@ -300,21 +299,31 @@
 					padding: 30px 15px;
 					width: 100%;
 				}
-			}
-		}
-
-		@media(max-width: 991.98px) {
-			padding-top: 35px;
-		}
-		@media(max-width: 1025px){
-			display: inline-block;
-			.block__content {
-				.block__description{
-					max-height: 352px;
-					overflow-y: auto;
+				@media(max-width: 1200px){
+					width: 100%;
+					padding-left: 30px;
+					padding-right: 15px;
 				}
 			}
-			
+		}
+		@media screen and ( max-width: 1024px){
+			height: auto;
+			.block__content{
+				height: 100%;
+				margin-top: 0;
+				display: flex;
+				align-items: center;
+				.block__description{
+					width: 100%;
+					padding: 30px 15px;
+					height: fit-content;
+					.nx-slide{
+						.nx__pro{
+							width: 100%;
+						}
+					}
+				}
+			}
 		}
 	}
 }

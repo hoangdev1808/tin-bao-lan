@@ -4,20 +4,18 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<div class="video__slide">
-			<div class="swiper-container nx-software">
-				<div class="swiper-wrapper">
-					<xsl:apply-templates select="/BannerList/Banner"></xsl:apply-templates>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+		<div class="swiper-container nx-software">
+			<div class="swiper-wrapper">
+				<xsl:apply-templates select="/BannerList/Banner"></xsl:apply-templates>
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 	</xsl:template>
 
 	<xsl:template match="Banner">
 		<div class="swiper-slide">
-			<div class="block__img" data-getHeight="">
+			<div class="block__img">
 				<a data-fancybox="">
 					<xsl:attribute name="href">
 						<xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>

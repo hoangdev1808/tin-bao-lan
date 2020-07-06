@@ -8,7 +8,6 @@
 		"bower_components/bootstrap/dist/js/bootstrap.min.js",
 		"bower_components/jquery-nice-select/js/jquery.nice-select.min.js",
 		"bower_components/swiper/dist/js/swiper.min.js",
-		"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
 		"bower_components/fancybox/dist/jquery.fancybox.min.js",
 		"bower_components/wow/dist/wow.min.js"
 		],

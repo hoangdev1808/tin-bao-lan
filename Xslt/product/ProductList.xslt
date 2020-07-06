@@ -15,15 +15,8 @@
           <h4>BỘ LỌC</h4>
           <div class="filter__icon"><i class="fa fa-filter"></i></div>
           <ul class="nav">
-            <!-- <li class="nav-item">
-            <div class="form-group"><span>Thương Hiệu:</span>
-              <select>
-                <option selected="">Tất cả</option>
-                <option>Thương hiệu 1</option>
-                <option>Thương hiệu 2</option>
-              </select>
-            </div>
-          </li> -->
+            <li class="nav-item">
+              
             <xsl:apply-templates select="/ProductList/SortBy"></xsl:apply-templates>
           </ul>
         </div>

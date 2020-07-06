@@ -9,15 +9,15 @@
         <h4>BỘ LỌC</h4>
         <div class="filter__icon"><i class="fa fa-filter"></i></div>
         <ul class="nav">
-          <!-- <li class="nav-item">
-            <div class="form-group"><span>Thương Hiệu:</span>
-              <select>
-                <option selected="">Tất cả</option>
-                <option>Thương hiệu 1</option>
-                <option>Thương hiệu 2</option>
-              </select>
-            </div>
-          </li> -->
+          <li class="nav-item">
+              <div class="form-group nice-select" tabindex="0"><span>Thương Hiệu:</span><span class="current">Tất cả</span>
+                <ul class="list">
+                  <li class="option selected focus" data-value="Tất cả"><a href="">Tất cả</a></li>
+                  <li class="option" data-value="Thương hiệu 1"><a href="">Thương hiệu 1</a></li>
+                  <li class="option" data-value="Thương hiệu 2"><a href="">Thương hiệu 2</a></li>
+                </ul>
+              </div>
+            </li>
           <xsl:apply-templates select="/ProductList/SortBy"></xsl:apply-templates>
           <li class="nav-item">
             <div class="form-group">

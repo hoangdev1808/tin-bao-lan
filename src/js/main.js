@@ -84,13 +84,13 @@ function nxPro(){
 				slidesPerView: 3,
 				spaceBetween: 20,
 			},
-			578:{
+			
+			575:{
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
-			375:{
+			480:{
 				slidesPerView: 1,
-				spaceBetween: 0,
 			},
 		},
 	})
@@ -109,15 +109,15 @@ function vaxTor(){
 			prevEl: '.vaxtor-slide .swiper-button-prev',
 		},
 		breakpoints: {
-			991:{
-				slidesPerView: 4,
+			1024:{
+				slidesPerView: 2,
 				spaceBetween: 20,
 			},
 			768:{
 				slidesPerView: 3,
 				spaceBetween: 20,
 			},
-			578:{
+			480:{
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
@@ -479,11 +479,6 @@ function listFilter(){
 			$('.content__sidebar').find('.acc').toggleClass('active');
 			e.preventDefault();
 		});
-	if($(window).width() <= 1024)
-	$('.block__filter').find('.filter__icon').on('click', function(e){
-		$('.block__filter').find('ul.nav').toggleClass('active');
-		e.preventDefault();
-	});
 }
 
 function helperCus(){
@@ -501,17 +496,7 @@ function helperCus(){
 	});
 
 }
-const setHeightOverFolowBySomeElement = () => {
-	const heightGet = $('[data-getHeight]').height();
-	const heightSet = $('[data-setHeight]');
-	const responsive = heightSet.attr('data-setHeight');
-	if (window.innerWidth > responsive) {
-		heightSet.css('height', heightGet - 50)
-	}
-	if($(window).width() <= 1024){
-		heightSet.css('height', heightGet)
-	}
-}
+
 
 function hideTool() {
 	$(window).scroll(function() {
@@ -588,6 +573,13 @@ function setBackground() {
 	});
 }
 
+function productFillter(){
+	$('.block__filter').find('.filter__icon').on('click', function(e){
+		$('.block__filter').find('ul.nav').toggleClass('active');
+		e.preventDefault();
+	})
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	// Loading();
 	Cookie();
@@ -616,9 +608,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	$('select').niceSelect();
 	hideTool();
 	subMenuMobile();
-	setHeightOverFolowBySomeElement();
 	DataBG();
 	setBackground();
+	productFillter();
 });
 $(window).resize(function() {
 	const banner2 = $('.banner-2');

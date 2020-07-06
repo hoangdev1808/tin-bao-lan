@@ -54,6 +54,7 @@
 						</xsl:attribute>
 						<xsl:text disable-output-escaping="yes">0</xsl:text>
 					</span>
+					<span><xsl:text disable-output-escaping="yes">+</xsl:text></span>
 				</h3>
 				<span>
 					<xsl:value-of disable-output-escaping="yes" select="SubTitle"></xsl:value-of>

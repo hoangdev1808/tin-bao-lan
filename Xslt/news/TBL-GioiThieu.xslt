@@ -159,7 +159,7 @@
                         <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
                     </h3>
                 </div>
-                <div class="block__description block__description-fontsize">
+                <div class="block__description">
                     <xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
                 </div>
             </div>
@@ -251,9 +251,8 @@
                         <xsl:attribute name="data-count">
                             <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
                         </xsl:attribute>
-					0
                     </span>
-                    <span>+</span>
+                    <span><xsl:text disable-output-escaping="yes">+</xsl:text></span>
                 </h3>
                 <span>
                     <xsl:value-of select="SubTitle"></xsl:value-of>

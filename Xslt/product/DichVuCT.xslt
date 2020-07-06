@@ -148,10 +148,12 @@
 					</a>
 				</div>
 			</div>
-			<div class="item__description">
-				<p class="lcl lcl-3">
-					<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
-				</p>
+			<div class="item__description lcl lcl-3">
+				<div class="desc">
+					<p>
+						<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+					</p>
+				</div>
 				<a class="read-more">
 					<xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>

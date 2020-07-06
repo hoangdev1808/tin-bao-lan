@@ -4,12 +4,12 @@
 	margin-left: auto;
 	.box-left {
 		width: 100%;
-		height: 100%;
+		height: 650px;
 		padding: 0;
-		display: flex;
-		align-items: flex-end;
 
 		.block__content {
+			margin-top: 50px;
+			height: 600px;
 			width: 100%;
 			background-image: linear-gradient(170deg, rgb(203, 248, 255) 55%, rgb(0, 162, 232) 99%);
 
@@ -64,6 +64,7 @@
 					width: 640px;
 
 					.swiper-slide{
+						width: 180px;
 						height: 200px;
 						padding: 20px;
 						background-color: rgb(255, 255, 255);
@@ -77,8 +78,7 @@
 							width: 100%;
 							height: 112px;
 							img{
-								width: 85%;
-								height: 100%;
+								height: 90%;
 								object-fit: cover;
 							}
 						}
@@ -100,13 +100,14 @@
 							}
 						}
 						@media(max-width: 1024px) {
-							width: 100%;
-
 							.img {
 								width: 100%;
 							}
 						}
 
+					}
+					@media screen and ( max-width: 1024px){
+						width: 100%;
 					}
 				}
 
@@ -130,6 +131,10 @@
 						text-align: center;
 						transition: .4s all ease-in-out;
 					}
+
+					@media screen and ( max-width: 1024px){
+						left: 0;
+					}
 				}
 
 				.swiper-button-prev {
@@ -152,36 +157,22 @@
 						text-align: center;
 						transition: .4s all ease-in-out;
 					}
-				}
-			}
-
-		}
-
-		@media(max-width: 991.98px) {
-			width: 100%;
-			display: inline-block;
-
-			.block__content {
-				width: 100%;
-
-				.block__img {
-					margin-bottom: 10px;
-				}
-
-				.block__description {
-					width: 100%;
-					padding: 30px;
-				}
-
-				.vaxtor-slide .vaxtor__pro {
-					margin-top: 15px;
-					width: 100%;
-
-					.img {
-						width: 100%;
+					@media screen and ( max-width: 1024px){
+						left: 0;
 					}
 				}
 			}
+			@media screen and ( max-width: 1024px){
+				margin-top: 0;
+				height: auto;
+				.block__description{
+					width: 100%;
+					padding: 30px 15px;
+				}
+			}
+		}
+		@media screen and ( max-width: 1024px){
+			height: auto;
 		}
 	}
 
@@ -189,7 +180,10 @@
 		position: relative;
 		display: block;
 		padding: 0;
-		height: 100%;
+		height: 650px;
+		.ModuleContent{
+			height: 100%;
+		}
 
 		.nx-software {
 			position: relative;
@@ -204,7 +198,7 @@
 			.block__img {
 				position: relative;
 				width: 100%;
-				height: 650px;
+				height: 100%;
 				overflow: hidden;
 
 				img {
@@ -222,22 +216,6 @@
 					transform: translate(-50%, -50%);
 					z-index: 2;
 				}
-
-				@media(min-width: 320px) {
-					height: unset;
-				}
-
-				@media(min-width: 900px) {
-					height: 540px;
-				}
-
-				@media(min-width: 1024px) {
-					height: 625px;
-				}
-
-				@media(min-width: 1200px) {
-					height: 650px;
-				}
 			}
 		}
 		.swiper-button-next {
@@ -247,6 +225,9 @@
 		.swiper-button-prev {
 			position: absolute;
 			left: 45px;
+		}
+		@media screen and ( max-width: 1024px){
+			height: auto;
 		}
 	}
 }

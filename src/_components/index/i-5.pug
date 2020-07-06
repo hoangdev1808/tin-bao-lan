@@ -1,53 +1,51 @@
 section.block-section.tbl-home-4.wow.fadeInUp(data-wow-delay=".3s")
-	.container-fluid.p-0
+	.container-fluid
 		.row
-			.col-lg-6.p-0
-				.box-left
-					.block__content(data-setHeight)
-						.block__description
-							.block__img
-								img(src="./assets/images/home/logo-5.png", alt="")
-							h5 Phần mềm nhận dạng biển số
-							p Chúng tôi phát triển các sản phẩm và giải pháp hiệu suất cao để nhận dạng biển số trong mọi tình huống.
-							.block__btn
-									a.btn.btn__new.bg-main(href="")
-										|xem chi tiết
-							.vaxtor-slide
-								.swiper-container.vaxtor__pro
-									.swiper-wrapper
-										.swiper-slide
-											.img
-												a(href="")
-													img(src="./assets/images/home/home3-slide-1.png", alt="")
-											.img__name
-												a(href="")
-													|VaxALPR Plugins
-										.swiper-slide
-											.img
-												a(href="")
-													img(src="./assets/images/home/home3-slide-2.png", alt="")
-											.img__name
-												a(href="")
-													|VaxALPR PC
-										.swiper-slide
-											.img
-												a(href="")
-													img(src="./assets/images/home/home3-slide-3.png", alt="")
-											.img__name
-												a(href="")
-													|VaxALPR Acceso
-								.swiper-button-next
-								.swiper-button-prev
-			.col-lg-6.col-12.p-0
-				.video__slide(data-getHeight)
-					.swiper-container.nx-software
-						.swiper-wrapper
-							-for(i=1; i<5; i++)
-								.swiper-slide
-									.block__img(data-getHeight)
-										img(src="./assets/images/home/home3-slide-video.png", alt="")
-										.block__icon
-											a(data-fancybox href="https://www.youtube.com/watch?v=2KaYyiMKYzA&t=1s")
-												img(src="./assets/icons/play-button.png", alt="")
-						.swiper-button-next
-						.swiper-button-prev
+			.col-xl-6.col-lg-6.col-md-12.box-left
+				.block__content
+					.block__description
+						.block__img
+							img(src="./assets/images/home/logo-5.png", alt="")
+						h5 Phần mềm nhận dạng biển số
+						p Chúng tôi phát triển các sản phẩm và giải pháp hiệu suất cao để nhận dạng biển số trong mọi tình huống.
+						.block__btn
+								a.btn.btn__new.bg-main(href="")
+									|xem chi tiết
+						.vaxtor-slide
+							.swiper-container.vaxtor__pro
+								.swiper-wrapper
+									.swiper-slide
+										.img
+											a(href="")
+												img(src="./assets/images/home/home3-slide-1.png", alt="")
+										.img__name
+											a(href="")
+												|VaxALPR Plugins
+									.swiper-slide
+										.img
+											a(href="")
+												img(src="./assets/images/home/home3-slide-2.png", alt="")
+										.img__name
+											a(href="")
+												|VaxALPR PC
+									.swiper-slide
+										.img
+											a(href="")
+												img(src="./assets/images/home/home3-slide-3.png", alt="")
+										.img__name
+											a(href="")
+												|VaxALPR Acceso
+							.swiper-button-next
+							.swiper-button-prev
+			.col-xl-6.col-lg-6.col-12.video__slide
+				.swiper-container.nx-software
+					.swiper-wrapper
+						-for(i=1; i<5; i++)
+							.swiper-slide
+								.block__img(data-getHeight)
+									img(src="./assets/images/home/home3-slide-video.png", alt="")
+									.block__icon
+										a(data-fancybox href="https://www.youtube.com/watch?v=2KaYyiMKYzA&t=1s")
+											img(src="./assets/icons/play-button.png", alt="")
+					.swiper-button-next
+					.swiper-button-prev
