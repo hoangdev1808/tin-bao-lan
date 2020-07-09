@@ -587,7 +587,7 @@ function productFillter(){
 }
 //Move select fillter product
 function moveSelect(){
-	$('.fillter').appendTo('ul.nav');
+	$('.fillter').appendTo('ul.nav #div');
 	$('.fillter').each(function () {
 		if (!$(this).text().match(/^\s*$/)) {
 			$(this).insertBefore($(this).prev('.nav-item'));
