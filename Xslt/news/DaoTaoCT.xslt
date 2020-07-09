@@ -92,7 +92,7 @@
     </xsl:template>
     <xsl:template match="News" mode="Top">
         <xsl:if test="position()!=1">
-            <div class="col-md-6 col-sm-6 csvc__item p-r-5px">
+            <div class="col-md-6 col-sm-6 csvc__item">
                 <div class="csvc__img">
                     <img >
                         <xsl:attribute name="src">
@@ -120,7 +120,7 @@
     </xsl:template>
     <xsl:template match="News" mode="Bottom">
         <xsl:if test="position()=1">
-            <div class="col-md-6 col-sm-6 csvc__item p-r-5px">
+            <div class="col-md-6 col-sm-6 csvc__item">
                 <div class="csvc__content">
                     <div class="csvc__title">
                         <h3>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 csvc__item p-l-5px">
+            <div class="col-md-6 col-sm-6 csvc__item">
                 <div class="csvc__img">
                     <img >
                         <xsl:attribute name="src">

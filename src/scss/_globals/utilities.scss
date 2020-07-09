@@ -21,7 +21,12 @@ body {
 		overflow: hidden;
 	}
 }
-
+@media screen and ( max-width: 1025px){
+	.swiper-button-next,
+	.swiper-button-prev{
+		display: none;
+	}
+}
 input,
 select,
 textarea {
@@ -141,13 +146,13 @@ textarea {
 		padding: 50px 0;
 	}
 	@media (min-width: 1438px){
-		padding: 70px 0;
+		padding: 60px 0;
 	}
 
 }
 .block__title {
 	padding-top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 	h3{
 		font-size: 40px;
 		font-family: "Barlow";
@@ -156,6 +161,9 @@ textarea {
 		@media(max-width: 1025px){
 			font-size: 20px;
 		}
+	}
+	@media screen and ( max-width: 1025px){
+		margin-bottom: 20px;
 	}
 }
 @media(max-width: 991.98px){
@@ -283,7 +291,6 @@ textarea {
 }
 
 .item{
-	max-width: 390px;
 	margin-bottom: 30px;
 	.item__image{
 		overflow: hidden;
@@ -307,10 +314,10 @@ textarea {
 			left: 0;
 			background-color: rgba($color: $main-color, $alpha: 0.8);
 			width: 100%;
-			height: 70px;
+			height: 60px;
 			overflow: hidden;
 			z-index: 2;
-			padding: 10px 20px;
+			padding: 0 20px;
 			transition: .3s all ease-in-out;
 			a{
 				font-size: 18px;
@@ -335,19 +342,12 @@ textarea {
 					-webkit-transform: scale(1.1);
 					transform: scale(1.1);
 				}
-				.item__title{
-					background-color: rgba($color: #fff, $alpha: 0.8);
-					a{
-						color: $main-color;
-					}
-				}
 			}
 		}
 	}
 	.item__description{
 		background-color: rgb(255, 255, 255);
 		box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.07);
-		width: 100%;
 		padding: 20px;
 		.desc{
 			max-height: 60px;
@@ -426,6 +426,12 @@ textarea {
 						color: #fff;
 					}
 				}
+				&.active{
+					span{
+						color: #fff;
+					}
+					background-color: $main-color
+				}
 			}
 		}
 	}
@@ -445,6 +451,7 @@ textarea {
 			font-family: "Barlow";
 			color: rgb(0, 101, 179);
 			text-align: center;
+			font-weight: 400;
 			&:hover {
 				background: rgba($color: $main-color, $alpha: .5);
 			}
@@ -461,7 +468,7 @@ textarea {
 
 	.panel {
 		background: #fff;
-		padding: 45px 30px;
+		padding: 30px;
 		display: none;
 		.panel__title{
 			p{
@@ -476,6 +483,7 @@ textarea {
 			.panel-slide{
 				max-width: 1020px;
 				margin: 40px auto;
+				cursor: pointer;
 				.panel__img{
 					border: solid 1px rgb(234, 234, 234);
 					background-color: rgb(255, 255, 255);
@@ -484,6 +492,11 @@ textarea {
 					align-items: center;
 					text-align: center;
 					justify-content: center;
+					transition: all .3s ease-in-out;
+					&:hover{
+						border: solid 1px #0065b3;
+						transition: all .3s ease-in-out;
+					}
 				}
 				@media(max-width: 991.98px){
 					max-width: 100%;
@@ -494,9 +507,41 @@ textarea {
 			}
 			.swiper-button-next{
 				right: 30px;
+				&::after {
+					width: 100%;
+					height: 100%;
+					content: '';
+					background-image: url('../assets/icons/next-gray.png');
+					background-repeat: no-repeat;
+					background-position: center;
+					text-align: center;
+					transition: .4s all ease-in-out;
+				}
+				&:hover{
+					&::after{
+						background-image: url('../assets/icons/next-blue.png');
+						background-color: transparent;
+					}
+				}
 			}
 			.swiper-button-prev{
 				left: 30px;
+				&::after {
+					width: 100%;
+					height: 100%;
+					content: '';
+					background-image: url('../assets/icons/prev-gray.png');
+					background-repeat: no-repeat;
+					background-position: center;
+					text-align: center;
+					transition: .4s all ease-in-out;
+				}
+				&:hover{
+					&::after{
+						background-image: url('../assets/icons/prev-blue.png');
+						background-color: transparent;
+					}
+				}
 			}
 		}
 		.panel__desc{
@@ -505,7 +550,9 @@ textarea {
 			padding-bottom: 50px;
 			text-align: center;
 			p{
-				font-size: 16px;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 24px;
 				font-family: "Barlow";
 				color: rgb(51, 51, 51);
 			}
@@ -535,6 +582,7 @@ textarea {
 			padding: 0 10px;
 			.item{
 				border: solid 1px rgb(234, 234, 234);
+				width: 256px;
 				height: 255px;
 				display: flex;
 				align-items: center;

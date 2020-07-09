@@ -22,7 +22,7 @@
 						<div class="swiper-button-prev"></div>
 					</div>
 					<div class="block__btn">
-						<a class="btn btn__new __hover" href="/gioi-thieu/tin-tuc">xem thêm</a>
+						<a class="btn btn__new __hover" href="/gioi-thieu/tin-tuc">xem thêm tất cả</a>
 					</div>
 				</div>
 			</div>

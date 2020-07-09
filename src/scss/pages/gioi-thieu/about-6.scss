@@ -13,8 +13,11 @@
 		}
 		.block-prize{
 			position: relative;
+			.swiper-slide{
+				background-color: #fff;
+			}
 			.img{
-				width: 100%;
+				padding: 20px;
 				img{
 					width: 100%;
 				}
@@ -24,12 +27,44 @@
 				right: -60px;
 				top: 50px;
 				background-color: #fff;
+				&::after {
+					width: 100%;
+					height: 100%;
+					content: '';
+					background-image: url('../assets/icons/next-gray.png');
+					background-repeat: no-repeat;
+					background-position: center;
+					text-align: center;
+					transition: .4s all ease-in-out;
+				}
+				&:hover{
+					&::after{
+						background-image: url('../assets/icons/next-blue.png');
+						background-color: transparent;
+					}
+				}
 			}
 			.swiper-button-prev{
 				position: absolute;
 				left: -60px;
 				top: 50px;
 				background-color: #fff;
+				&::after {
+					width: 100%;
+					height: 100%;
+					content: '';
+					background-image: url('../assets/icons/prev-gray.png');
+					background-repeat: no-repeat;
+					background-position: center;
+					text-align: center;
+					transition: .4s all ease-in-out;
+				}
+				&:hover{
+					&::after{
+						background-image: url('../assets/icons/prev-blue.png');
+						background-color: transparent;
+					}
+				}
 			}
 			
 		}

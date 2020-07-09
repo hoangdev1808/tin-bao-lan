@@ -10,6 +10,8 @@
 }
 
 .mobile {
+	display: flex;
+	align-items: center;
 	@media (min-width: 991.98px) {
 		display: none !important;
 	}

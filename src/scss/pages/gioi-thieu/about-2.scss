@@ -27,10 +27,10 @@
 		align-items: center;
 		padding: 0;
 		.block__content{
-			width: 550px;
-			margin: 0 auto;
+			width: 540px;
 			padding-top: 80px;
 			padding-bottom: 70px;
+			padding-left: 85px;
 			.block__title{
 				h3{
 					color: #fff;
@@ -54,10 +54,13 @@
 			}
 			.block__description{
 				max-height: 320px;
-				padding-right: 20px;
+				padding-right: 30px;
 				overflow-y: auto;
+				width: 530px;
 				p{
-					font-size: 16px;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 30px;
 					font-family: "Barlow";
 					color: rgb(255, 255, 255);
 					text-align: left;
@@ -88,6 +91,7 @@
 					}
 				}
 				@media(max-width: 1025px){
+					width: 100%;
 					p{
 						padding-bottom: 16px;
 						font-size: 14px;
@@ -131,7 +135,7 @@
 				padding: 30px;
 			}
 			@media(max-width: 768.98px){
-				padding: 25px 15px;
+				padding: 15px;
 			}
 		}
 		@media(max-width: 1024px){

@@ -252,7 +252,9 @@
                             <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
                         </xsl:attribute>
                     </span>
-                    <span><xsl:text disable-output-escaping="yes">+</xsl:text></span>
+                    <span>
+                        <xsl:text disable-output-escaping="yes">+</xsl:text>
+                    </span>
                 </h3>
                 <span>
                     <xsl:value-of select="SubTitle"></xsl:value-of>
@@ -266,9 +268,9 @@
                 <div class="block-video">
                     <ul class="block__content">
                         <li>
-                            <h3>
-                                <xsl:value-of select="BriefContent"></xsl:value-of>
-                            </h3>
+                            <h4>
+                                <xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+                            </h4>
                         </li>
                         <li>
                             <xsl:value-of select="FullContent"></xsl:value-of>

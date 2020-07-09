@@ -4,41 +4,44 @@
 	margin-left: auto;
 	.box-left {
 		width: 100%;
-		height: 650px;
+		height: 600px;
+		margin-top: 50px;
 		padding: 0;
+		background-image: linear-gradient(170deg, rgb(203, 248, 255) 55%, rgb(0, 162, 232) 99%);
 
 		.block__content {
 			margin-top: 50px;
-			height: 600px;
-			width: 100%;
-			background-image: linear-gradient(170deg, rgb(203, 248, 255) 55%, rgb(0, 162, 232) 99%);
+			margin-left: auto;
+			width: 615px;
 
 			.block__description {
-				width: 630px;
-				margin-left: auto;
+				width: 480px;
+				margin-left: 75px;
 				padding-top: 70px;
-				padding-bottom: 60px;
-				padding-left: 85px;
 				.block__img {
-					width: 240px;
+					width: 269px;
+					height: 57px;
 					margin-bottom: 30px;
 
 					img {
 						width: 100%;
+						height: 100%;
 					}
 				}
-
+				
 				h5 {
 					font-size: 14px;
 					font-family: "Barlow";
 					color: rgb(51, 51, 51);
 					font-weight: bold;
+					line-height: 1.429;
 					text-transform: uppercase;
 				}
-
 				p {
 					font-size: 14px;
+					font-weight: 400;
 					font-family: "Barlow";
+					line-height: 1.429;
 					color: rgb(51, 51, 51);
 				}
 			}
@@ -58,15 +61,13 @@
 
 			.vaxtor-slide {
 				position: relative;
-
+				width: 600px;
 				.vaxtor__pro {
 					margin-top: 30px;
-					width: 640px;
 
 					.swiper-slide{
-						width: 180px;
+						max-width: 180px;
 						height: 200px;
-						padding: 20px;
 						background-color: rgb(255, 255, 255);
 						box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
 						text-align: center;
@@ -77,6 +78,7 @@
 						.img {
 							width: 100%;
 							height: 112px;
+							padding-top: 20px;
 							img{
 								height: 90%;
 								object-fit: cover;
@@ -84,7 +86,7 @@
 						}
 
 						.img__name {
-							width: 100%;
+							padding: 20px;
 							max-height: 50px;
 							text-align: center;
 							overflow: hidden;
@@ -113,14 +115,13 @@
 
 				.swiper-button-next {
 					position: absolute;
-					left: -70px;
+					left:-75px;
 					top: 40%;
 					width: 40px;
 					height: 40px;
 					border: none;
 					transform: translateY(-50%);
 					background-color: rgba(15, 105, 171, 0.8);
-
 					&::after {
 						width: 100%;
 						height: 100%;
@@ -139,7 +140,7 @@
 
 				.swiper-button-prev {
 					position: absolute;
-					left: -70px;
+					left: -75px;
 					top: 61%;
 					width: 40px;
 					height: 40px;
@@ -161,18 +162,33 @@
 						left: 0;
 					}
 				}
+				@media screen and ( max-width: 1024px){
+					width: 100%;
+					padding-left: 15px;
+					padding-right: 15px;
+					padding-bottom: 30px;
+					.vaxtor__pro{
+						margin-top: 0;
+						.swiper-slide{
+							max-width: unset;
+						}
+					}
+				}
 			}
 			@media screen and ( max-width: 1024px){
 				margin-top: 0;
+				width: 100%;
 				height: auto;
 				.block__description{
 					width: 100%;
+					margin-left: 0;
 					padding: 30px 15px;
 				}
 			}
 		}
 		@media screen and ( max-width: 1024px){
 			height: auto;
+			margin-top: 0;
 		}
 	}
 
@@ -211,20 +227,49 @@
 					position: absolute;
 					width: 80px;
 					height: 80px;
-					top: 50%;
-					left: 50%;
+					top: 51%;
+					left: 40%;
 					transform: translate(-50%, -50%);
 					z-index: 2;
+					@media screen and ( max-width: 1025px){
+						left: 50%;
+						top: 50%;
+					}
 				}
 			}
 		}
 		.swiper-button-next {
 			position: absolute;
-			right: 15%;
+			right: 20%;
+			top: 51%;
+			@media screen and ( min-width: 1200px){
+				right: 8%;
+			}
+			&::after {
+				width: 100%;
+				height: 100%;
+				content: '';
+				background-image: url('../assets/icons/next-gray.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				text-align: center;
+				transition: .4s all ease-in-out;
+			}
 		}
 		.swiper-button-prev {
 			position: absolute;
-			left: 45px;
+			left: 30px;
+			top: 51%;
+			&::after {
+				width: 100%;
+				height: 100%;
+				content: '';
+				background-image: url('../assets/icons/prev-gray.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				text-align: center;
+				transition: .4s all ease-in-out;
+			}
 		}
 		@media screen and ( max-width: 1024px){
 			height: auto;

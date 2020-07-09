@@ -94,6 +94,11 @@
 
 	<xsl:template match="ProductAttributes" mode="Title">
 		<li>
+			<xsl:if test="position()=1">
+				<xsl:attribute name="class">
+					<xsl:text>active</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
 			<xsl:attribute name="rel">
 				<xsl:text disable-output-escaping="yes">panel-</xsl:text>
 				<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>

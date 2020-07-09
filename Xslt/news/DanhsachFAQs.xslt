@@ -6,33 +6,43 @@
     <xsl:template match="/">
         <div class="panel active" id="panel-1">
             <div class="block__title">
-                <h4>
+                <h3>
                     <xsl:value-of select="/NewsList/ZoneTitle" disable-output-escaping="yes"></xsl:value-of>
-                </h4>
+                </h3>
             </div>
             <div class="acc">
-				<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
+                <xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
             </div>
         </div>
     </xsl:template>
     <xsl:template match="News">
-		<div class="acc__card">
-			<div class="__title">
-				<p>
-				<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-				</p>
-			</div>
-			<div class="acc__panel">
-				<p>
-					<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
-				</p>
-				<a>
-					<xsl:attribute name="href">
+        <div class="acc__card">
+            <div class="__title">
+                <p>
+                    <xsl:if test="position()>=10">
+                        <xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+                        <xsl:text>. </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="position() !=10">
+                        <xsl:text>0</xsl:text>
+                        <xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+                        <xsl:text>. </xsl:text>
+                        
+                    </xsl:if>
+                    <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+                </p>
+            </div>
+            <div class="acc__panel">
+                <p>
+                    <xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+                </p>
+                <a>
+                    <xsl:attribute name="href">
                         <xsl:value-of select="Url"></xsl:value-of>
                     </xsl:attribute>
-					<xsl:text>http://www.tblpro.com/</xsl:text>
-				</a>
-			</div>
-		</div>
+                    <xsl:text>http://www.tblpro.com/</xsl:text>
+                </a>
+            </div>
+        </div>
     </xsl:template>
 </xsl:stylesheet>

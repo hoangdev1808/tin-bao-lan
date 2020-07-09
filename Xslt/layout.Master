@@ -37,7 +37,7 @@
 							<div class="nav-main">
 								<!-- Logo Tin Bảo Lan -->
 								<portal:modulewrapper id="mdl177" runat="server" configuremoduleid="177" /><!-- Icon header mobile -->
-								<div class="header-icon mobile d-flex align-items-center">
+								<div class="header-icon mobile">
 									<div class="header__language dropdown">
 										<button class="dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href=""><img src="./assets/icons/vn.png" alt=""></a></button>
 										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><img src="./assets/icons/en.png" alt=""></a><a class="dropdown-item" href="#"><img src="./assets/icons/cn.png" alt=""></a></div>

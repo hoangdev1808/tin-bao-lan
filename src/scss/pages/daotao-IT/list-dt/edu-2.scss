@@ -1,6 +1,6 @@
 .block-item{
 	position: relative;
-	width: 390px;
+	width: 394px;
 	height: 500px;
 	cursor: pointer;
 	.item__img{
@@ -30,22 +30,25 @@
 			visibility: hidden;
 			opacity: 0;
 			transition: .2s all ease-in-out;
-			h5{
-				color: #fff;
-				font-size: 30px;
-			}
-			.btn__new{
-				margin-top: 30px;
-				background-color: $main-color;
-				color: #fff;
-				&:hover{
-					background-color: #fff;
-					color: $main-color;
+			.desc{
+				h5{
+					color: #fff;
+					font-size: 30px;
+					font-weight: 400;
+					line-height: 30px;
+				}
+				.btn__new{
+					margin-top: 30px;
+					background-color: $main-color;
+					color: #fff;
+					&:hover{
+						background-color: #fff;
+						color: $main-color
+					}
 				}
 			}
 		}
 	}
-	@media(min-width: 1025px){
 		&:hover{
 			.item__img-hover{
 				visibility: visible;
@@ -54,13 +57,11 @@
 				left: 0;
 				height: 100%;
 				width: 100%;
-				pointer-events: none;
 				.content{
 					opacity: 1;
 					visibility: visible;
 				}
 			}
-		}
 	}
 	@media(max-width: 991.98px){
 		width: 100%;

@@ -6,9 +6,9 @@
     <xsl:template match="/">
         <xsl:if test="count(/ZoneList/Zone) > 0">
             <div class="block__title text-uppercase">
-                <h4>
+                <h3>
                     <xsl:value-of select="/ZoneList/RootTitle" disable-output-escaping="yes"></xsl:value-of>
-                </h4>
+                </h3>
             </div>
             <div class="left__sidebar">
                 <ul>

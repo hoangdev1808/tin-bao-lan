@@ -91,9 +91,13 @@ header {
 				img {
 					width: 100%;
 					height: 100%;
+					@media(max-width: 600px){
+						width: unset;
+					}
 				}
 				@media(max-width: 1025px){
 					flex: none;
+					margin-right: 30px;
 				}
 				@media(max-width: 991.98px) {
 					width: auto;
@@ -236,7 +240,11 @@ header {
 							position: relative;
 							margin-right: auto;
 							cursor: pointer;
-	
+							&.active{
+								.nav-link{
+									color: $main-color;
+								}
+							}
 							&::before {
 								position: absolute;
 								bottom: -22px;
@@ -254,11 +262,9 @@ header {
 								text-align: left;
 								transition: .3s all ease-in-out;
 								padding: 8px 0;
-								@media(max-width: 1024px) {
-									&:hover {
-										color: rgb(29, 175, 240) !important;
-										background-color: transparent !important;
-									}
+								&:hover {
+									color: $main-color;
+									background-color: transparent;
 								}
 							}
 	
@@ -372,6 +378,11 @@ header {
 										a {
 											color: $main-color;
 											background-color: transparent;
+										}
+									}
+									&.active{
+										a{
+											color: $main-color;
 										}
 									}
 								}
@@ -523,6 +534,8 @@ header {
 					}
 				}
 				.mobile{
+					display: flex;
+					flex-direction: column;
 					.nav-logo__mobile{
 						display: flex;
 						align-items: center;

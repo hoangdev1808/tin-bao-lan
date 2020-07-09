@@ -1,5 +1,6 @@
 import Loading from "./lib/Loading";
-import Cookie from "./lib/Cookie"
+import Cookie from "./lib/Cookie";
+import MoveElement from "./lib/MoveElement"
 
 const toggleMenuMobile = () => {
 	$(".toggle-menu.mobile").on("click", function() {
@@ -8,6 +9,8 @@ const toggleMenuMobile = () => {
 		$("body").toggleClass("disabled");
 	});
 };
+
+
 // Home banner
 function homeBanner(){
 	var swiper = new Swiper('.banner-main', {
@@ -68,7 +71,7 @@ function nxSile(){
 function nxPro(){
 	var swiper = new Swiper('.nx__pro', {
 		slidesPerView: 2,
-		spaceBetween: 20,
+		spaceBetween: 30,
 		loop: true,
 		speed: 1000,
 		navigation: {
@@ -78,17 +81,13 @@ function nxPro(){
 		breakpoints: {
 			991:{
 				slidesPerView: 4,
-				spaceBetween: 20,
+				spaceBetween: 30,
 			},
 			768:{
-				slidesPerView: 3,
-				spaceBetween: 20,
-			},
-			
-			575:{
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
+			
 			480:{
 				slidesPerView: 1,
 			},
@@ -109,17 +108,20 @@ function vaxTor(){
 			prevEl: '.vaxtor-slide .swiper-button-prev',
 		},
 		breakpoints: {
+			1100:{
+				spaceBetween: 20,
+			},
 			1024:{
 				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			991:{
+				slidesPerView: 4,
 				spaceBetween: 20,
 			},
 			768:{
-				slidesPerView: 3,
-				spaceBetween: 20,
-			},
-			480:{
 				slidesPerView: 2,
-				spaceBetween: 10,
+				spaceBetween: 0,
 			},
 			375:{
 				slidesPerView: 1,
@@ -131,9 +133,8 @@ function vaxTor(){
 function eduSlide(){
 	var swiper = new Swiper('.right-partner', {
 		slidesPerView: 3,
+		spaceBetween: 30,
 		slidesPerColumn: 2,
-		observer: true,
-		observeParents: true,
 		loop: true,
 		speed: 1100,
 		autoplay: true,
@@ -143,6 +144,10 @@ function eduSlide(){
 			prevEl: '.right-slide .swiper-button-prev',
 		},
 		breakpoints: {
+			1024:{
+				slidesPerView: 6,
+				spaceBetween: 10,
+			},
 			578:{
 				slidesPerView: 2,
 				spaceBetween: 10,
@@ -163,8 +168,8 @@ function homeNewSlide(){
 		speed: 1100,
 		autoplay: true,
 		navigation: {
-			nextEl: '.new-home-list .swiper-button-next',
-			prevEl: '.new-home-list .swiper-button-prev',
+			nextEl: '.tbl-home-7__content__list .swiper-button-next',
+			prevEl: '.tbl-home-7__content__list .swiper-button-prev',
 		},
 		breakpoints: {
 			992:{
@@ -187,8 +192,9 @@ function partnerSlide(){
 		slidesPerColumn: 2,
 		spaceBetween: 20,
 		slidesPerView: 6,
-		speed: 1100,
-		autoplay: true,
+		speed: 1000,
+		autoplay: false,
+		loop: true,
 		navigation: {
 			nextEl: '.block__partner .swiper-button-next',
 			prevEl: '.block__partner .swiper-button-prev',
@@ -579,6 +585,15 @@ function productFillter(){
 		e.preventDefault();
 	})
 }
+//Move select fillter product
+function moveSelect(){
+	$('.fillter').appendTo('ul.nav');
+	$('.fillter').each(function () {
+		if (!$(this).text().match(/^\s*$/)) {
+			$(this).insertBefore($(this).prev('.nav-item'));
+		}
+});
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 	// Loading();
@@ -611,6 +626,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	DataBG();
 	setBackground();
 	productFillter();
+	moveSelect();
 });
 $(window).resize(function() {
 	const banner2 = $('.banner-2');

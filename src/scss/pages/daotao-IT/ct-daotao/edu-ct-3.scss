@@ -13,16 +13,25 @@
 	.admissions__content{
 		text-align: center;
 		.block__title>h4{
+			margin: 0 auto;
+			width: 417px;
 			color: #fff;
+			font-size: 40px;
+			line-height: 30px;
+			font-weight: 700;
+			margin-bottom: 40px;
 		}
 		ul{
 			padding: 0;
 			list-style: none;
 			li{
-				margin-bottom: 30px;
+				margin-bottom: 20px;
 				p{
 					color: #fff;
 					font-size: 16px;
+				}
+				&:last-child{
+					margin-bottom: 30px;
 				}
 			}
 			@media(max-width: 991.98px){
@@ -32,11 +41,12 @@
 			}
 		}
 		.btn__new{
-			margin-bottom: 20px;
+			margin-bottom: 15px;
 			padding: 0 10px;
 			width: 220px;
 			color: $main-color;
 			background-color: #fff;
+			border: none;
 			&:hover{
 				background-color: $main-color;
 				color: #fff;

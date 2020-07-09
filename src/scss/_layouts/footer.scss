@@ -11,10 +11,11 @@ footer{
 			.card__title{
 				margin-bottom: 15px;
 				h3{
-					font-weight: 600;
+					font-weight: 500;
 					color: #fff;
 					font-size: 18px;
 					font-family: "Barlow";
+					line-height: 22px;
 					text-transform: uppercase;
 				}
 			}
@@ -31,13 +32,18 @@ footer{
 						display: flex;
 						margin-bottom: .5rem;
 						span{
-							font-size: 14px;
-							font-family: "MaterialIcons";
-							color: rgb(29, 175, 240);
-							margin-right: 15px;
+							.material-icons{
+								font-size: 14px;
+								font-family: "Material Icons";
+								color: rgb(29, 175, 240);
+								margin-right: 15px;
+								font-weight: 400;
+							}
 						}
 						p{
-							font-size: .875rem;
+							font-size: 14px;
+							line-height: 30px;
+							font-weight: 400;
 							font-family: "Barlow";
 							color: rgba(255, 255, 255, 0.502);
 						}
@@ -53,7 +59,6 @@ footer{
 				.subscribefrm{
 					position: relative;
 					margin: 1.25rem 0;
-					width: 293px;
 					.subscribeemail{
 						border-radius: 0;
 						width: 100%;
@@ -62,6 +67,13 @@ footer{
 						color: rgba(255, 255, 255, 0.502);
 						padding-left: 15px;
 						border: solid 1px rgba($color: #fff, $alpha: .2);
+						&::placeholder{
+							font-size: 14px;
+							font-family: "Barlow";
+							color: rgb(107, 150, 189);
+							line-height: 1.429;
+								
+						}
 					}
 					.subscribebutton{
 						position: absolute;
@@ -80,20 +92,11 @@ footer{
 			}
 			
 			.card__media{
-				ul{
-					display: flex;
-					list-style: none;
-					padding: 0;
-					.media__icon{
-						width: 32px;
-						height: 32px;
-						background-color: #fff;
-						border-radius: 50%;
-						margin-right: auto;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-					}
+				width: 106px;
+				height: 40px;
+				img{
+					width: 100%;
+					height: 100%;
 				}
 			}
 			@media(max-width: 768.98px){
@@ -116,12 +119,15 @@ footer{
 			padding: 0;
 			list-style: none;
 			li{
-				padding-right: 1rem;
+				margin-left: 30px;
 				position: relative;
 				a{
-					font-size: 15px;
-					font-family: "FontAwesome5Brands";
-					color: rgb(137, 186, 232);
+					.fa{
+						font-size: 15px;
+						color: rgb(137, 186, 232);
+						font-weight: 400;
+						line-height: 20px;
+					}
 				}
 				&:last-child{
 					padding-right: 0;
@@ -136,6 +142,8 @@ footer{
 			font-family: "Barlow";
 			color: rgba(255, 255, 255, 0.502);
 			text-transform: uppercase;
+			line-height: 20px;
+			font-weight: 400;
 		}
 	}
 }

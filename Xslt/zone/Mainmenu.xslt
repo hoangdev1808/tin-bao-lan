@@ -9,6 +9,11 @@
 	</xsl:template>
 	<xsl:template match="Zone">
 		<li class="nav-item">
+			<xsl:if test="IsActive='true'">
+				<xsl:attribute name="class">
+					<xsl:text>nav-item active</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
 			<a class="nav-link">
 				<xsl:attribute name="href">
 					<xsl:value-of select="Url"></xsl:value-of>
@@ -52,6 +57,11 @@
 	<!-- Danh sách Dropdown -->
 	<xsl:template match="Zone" mode="Dropdown">
 		<li>
+			<xsl:if test="IsActive='true'">
+				<xsl:attribute name="class">
+					<xsl:text>active</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
 			<a class="dropdown-item">
 				<xsl:attribute name="href">
 					<xsl:value-of select="Url"></xsl:value-of>

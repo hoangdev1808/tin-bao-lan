@@ -21,7 +21,7 @@
 						<div class="swiper-button-next"></div>
 						<div class="swiper-button-prev"></div>
 					</div>
-					<div class="block__btn"><a class="btn btn__new" href="">xem thêm</a></div>
+					<div class="block__btn"><a class="btn btn__new" href="">xem thêm tất cả</a></div>
 				</div>
 			</div>
 		</section>

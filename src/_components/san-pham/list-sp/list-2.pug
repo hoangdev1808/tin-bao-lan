@@ -7,18 +7,7 @@ section.block-section.tbl-product.wow.fadeInDown(data-wow-delay=".3s")
 			.filter__icon
 				i.fa.fa-filter
 			ul.nav
-				.fillter
-					li.nav-item
-						.form-group.nice-select(tabindex='0')
-							span Thương Hiệu:
-							span.current Tất cả
-							ul.list
-								li.option.selected.focus(data-value='Tất cả')
-									a(href="") Tất cả
-								li.option(data-value='Thương hiệu 1')
-									a(href="") Thương hiệu 1
-								li.option(data-value='Thương hiệu 2')
-									a(href="") Thương hiệu 2
+				
 				li.nav-item
 					.form-group
 						input#radio1(type='radio', name='radio-group', checked='')
@@ -35,6 +24,18 @@ section.block-section.tbl-product.wow.fadeInDown(data-wow-delay=".3s")
 					.form-group
 						input#radio4(type='radio', name='radio-group')
 						label(for='radio4') Giá giảm dần
+		.fillter
+			li.nav-item
+				.form-group.nice-select(tabindex='0')
+					span Thương Hiệu:
+					span.current Tất cả
+					ul.list
+						li.option.selected.focus(data-value='Tất cả')
+							a(href="") Tất cả
+						li.option(data-value='Thương hiệu 1')
+							a(href="") Thương hiệu 1
+						li.option(data-value='Thương hiệu 2')
+							a(href="") Thương hiệu 2
 		.list-product
 			.row
 				-for(i=1; i<17; i++)
@@ -52,7 +53,7 @@ section.block-section.tbl-product.wow.fadeInDown(data-wow-delay=".3s")
 										p.promotion 3.000.000đ
 									.icon
 										a(href="") 
-											i.fa.fa-shopping-cart
+											span.lnr.lnr-cart
 		.pages
 			.modulepager
 				ul.pagination

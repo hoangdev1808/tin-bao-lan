@@ -1,6 +1,7 @@
 .tbl-home-6{
 	position: relative;
 	width: 100%;
+	height: 609px;
 	background-image: url('../assets/images/home/home4-bg.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -14,17 +15,19 @@
 		content: '';
 		top: 0;
 		left: 0;
-		background-color: rgba($color: #fff, $alpha: .7);
+		background-color: #fff;
+		opacity: .7;
 		z-index: 0;
 	}
 	&__content{
-		padding-top: 70px;
 		.block__title{
+			padding-top: 70px;
 			position: relative;
 			z-index: 1;
-			margin-bottom: 35px;
+			height: 197px;
+			margin-bottom: 0;
 			&__description{
-				padding-top: 40px;
+				padding-top: 30px;
 				display: flex;
 				align-items: center;
 				text-align: center;
@@ -33,6 +36,10 @@
 						font-size: 16px;
 						color: rgb(51, 51, 51);
 						text-align: left;
+						font-weight: 400;
+				}
+				span{
+					padding-left: 20px !important;
 				}
 				@media(max-width: 1024px){
 					padding-left: 15px;
@@ -41,28 +48,37 @@
 					display: inline-grid;
 				}
 			}
+			@media screen and ( max-width: 1025px){
+				padding-top: 20px;
+				height: unset;
+			}
 		}
 		&__edu{
 			position: relative;
 			z-index: 2;
-			height: 410px;
+			height: 412px;
+			padding-top: 70px;
+			padding-bottom: 0;
 			background-color: rgba($color: $main-color, $alpha: .7);
 			.box-left{
 				height: 100%;
 				width: 100%;
+				.relative{
+					height: 100%;
+				}
 				.left__img{
 					position: absolute;
-					bottom: -105px;
+					bottom: -150px;
 					left: 0;
-					width: 100%;
-					height: 100%;
-					@media(max-width: 1200px){
-						display: flex;
-						align-items: center;
+					width: 735px;
+					height: 437px;
+					img{
+						width: 100%;
+					}
+					@media screen and ( max-width: 1024px){
 						position: static;
-						img{
-							height: unset;
-						}
+						width: unset;
+						height: unset;
 					}
 				}
 				@media(max-width: 991.98px){
@@ -70,45 +86,49 @@
 				}
 			}
 			.box-right{
-				padding: 70px 0;
 				position: relative;
 				.right__title{
-					font-size: 24px;
-					font-family: "Barlow";
-					color: rgb(255, 255, 255);
-					text-transform: uppercase;
-					text-align: center;
 					padding-bottom: 30px;
+					h5{
+						font-size: 24px;
+						font-family: "Barlow";
+						color: rgb(255, 255, 255);
+						text-transform: uppercase;
+						text-align: center;
+						
+					}
 				}
 				.right-slide{
 					position: relative;
-					width: 100%;
+					width: 398px;
+					margin: 0 auto;
 					.right-partner{
 						width: 100%;
 						height: 230px;
 						.swiper-slide{
-							height: 90px;
+							height: 94px;
 							.img{
 								margin: 0 auto;
 								text-align: center;
-								width: 110px;
+								width: 113px;
 								height: 100%;
 								img{
 									width: 100%;
 									height: 100%;
+									object-fit: cover;
 								}
 							}
 						}
 					}
 					.swiper-button-next{
 						position: absolute;
-						right: 0px;
+						right: -50px;
 						top: 60%;
 						width: 40px;
 						height: 40px;
 						border: solid 1px #c3c3c3;
 						transform: translateY(-50%);
-						background-color: rgba(15,105,171,0.8);
+						background-color: transparent;
 						&::after{
 							width: 100%;
 							height: 100%;
@@ -125,13 +145,13 @@
 					}
 					.swiper-button-prev{
 						position: absolute;
-						left: 0px;
+						left: -50px;
 						top: 60%;
 						width: 40px;
 						height: 40px;
 						border: solid 1px #c3c3c3;
 						transform: translateY(-50%);
-						background-color: rgba(15,105,171,0.8);
+						background-color: transparent;
 						&::after{
 							width: 100%;
 							height: 100%;
@@ -146,6 +166,9 @@
 							justify-content: center;
 						}
 					}
+					@media screen and ( max-width: 991.98px){
+						width: 100%;
+					}
 				}
 			}
 			@media(max-width: 991.98px){
@@ -157,10 +180,12 @@
 	
 	@media(max-width: 1200px){
 		&__content{
-			padding-top: 30px;
 			.block__title{
 				margin-bottom: 30px;
 			}
 		}
+	}
+	@media screen and ( max-width: 1024px){
+		height: auto;
 	}
 }

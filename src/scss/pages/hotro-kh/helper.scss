@@ -6,8 +6,8 @@
 			background-color: rgb(29, 175, 240);
 			height: 60px;
 			padding: 20px 20px;
-
-			h4 {
+			margin-bottom: 0;
+			h3 {
 				font-size: 20px;
 				color: rgb(255, 255, 255);
 				font-weight: bold;
@@ -26,25 +26,30 @@
 
 				li {
 					position: relative;
-					padding: 15px 20px;
+					padding: 0 20px;
 					border-bottom: solid 1px #eee;
-
-					&::after {
-						position: absolute;
-						content: '';
-						top: 0;
-						left: 0;
-						width: 2px;
-						height: 100%;
-						background-color: $main-color;
-						opacity: 0;
-						visibility: hidden;
-						transition: .2s all ease-in-out;
+					height: 40px;
+					line-height: 40px;
+					&.active{
+						a{
+							font-size: 18px;
+							font-weight: 700;
+							color: $main-color;
+						}
+						&::before{
+							content: '';
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 2px;
+							height: 40px;
+							background-color: $main-color;
+						}
 					}
 
 					a {
 						font-size: 16px;
-						font-weight: bold;
+						font-weight: 400;
 						text-decoration: none;
 					}
 
@@ -63,28 +68,30 @@
 	}
 
 	.right-box {
+		padding-left: 35px;
 		.panel {
 			padding-top: 0;
 			background-color: transparent;
 
 			.block__title {
 				padding-top: 0;
+				margin-bottom: 25px;
 
-				h4 {
+				h3 {
 					font-size: 40px;
 					color: rgb(2, 103, 177);
 					font-weight: bold;
-
 					
 				}
 				@media(max-width: 991.98px) {
 					padding-top: 10px;
-					h4{
+					h3{
 						font-size: 20px;
 					}
 				}
 			}
 			.acc {
+				width: 900px;
 				.acc__card {
 					background-color: #fff;
 					border: none;
@@ -94,9 +101,9 @@
 						cursor: pointer;
 						display: flex;
 						align-items: center;
-						padding: .75rem 1.875rem;
+						min-height: 50px;
 						position: relative;
-
+						padding-left: 20px;
 						p {
 							font-size: 18px;
 							font-family: "Barlow";
@@ -107,13 +114,13 @@
 						&::after {
 							position: absolute;
 							right: 20px;
-							top: 0;
-							transform: rotate(0deg);
+							top: 50%;
+							transform: translateY(-50%);
 							transition: all 0.2s ease-in-out;
-							padding: 5px 0;
-							content: '\f107 ';
-							font-family: 'FontAwesome';
-							font-size: 16px;
+							content: '\e874';
+							font-size: 14px;
+							line-height: 22px;
+							font-family: 'Linearicons-Free';
 						}
 
 						&.active {
@@ -123,7 +130,8 @@
 
 							&::after {
 								color: $main-color;
-								transform: rotate(-180deg);
+								top: 50%;
+								transform: rotate(-180deg) translateY(50%);
 								transition: all 0.2s ease-in-out;
 							}
 						}
@@ -150,9 +158,9 @@
 								top: -30px;
 								left: 0;
 								content: '';
-								height: 2px;
+								height: 1px;
 								width: 100%;
-								background-color: $main-color;
+								background-color: #1daff0;
 								transition: .3s all ease-in-out;
 							}
 

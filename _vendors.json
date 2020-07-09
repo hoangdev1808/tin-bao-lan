@@ -1,7 +1,6 @@
 {
 	"fonts": [
-		"src/fonts/**",
-		"node_modules/@mdi/font/fonts"
+		"node_modules/@mdi/font/fonts/**"
 	],
 	"js": [
 		"bower_components/jquery/dist/jquery.js",
@@ -12,9 +11,9 @@
 		"bower_components/wow/dist/wow.min.js"
 		],
 	"css": [
+		"node_modules/@mdi/font/css/materialdesignicons.mim.css",
 		"bower_components/bootstrap/dist/css/bootstrap.min.css",
 		"bower_components/swiper/dist/css/swiper.min.css",
-		"node_modules/@mdi/font/css/materialdesignicons.min.css",
 		"bower_components/fancybox/dist/jquery.fancybox.min.css",
 		"bower_components/wow/css/libs/animate.css"
 	]

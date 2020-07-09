@@ -4,13 +4,25 @@
 	padding: 75px 0;
 
 	.container {
-		max-width: 1080px;
+		max-width: 1080px !important;
 		margin: 0 auto;
+		.col-md-6{
+			padding-right: 30px;
+			&:nth-child(2){
+				padding-left: 30px;
+			}
+		}
 	}
-
+	.block__title{
+		width: 140px;
+		margin: 0 auto;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
 	&__content {
 		background-color: #fff;
 		height: 240px;
+		width: 510px;
 		padding: 30px;
 
 		&__title h4 {
@@ -28,11 +40,12 @@
 				display: flex;
 				margin-bottom: 20px;
 
-				span {
+				span .material-icons {
 					padding-right: 20px;
 					font-size: 20px;
 					font-family: "Material Icons";
 					color: rgb(29, 175, 240);
+					line-height: 30px;
 				}
 			}
 		}

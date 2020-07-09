@@ -1,5 +1,5 @@
 .service-4{
-	padding-top: 0;
+	padding-bottom: 0;
 	&__content {
 		&__list {
 
@@ -13,9 +13,13 @@
 		}
 		.block__btn{
 			width: 100%;
+
 			@media(max-width: 991.98px){
 				margin-top: 10px;
 			}
 		}
+	}
+	&:last-child{
+		padding-bottom: 60px;
 	}
 }
