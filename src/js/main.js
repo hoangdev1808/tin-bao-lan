@@ -401,7 +401,7 @@ const checkLayoutBanner = () => {
 function productDetail() {
 	var galleryThumbs = new Swiper(".thumb .gallery-thumbs", {
 		direction: 'vertical',
-		spaceBetween: 10,
+		spaceBetween: 15,
 		slidesPerView: 4,
 		loop: true,
 		freeMode: true,
