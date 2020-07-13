@@ -30,29 +30,31 @@
 				
 			}
 			.thumb{
+				padding: 35px 0;
 				order: 1;
 				position: relative;
 				cursor: pointer;
 				width: 20%;
 				height: 100%;
-				padding: 50px 0;
 				box-sizing: border-box;
 				.gallery-thumbs{
 					width: 100%;
 					height: 100%;
 					.swiper-slide{
 						width: 120px;
-						height: 90px;
 						overflow: hidden;
 						display: flex;
 						align-items: center;
 						justify-content: center;
 						background-color: rgb(255, 255, 255);
-						padding: 10px;
+						padding: 10px 0;
 						img{
 							width: 100%;
 							height: 100%;
 							object-fit: contain;
+						}
+						.active{
+							border: solid $main-color 1px;
 						}
 					}
 				}
@@ -161,6 +163,19 @@
 	}
 	.product__desc{
 		padding-top: 20px;
+		table{
+			width: 100%;
+			tbody{
+				tr{
+					td{
+						padding-bottom: 15px;
+						&:last-child{
+							float: right;
+						}
+					}
+				}
+			}
+		}
 		ul{
 			padding: 0;
 			list-style: none;

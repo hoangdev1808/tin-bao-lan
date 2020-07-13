@@ -1,69 +1,104 @@
-.tbl-pro-detail2{
+.tbl-pro-detail2 {
 	padding-top: 0;
 	padding-bottom: 0;
 	background-color: #f5f5f5;
-	&__desciption{
-		.tab-panels{
-			.panel__title{
+
+	&__desciption {
+		.tab-panels {
+			.panel__title {
 				padding: 0;
 				margin-bottom: 20px;
-				h3{
+
+				h3 {
 					color: $main-color;
 					font-size: 24px;
 					font-weight: 700;
 				}
-				@media(max-width: 991.98px){
+
+				@media(max-width: 991.98px) {
 					margin-bottom: 10px;
-					h3{
+
+					h3 {
 						font-size: 16px;
 					}
 				}
 			}
-			.panel{
+
+			.panel {
 				padding: 60px 0 65px 40px;
-				.panel__desc{
+
+				table {
+					width: 100%;
+					tbody {
+						tr {
+							td {
+								strong>span {
+									font-size: 24px !important;
+								}
+								img{
+									width: 440px;
+									max-width: 100%;
+								}
+							}
+
+						}
+					}
+				}
+
+				.panel__desc {
 					max-width: 100%;
-					.desc{
-						li{
+
+					.desc {
+						li {
 							pointer-events: none;
-							p{
+
+							p {
 								width: 50%;
 								text-align: left;
-								@media(max-width: 991.98px){
+
+								@media(max-width: 991.98px) {
 									font-size: 14px;
 								}
 							}
-							span{
+
+							span {
 								width: 50%;
 								text-align: left;
-								@media(max-width: 991.98px){
+
+								@media(max-width: 991.98px) {
 									font-size: 14px;
 								}
 							}
 						}
 					}
 				}
-				.img{
+
+				.img {
 					padding-right: 100px;
 				}
-				@media(max-width: 991.98px){
+
+				@media(max-width: 991.98px) {
 					padding: 25px;
-					.panel__desc .desc li{
+
+					.panel__desc .desc li {
 						margin-bottom: 0;
 					}
-					.block__btn{
+
+					.block__btn {
 						margin-top: 20px;
 					}
-					.img{
+
+					.img {
 						padding: 0;
 						text-align: center;
-						img{
+
+						img {
 							width: 70%;
 						}
 					}
 				}
 			}
 		}
-		
+
 	}
 }

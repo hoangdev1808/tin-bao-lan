@@ -33,7 +33,7 @@
 					<xsl:attribute name="title">
 						<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
-					<xsl:text disable-output-escaping="yes">xem thêm</xsl:text>
+					<xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
 					<span class="material-icons">keyboard_arrow_right</span>
 				</a>
 			</div>
@@ -92,7 +92,7 @@
 						</div>
 						<div class="icon">
 							<a href="">
-								<i class="fa fa-shopping-cart"></i>
+								<span class="lnr lnr-cart"></span>
 							</a>
 						</div>
 					</div>

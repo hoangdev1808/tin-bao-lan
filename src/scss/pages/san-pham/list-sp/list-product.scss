@@ -10,6 +10,10 @@
 			.nav-item{
 				.nice-select{
 					width: auto;
+					&::after {
+						top: 10px;
+						color: rgb(102, 102, 102);
+					}
 				}
 				@media screen and ( min-width: 1200){
 					margin-left: auto;
@@ -73,15 +77,18 @@
 			right: 20px;
 			cursor: pointer;
 			transform: translateY(-50%);
+
 			@media(max-width: 768px){
 				display: block;
 			}
 		}
 	}
-	.block__filter>.nav>.nav-item>.form-group>.nice-select{
+	.block__filter>.nav>.nav-item>.nice-select{
 		width: 125px;
 		&:after {
 			color: rgb(102, 102, 102);
+			top: 0;
+			transform: translateY(50%);
 		}
 		.option{
 			padding: .5rem;
@@ -93,29 +100,36 @@
 		.product__item{
 			background-color: rgb(255, 255, 255);
 			max-width: 285px;
+			min-height: 360px;
 			margin-bottom: 20px;
 			border: solid 1px transparent;
 			transition: ease-in-out all .3s;
+			cursor: pointer;
 			.product__image{
-				width: 100%;
+				width: 150px;
 				height: 150px;
-				padding: 20px;
+				overflow: hidden;
 				display: flex;
 				align-items: center;
-				text-align: center;
 				justify-content: center;
+				margin: 0 auto;
 				img{
-					width: 50%;
+					width: 100%;
+					height: 100%;
 				}
 				@media(max-width: 768px){
 					img{
-						width: 35%;
+						width: 100%;
 					}
 				}
 			}
 			.product__desc{
-				padding: 30px 30px;
+				padding-top: 60px;
+				padding-left: 30px;
+				padding-right: 30px;
+				min-height: 120px;
 				.product__name{
+					margin-bottom: 20px;
 					a{
 						font-size: 14px;
 						font-family: "Barlow";
@@ -131,12 +145,12 @@
 					position: relative;
 					.product__price{
 						.sale{
-							font-size: 22px;
+							font-size: 18px;
 							color: rgb(2, 103, 177);
 							text-align: left;
 						}
 						.promotion{
-							font-size: 18px;
+							font-size: 14px;
 							color: rgb(153, 153, 153);
 							text-decoration: line-through;
 							text-align: left;

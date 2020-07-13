@@ -9,6 +9,7 @@
 			align-items: center;
 			justify-content: center;
 			padding: 20px 0;
+			margin-bottom: 0;
 			h5{
 				font-size: 30px;
 				font-family: "Barlow";
@@ -30,9 +31,15 @@
 			padding-left: 10px;
 		}
 		.right-box>.block__filter>.nav>.nav-item>.form-group>.nice-select{
-			width: 125px;
+			width: 120px;
 			&:after {
+				font-family: Linearicons-Free;
+				font-size: 14px;
+				line-height: 22px;
+				content: '\e874';
 				color: rgb(102, 102, 102);
+				top: 0;
+				transform: translateY(50%);
 			}
 			.option{
 				padding: .5rem;
@@ -41,16 +48,27 @@
 		.right-box{
 			.list-product{
 				.product__item{
-					width: 100%;
+					padding: 30px 15px;
+					min-height: 280px;
+					cursor: pointer;
 					.product__image{
-						width: 100%;
+						width: 108px;
+						height: 108px;
 					}
 					.product__desc{
-						padding: 15px;
-						@media(max-width: 991.98px){
-							padding: 10px;
+						padding: 0;
+						.product__infor{
+							.product__price{
+								.sale{
+									font-size: 18px;
+								}
+							}
+							.icon{
+								right: -15px;
+							}
 						}
 					}
+				
 				}
 			}
 			.block__filter{

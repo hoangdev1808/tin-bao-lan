@@ -405,9 +405,9 @@ function productDetail() {
 		slidesPerView: 4,
 		loop: true,
 		freeMode: true,
-		loopedSlides: 5,
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
+		centeredSlides: true,
+		centeredSlides: true,
+		slideToClickedSlide: true,
 		breakpoints:{
 			1024:{
 				direction: 'horizontal',
@@ -594,7 +594,6 @@ function moveSelect(){
 		}
 });
 }
-
 document.addEventListener('DOMContentLoaded', () => {
 	// Loading();
 	Cookie();
