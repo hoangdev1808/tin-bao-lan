@@ -39,7 +39,7 @@
                 </div>
                 <div class="item__img-hover">
                     <div class="content">
-                        <div class="text-center">
+                        <div class="desc text-center">
                             <h5>
                                 <xsl:apply-templates select="Title"></xsl:apply-templates>
                             </h5>

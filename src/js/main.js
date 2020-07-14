@@ -371,16 +371,18 @@ function panelSlide(){
 
 // Form search
 function searchForm() {
-	$('header').each(function() {
-		$('.search').click(function(){
-			$('.search-form').slideToggle();
+	if($(window).width() <= 992){
+		$('header').each(function() {
+			$('.search').click(function(){
+				$('.searchbox').slideToggle();
+			})
 		})
-	})
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 0) {
-            $('.search-form').slideUp();
-        }
-	});
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 0) {
+				$('.searchbox').slideUp();
+			}
+		});
+	}
 }
 
 // CHECK LAYOUT CÓ BANNER KHÔNG
@@ -522,10 +524,10 @@ function subMenuMobile(){
 			$(this).closest('.nav-item').find('.nav-item__dropdownmenu').addClass('active');
 			$(this).closest('.navbar-nav').find('.nav-item__dropdownmenu').not(dropDown).slideUp();
 			if ($(this).hasClass('active')) {
-				$(this).removeClass('active');
+				$(this).addClass('active');
 			} else {
 				$(this).closest('.navbar-nav').find('.submenu-toggle').removeClass('active');
-				$(this).addClass('active');
+				$(this).removeClass('active');
 			}
 				dropDown.stop(false, true).slideToggle();
 				event.preventDefault();
@@ -594,6 +596,16 @@ function moveSelect(){
 		}
 });
 }
+
+
+function moveNav(){
+	if($(window).width() <= 991.98){
+		$('.nav-top').appendTo('.nav-main .header-icon');
+	}else{
+		$('.nav-top').appendTo('.navbar-collapse #div')
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	// Loading();
 	Cookie();
@@ -626,18 +638,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	setBackground();
 	productFillter();
 	moveSelect();
+	moveNav()
 });
-$(window).resize(function() {
-	const banner2 = $('.banner-2');
-	const breadcrumb = $('.global-breadcrumb');
-	const heightHeader = $('header').outerHeight();
-	if ($(window).width() <= 1024) {
-		if (banner2.length >= 1 && banner2.css('display') == 'block') {
-			banner2.css('padding-top', heightHeader);
-		} else if (breadcrumb.length >= 1 && breadcrumb.css('display') == 'block') {
-			breadcrumb.css('padding-top', heightHeader);
-		} else {
-			$('main').css('padding-top', heightHeader);
-		}
-	}
-})

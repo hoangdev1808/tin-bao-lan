@@ -10,16 +10,9 @@
 		<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" JQueryUIThemeName="smoothness" />
 		<portal:Favicon ID="Favicon1" runat="server" />
 		<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="true" />
-		
+
 		<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
 
-
-		<!--*********************************************************************************************-->
-		<!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
-		<!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
-		<!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
-		<!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
-		<!--*********************************************************************************************-->
 	</head>
 
 	<body id="Body" runat="server" class="canhcam">
@@ -38,51 +31,33 @@
 								<!-- Logo Tin Bảo Lan -->
 								<portal:modulewrapper id="mdl177" runat="server" configuremoduleid="177" /><!-- Icon header mobile -->
 								<div class="header-icon mobile">
-									<div class="header__language dropdown">
-										<button class="dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href=""><img src="./assets/icons/vn.png" alt=""></a></button>
-										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><img src="./assets/icons/en.png" alt=""></a><a class="dropdown-item" href="#"><img src="./assets/icons/cn.png" alt=""></a></div>
-									</div>
-									<div class="search button-search"><i class="fa fa-search"></i></div>
-									<div class="search-form search-box">
-										<div class="form-group">
-											<input class="form-control" type="text" placeholder="Tìm sản phẩm...">
-											<button class="searchbutton btn btn__search"><span class="material-icons">search</span></button>
-										</div>
-									</div>
+
 								</div><!-- End icon header mobile -->
 								<div class="toggle-menu mobile"></div><!-- Main menu header start -->
 								<div class="navbar-collapse ml-auto">
 									<!-- Top main menu -->
+									<div id="div"></div>
 									<ul class="nav-top">
 										<li>
-											<portal:modulewrapper id="mdl176" runat="server" configuremoduleid="176"/>
+											<portal:modulewrapper id="mdl176" runat="server" configuremoduleid="176" />
 										</li>
 										<li>
-											<portal:modulewrapper id="mdl179" runat="server" configuremoduleid="179"/>
+											<a class="search btn btn__search mobile" href="javascript:void(0)">
+												<label class="material-icons">search</label>
+											</a>
 										</li>
 										<li>
-											<portal:modulewrapper id="mdl181" runat="server" configuremoduleid="181"/>
+											<portal:modulewrapper id="mdl179" runat="server" configuremoduleid="179" />
+										</li>
 										<li>
-											<portal:modulewrapper id="mdl182" runat="server" configuremoduleid="182"/>
+											<portal:modulewrapper id="mdl181" runat="server" configuremoduleid="181" />
+										<li>
+											<portal:modulewrapper id="mdl182" runat="server" configuremoduleid="182" />
 										</li>
 									</ul><!-- Main menu -->
 									<div class="main-menu">
 										<portal:modulewrapper id="mdl178" runat="server" configuremoduleid="178" />
 										<div class="mobile">
-											<ul class="nav-top d-flex align-item-center">
-												<li class="d-flex align-item-center">
-													<a class="btn btn__shopping" href="danh-sach-shopping.html">
-														<em class="fa fa-cart-plus"></em>
-														<span>Shopping</span>
-													</a>
-												</li>
-												<li class="d-flex align-item-center">
-													<a class="btn btn__check" href="">
-														<em class="fa fa-shield"></em>Kiểm tra và bảo hành
-							
-													</a>
-												</li>
-											</ul>
 											<div class="nav-logo__mobile">
 												<ul>
 													<li>
@@ -104,10 +79,10 @@
 											</div>
 										</div>
 									</div>
-									
+
 								</div><!-- End main menu header start -->
 								<div class="nav-logo">
-									<portal:modulewrapper id="mdl190" runat="server" configuremoduleid="190"/>
+									<portal:modulewrapper id="mdl190" runat="server" configuremoduleid="190" />
 								</div>
 							</div>
 						</div>
@@ -156,18 +131,18 @@
 					<div class="footer-block">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-3 footer-card">
+								<div class="col-md-3 col-sm-6 col-6 footer-card">
 									<portal:modulewrapper id="mdl183" runat="server" configuremoduleid="183" />
 								</div>
-								<div class="col-md-3 footer-card">
+								<div class="col-md-3 col-sm-6 col-6 footer-card">
 									<portal:modulewrapper id="mdl184" runat="server" configuremoduleid="184" />
 								</div>
-								<div class="col-md-3 footer-card">
+								<div class="col-md-3 col-sm-6 col-6 footer-card">
 									<portal:modulewrapper id="mdl185" runat="server" configuremoduleid="185" />
 								</div>
-								<div class="col-md-3 footer-card">
+								<div class="col-md-3 col-sm-6 col-6 footer-card">
 									<portal:modulewrapper id="mdl186" runat="server" configuremoduleid="186" />
-									<portal:modulewrapper id="mdl187" runat="server" configuremoduleid="187"/>
+									<portal:modulewrapper id="mdl187" runat="server" configuremoduleid="187" />
 									<div class="card__media"><img src="/Data/Sites/1/skins/default/assets/images/home/congthuong.png" alt=""></div>
 								</div>
 							</div>
@@ -186,7 +161,7 @@
 				</footer>
 			</div>
 			<div class="dekstop" id="block__tool">
-				<portal:modulewrapper id="mdl191" runat="server" configuremoduleid="191"/>
+				<portal:modulewrapper id="mdl191" runat="server" configuremoduleid="191" />
 			</div>
 			<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
 				<div class="row">

@@ -62,10 +62,17 @@
         </section>
     </xsl:template>
     <xsl:template match="NewsOther">
-        <xsl:if test="position()&lt;4">
+        <xsl:if test="position()&lt;6">
             <div class="news__item">
                 <div class="news__img">
-                    <img>
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="Url"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:attribute name="title">
+                            <xsl:value-of select="Title"></xsl:value-of>
+                        </xsl:attribute>
+                         <img>
                         <xsl:attribute name="src">
                             <xsl:value-of select="ImageUrl"></xsl:value-of>
                         </xsl:attribute>
@@ -73,6 +80,7 @@
                             <xsl:value-of select="Title"></xsl:value-of>
                         </xsl:attribute>
                     </img>
+                    </a>
                 </div>
                 <div class="news__desc">
                     <ul>

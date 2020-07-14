@@ -8,7 +8,7 @@
 			<div class="container">
 				<div class="tbl-dsv1-content">
 					<div class="row">
-						<div class="col-md-6 col-12 pr-0">
+						<div class="col-md-6 col-12">
 							<div class="tbl-dsv1-content__image">
 								<img>
 								<xsl:attribute name="src">
@@ -21,7 +21,7 @@
 								</img>
 							</div>
 						</div>
-						<div class="col-md-6 col-12 pl-0">
+						<div class="col-md-6 col-12">
 							<div class="tbl-dsv1-content__description">
 								<div class="block__title">
 									<h3>

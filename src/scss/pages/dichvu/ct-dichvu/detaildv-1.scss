@@ -5,7 +5,7 @@
 	.tbl-dsv1-content{
 		padding-top: 80px;
 		&__image{
-			width: 600px;
+			width: 100%;
 			height: 100%;
 			overflow: hidden;
 			img{
@@ -13,12 +13,15 @@
 				height: 100%;
 				object-fit: cover;
 			}
+			@media screen and ( max-width: 1025px){
+				width: 100%;
+			}
 		}
 		&__description{
 			background-color: rgb(255, 255, 255);
 			height: 100%;
 			padding: 40px 50px;
-			margin-left: -15px;
+			margin-left: -30px;
 			.block__title{
 				margin-bottom: 20px;
 				h3{
@@ -89,7 +92,8 @@
 				}
 			}
 			@media(max-width: 991.98px){
-				padding: 10px;
+				padding: 15px;
+				margin-left: 0;
 				.block__title{
 					padding-top: 0;
 				}

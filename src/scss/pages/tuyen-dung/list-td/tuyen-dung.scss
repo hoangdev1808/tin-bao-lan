@@ -66,13 +66,16 @@
 				}
 			}
 			table{
+				border: 1px solid #f3f3f3;
 				width: 100%;
 				.title{
-					background-color: rgb(2, 103, 177);
+					background-color: rgb(2, 103, 177) !important;
 					th{
 						padding: 20px 0;
 						color: #fff;
 						text-align:  center;
+						font-weight: 700;
+						border-right: solid 1px #fff;
 					}
 				}
 				tr{
@@ -82,9 +85,21 @@
 					}
 					td{
 						cursor: pointer;
+						border: 1px solid #f3f3f3;
 						a{
 							text-decoration: none;
 						}
+					}
+					&:nth-child(odd) {
+						background-color: #fafafa;
+					}
+				}
+			}
+			.table-hover tbody tr:hover{
+				background-color: #d6eeff;
+				td{
+					a{
+						color: $main-color;
 					}
 				}
 			}

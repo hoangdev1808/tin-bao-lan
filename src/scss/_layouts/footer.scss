@@ -18,12 +18,21 @@ footer{
 					line-height: 22px;
 					text-transform: uppercase;
 				}
+				@media screen and ( max-width: 768px){
+					margin-bottom: 10px;
+					h3{
+						font-size: 12px;
+					}
+				}
 			}
 			.card__body{
 				p{
 					font-size: .875rem;
 					font-family: "Barlow";
 					color: rgba(255, 255, 255, 0.502);
+					@media screen and ( max-width: 768px){
+						font-size: 11px !important;
+					}
 				}
 				ul{
 					padding: 0;
@@ -51,6 +60,20 @@ footer{
 							font-size: .875rem;
 							font-family: "Barlow";
 							color: rgba(255, 255, 255, 0.502);
+						}
+						@media screen and ( max-width: 768px){
+							p{
+								font-size: 11px !important;
+								line-height: unset;
+							}
+							span{
+								.material-icons{
+									margin-right: 7px;
+								}
+							}
+							a{
+								font-size: 11px;
+							}
 						}
 					}
 				}
@@ -87,6 +110,10 @@ footer{
 						height: 40px;
 						border: none;
 						outline: none;
+						@media screen and ( max-width: 768px){
+							width: 40px;
+							font-size: 11px !important;
+						}
 					}
 				}
 			}
@@ -132,6 +159,11 @@ footer{
 				&:last-child{
 					padding-right: 0;
 				}
+				@media screen and ( max-width: 768px){
+					&:first-child{
+						margin-left: 0;
+					}
+				}
 			}
 			@media(max-width: 768px){
 				justify-content: flex-start;
@@ -144,6 +176,9 @@ footer{
 			text-transform: uppercase;
 			line-height: 20px;
 			font-weight: 400;
+			@media screen and ( max-width: 768px){
+				font-size: 11px !important;
+			}
 		}
 	}
 }

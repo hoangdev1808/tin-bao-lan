@@ -7,54 +7,42 @@ header
 					img.d-inline-block.align-top(src='./assets/logo.png', alt='')
 				<!-- Icon header mobile -->
 				.header-icon.mobile
-					.header__language.dropdown
-						button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-							a(href="")
-								img(src="./assets/icons/vn.png", alt="")
-						.dropdown-menu(aria-labelledby='dropdownMenuButton')
-							a.dropdown-item(href='#')
-								img(src="./assets/icons/en.png", alt="")
-							a.dropdown-item(href='#')
-								img(src="./assets/icons/cn.png", alt="")
-					.search.button-search
-						i.fa.fa-search
-					.search-form.search-box
-						.form-group
-							input.form-control(type="text" placeholder="Tìm sản phẩm...")
-							button.searchbutton.btn.btn__search
-								span.material-icons search
+			
 				<!-- End icon header mobile -->
 
-				
 				.toggle-menu.mobile
 
 				<!-- Main menu header start -->
 				.navbar-collapse.ml-auto
 					<!-- Top main menu -->
-					ul.nav-top
-						li
-							.searchbox.form-group
-								input.form-control(type="text" placeholder="Tìm sản phẩm...")
-								button.searchbutton.btn.btn__search
+					#div
+						ul.nav-top
+							li
+								.searchbox.form-group
+									input.form-control(type="text" placeholder="Tìm sản phẩm...")
+									button.searchbutton.btn.btn__search
+										span.material-icons search
+							li
+								a.search.btn.btn__search.mobile(href="")
 									span.material-icons search
-						li
-							a.btn.btn__shopping(href="danh-sach-shopping.html")
-								em.fa.fa-cart-plus
-								label Shopping
-						li
-							a.btn.btn__check(href="")
-								em.fa.fa-shield
-								span Kiểm tra và bảo hành
-						li
-							.header__language.dropdown
-								button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-									a(href="")
-										img(src="./assets/icons/vn.png", alt="") 
-								.dropdown-menu(aria-labelledby='dropdownMenuButton')
-									a.dropdown-item(href='#')
-										img(src="./assets/icons/en.png", alt="")
-									a.dropdown-item(href='#')
-										img(src="./assets/icons/cn.png", alt="")
+							li
+								a.btn.btn__shopping(href="danh-sach-shopping.html")
+									em.fa.fa-cart-plus
+									label Shopping
+							li
+								a.btn.btn__check(href="")
+									em.fa.fa-shield
+									label Kiểm tra và bảo hành
+							li
+								.header__language.dropdown
+									button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+										a(href="")
+											img(src="./assets/icons/vn.png", alt="") 
+									.dropdown-menu(aria-labelledby='dropdownMenuButton')
+										a.dropdown-item(href='#')
+											img(src="./assets/icons/en.png", alt="")
+										a.dropdown-item(href='#')
+											img(src="./assets/icons/cn.png", alt="")
 					<!-- Main menu -->
 					.main-menu
 						div
@@ -129,15 +117,6 @@ header
 										li
 											a.dropdown-item(href="ho-tro-khach-hang.html") Kinh doanh
 						.mobile
-							ul.nav-top.d-flex.align-item-center
-								li.d-flex.align-item-center
-									a.btn.btn__shopping(href="danh-sach-shopping.html")
-										em.fa.fa-cart-plus
-										span Shopping
-								li.d-flex.align-item-center
-									a.btn.btn__check(href="")
-										em.fa.fa-shield
-										|Kiểm tra và bảo hành
 							.nav-logo__mobile
 								ul
 									-for(i=1; i<4; i++)

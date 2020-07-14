@@ -3,6 +3,9 @@
 	background-color: #f5f5f5;
 	&__content{
 		padding-top: 60px;
+		.content__sidebar{
+			margin-bottom: 30px;
+		}
 		.content__sidebar>.block__title{
 			position: relative;
 			display: flex;
