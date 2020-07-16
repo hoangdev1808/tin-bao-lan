@@ -30,11 +30,11 @@ section.block-section.tbl-shopping.tbl-product.wow.fadeInDown(data-wow-delay=".3
 					.content__sidebar
 						.block__title.text-center.text-uppercase.bg-main
 							h5.color-while khoảng giá
-						.acc.bg-while
-							.form-group
-								input#formControlRange.form-control-range(type='range')
-								label(for='formControlRange') Example Range input
-
+						.wrap
+							#slider-range-min
+							.range-price
+								label(for='amount') Giá từ 0đ đến
+								input#amount(type='text', readonly='')
 				.col-md-9.right-box
 					.block__filter
 						h4 BỘ LỌC
@@ -72,7 +72,7 @@ section.block-section.tbl-shopping.tbl-product.wow.fadeInDown(data-wow-delay=".3
 									.product__item
 										.product__image
 											a(href="chi-tiet-san-pham.html")
-												img(src="./assets/images/product/p-"+i+".png", alt="")
+												img(src="./assets/images/product/p-"+i+".png" alt="")
 										.product__desc
 											.product__name
 												a(href="chi-tiet-san-pham.html") Máy in Laser BROTHER HL- L2321D - In đảo mặt tự động
