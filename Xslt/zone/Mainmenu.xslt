@@ -4,7 +4,6 @@
 	<xsl:template match="/">
 		<ul class="navbar-nav">
 			<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
-
 		</ul>
 	</xsl:template>
 	<xsl:template match="Zone">

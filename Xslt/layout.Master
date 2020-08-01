@@ -10,7 +10,6 @@
 		<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" JQueryUIThemeName="smoothness" />
 		<portal:Favicon ID="Favicon1" runat="server" />
 		<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="true" />
-
 		<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
 
 	</head>
@@ -40,11 +39,6 @@
 									<ul class="nav-top">
 										<li>
 											<portal:modulewrapper id="mdl176" runat="server" configuremoduleid="176" />
-										</li>
-										<li>
-											<a class="search btn btn__search mobile" href="javascript:void(0)">
-												<label class="material-icons">search</label>
-											</a>
 										</li>
 										<li>
 											<portal:modulewrapper id="mdl179" runat="server" configuremoduleid="179" />
@@ -109,24 +103,7 @@
 						<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
 					</asp:Panel>
 				</main>
-				<div class="modal" id="checkIME">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">×</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<section class="cart-history">
-								</section>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-info" data-dismiss="modal">Đóng</button>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 				<footer>
 					<div class="footer-block">
 						<div class="container">

@@ -8,7 +8,7 @@
             <div id="slider-range-min"></div>
             <div class="range-price">
                 <label for="amount" data-index="0">Giá từ 0đ đến</label>
-                <input id="amount" type="text" readonly=""/>
+                <input id="amount" type="text" readonly=""></input>
             </div>
         </div>
     </xsl:template>

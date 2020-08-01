@@ -610,6 +610,15 @@ $(function() {
 	});
 	$("#amount").val($("#slider-range-min").slider("value")+"đ");
 });
+const checkLayoutBanner = () => {
+	const pagesBanner = $("#page-banner");
+	const breadcrumb = $('.global-breadcrumb');
+	const heightHeader = $("header").outerHeight();
+	const blockbanner = $('.block__banner');
+	if (blockbanner.length < 1) {
+		$("main").css("padding-top", heightHeader);
+	}
+};
 document.addEventListener('DOMContentLoaded', () => {
 	// Loading();
 	Cookie();
@@ -642,6 +651,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	productFillter();
 	moveSelect();
 	moveNav();
+	checkLayoutBanner();
 });
 $(window).resize(function(){
 	if ($(window).width() <= 991.98) {

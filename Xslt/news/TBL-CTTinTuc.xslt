@@ -63,6 +63,7 @@
     </xsl:template>
     <xsl:template match="NewsOther">
         <xsl:if test="position()&lt;6">
+         <xsl:if test="position()&lt;6">
             <div class="news__item">
                 <div class="news__img">
                     <a>
