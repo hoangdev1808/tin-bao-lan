@@ -36,7 +36,7 @@
 					</xsl:when>
 					<xsl:otherwise>
 						<ul class="nav-item__dropdownmenu mobile">
-							<xsl:apply-templates select="Zone" mode="Mega-Mobile"></xsl:apply-templates>
+							<xsl:apply-templates select="Zone" mode="Mega-Mbile"></xsl:apply-templates>
 						</ul>
 						<div class="menu-mega nav-item__dropdownmenu">
 							<div class="container">
